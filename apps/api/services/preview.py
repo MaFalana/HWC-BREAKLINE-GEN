@@ -3,6 +3,7 @@ Preview service for LiDAR data analysis
 """
 
 import time
+import csv
 import logging
 from typing import Dict, List, Optional, Tuple
 import numpy as np
@@ -586,4 +587,151 @@ class PreviewService:
             spatial_coverage=spatial_coverage,
             data_quality=data_quality,
             file_metadata=file_metadata
+        )
+
+    # ------------------------------------------------------------------
+    # Completed-job preview (from preview CSV files in blob storage)
+    # ------------------------------------------------------------------
+
+    async def build_preview_from_outputs(self, job) -> JobPreviewResponse | MultiFilePreviewResponse:
+        """Build a preview response by downloading and parsing preview CSVs
+        that were generated during processing.
+
+        Falls back to the live LAS-based preview if no preview CSV is found.
+        """
+        from app.models.job import Job  # avoid circular at module level
+
+        preview_blobs = [b for b in job.output_files if b.endswith("_preview.csv")]
+
+        if not preview_blobs:
+            # No preview CSV was generated (legacy job) — fall back to live preview
+            self.logger.info(f"No preview CSV found for job {job.id}, falling back to live preview")
+            if len(job.input_files) == 1:
+                return await self.generate_preview(job.id, job.input_files[0])
+            else:
+                is_merge = job.processing_parameters.get("merge_outputs", False)
+                return await self.generate_multi_file_preview(job.id, job.input_files, is_merge)
+
+        # Parse each preview CSV into a FilePreview
+        file_previews: list[FilePreview] = []
+        for blob_name in preview_blobs:
+            file_preview = await self._parse_preview_csv(blob_name)
+            file_previews.append(file_preview)
+
+        total_points = job.total_processed_points or 0
+
+        if len(file_previews) == 1:
+            fp = file_previews[0]
+            return JobPreviewResponse(
+                job_id=job.id,
+                preview_points=fp.preview_points,
+                elevation_statistics=fp.elevation_statistics,
+                spatial_coverage=fp.spatial_coverage,
+                data_quality=fp.data_quality,
+                file_metadata=fp.file_metadata,
+                processing_time_ms=0.0,
+                total_processed_points=total_points,
+            )
+        else:
+            is_merge = job.processing_parameters.get("merge_outputs", False)
+            return MultiFilePreviewResponse(
+                job_id=job.id,
+                is_merge_job=is_merge,
+                file_count=len(file_previews),
+                file_previews=file_previews if not is_merge else [],
+                merged_preview=file_previews[0] if is_merge else None,
+                processing_time_ms=0.0,
+                total_processed_points=total_points,
+            )
+
+    async def _parse_preview_csv(self, blob_name: str) -> FilePreview:
+        """Download a preview CSV from blob storage and convert to FilePreview."""
+        raw = await self.storage_service.download_file(blob_name)
+        text = raw.decode("utf-8")
+        reader = csv.DictReader(text.splitlines())
+
+        points: list[PNEZDPoint] = []
+        for row in reader:
+            points.append(PNEZDPoint(
+                point=int(row["Point"]),
+                northing=float(row["Northing"]),
+                easting=float(row["Easting"]),
+                elevation=float(row["Elevation"]),
+                description=row["Description"],
+            ))
+
+        # Derive basic stats from the preview points
+        if points:
+            elevations = [p.elevation for p in points]
+            northings = [p.northing for p in points]
+            eastings = [p.easting for p in points]
+            sorted_e = sorted(elevations)
+            n = len(sorted_e)
+
+            elevation_stats = ElevationStatistics(
+                min=sorted_e[0],
+                q1=sorted_e[n // 4] if n > 4 else sorted_e[0],
+                median=sorted_e[n // 2],
+                q3=sorted_e[3 * n // 4] if n > 4 else sorted_e[-1],
+                max=sorted_e[-1],
+                mean=round(sum(elevations) / n, 4),
+                std_dev=round(float(np.std(elevations)), 4),
+                variance=round(float(np.var(elevations)), 4),
+                range=round(sorted_e[-1] - sorted_e[0], 4),
+                iqr=round(
+                    (sorted_e[3 * n // 4] if n > 4 else sorted_e[-1])
+                    - (sorted_e[n // 4] if n > 4 else sorted_e[0]),
+                    4,
+                ),
+            )
+            spatial_coverage = SpatialCoverage(
+                bounding_box=BoundingBox(
+                    min_northing=min(northings),
+                    max_northing=max(northings),
+                    min_easting=min(eastings),
+                    max_easting=max(eastings),
+                    min_elevation=sorted_e[0],
+                    max_elevation=sorted_e[-1],
+                ),
+                area_sq_meters=0.0,
+                area_acres=0.0,
+                area_hectares=0.0,
+                point_density=0.0,
+                coordinate_system="Processed",
+            )
+        else:
+            elevation_stats = ElevationStatistics(
+                min=0, q1=0, median=0, q3=0, max=0,
+                mean=0, std_dev=0, variance=0, range=0, iqr=0,
+            )
+            spatial_coverage = SpatialCoverage(
+                bounding_box=BoundingBox(
+                    min_northing=0, max_northing=0, min_easting=0,
+                    max_easting=0, min_elevation=0, max_elevation=0,
+                ),
+                area_sq_meters=0, area_acres=0, area_hectares=0,
+                point_density=0, coordinate_system="Processed",
+            )
+
+        filename = Path(blob_name).name
+        return FilePreview(
+            preview_points=points,
+            elevation_statistics=elevation_stats,
+            spatial_coverage=spatial_coverage,
+            data_quality=DataQuality(
+                total_points=len(points),
+                classifications=[],
+                return_types=None,
+                gps_time_range=None,
+                intensity_stats=None,
+            ),
+            file_metadata=FileMetadata(
+                filename=filename,
+                file_size_mb=0,
+                las_version="Processed",
+                point_data_format=0,
+                creation_date=None,
+                generating_software="Surface Generation API",
+                system_identifier=None,
+            ),
         )

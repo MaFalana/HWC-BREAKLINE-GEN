@@ -321,19 +321,23 @@ class LiDARProcessor:
     
     def _export_files(self, points: np.ndarray, 
                      breaklines: List, basename: str) -> Dict[str, str]:
-        """Export to DXF and/or CSV formats"""
+        """Export to DXF, CSV, and preview formats"""
         output_files = {}
         output_dir = Path(self.params.output_dir)
         output_dir.mkdir(parents=True, exist_ok=True)
-        
+
         if 'dxf' in self.params.output_formats:
             dxf_path = self._export_dxf(points, breaklines, basename, output_dir)
             output_files['dxf'] = str(dxf_path)
-            
+
         if 'csv' in self.params.output_formats:
             csv_path = self._export_csv(points, basename, output_dir)
             output_files['csv'] = str(csv_path)
-            
+
+        # Always generate a preview file
+        preview_path = self._export_preview(points, basename, output_dir)
+        output_files['preview'] = str(preview_path)
+
         return output_files
     
     def _export_dxf(self, points: np.ndarray, breaklines: List, 
@@ -376,6 +380,27 @@ class LiDARProcessor:
         
         self.logger.info(f"Saved CSV file: {csv_path}")
         return csv_path
+    def _export_preview(self, points: np.ndarray, basename: str,
+                        output_dir: Path, max_points: int = 50) -> Path:
+        """Export a lightweight preview CSV with the first N processed points in PNEZD format.
+
+        The file is always generated regardless of user-selected output formats
+        so the API can serve preview data without touching MongoDB or the
+        original LAS file.
+        """
+        preview_path = output_dir / f"{basename}_preview.csv"
+        num_points = min(len(points), max_points)
+
+        with open(preview_path, 'w', newline='') as f:
+            writer = csv.writer(f)
+            writer.writerow(['Point', 'Northing', 'Easting', 'Elevation', 'Description'])
+            for i in range(num_points):
+                x, y, z = points[i]
+                writer.writerow([i + 1, round(float(y), 4), round(float(x), 4),
+                                 round(float(z), 4), 'Ground'])
+
+        self.logger.info(f"Saved preview CSV ({num_points} points): {preview_path}")
+        return preview_path
     
     def _merge_results(self, results: List[ProcessingResult]) -> ProcessingResult:
         """

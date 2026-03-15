@@ -3,7 +3,7 @@ Job management service
 """
 
 import logging
-from typing import List, Optional, Dict, Any
+from typing import List, Optional
 from datetime import datetime
 import uuid
 
@@ -92,9 +92,7 @@ class JobManager:
         status: JobStatus,
         error_message: Optional[str] = None,
         output_files: Optional[List[str]] = None,
-        processed_preview_points: Optional[Dict[str, List[Dict[str, Any]]]] = None,
-        total_processed_points: Optional[int] = None,
-        per_file_processed_points: Optional[Dict[str, int]] = None
+        total_processed_points: Optional[int] = None
     ) -> Job:
         """
         Update job status
@@ -104,9 +102,7 @@ class JobManager:
             status: New status
             error_message: Optional error message
             output_files: Optional list of output files
-            processed_preview_points: Optional processed preview points per file
             total_processed_points: Optional total number of processed points
-            per_file_processed_points: Optional per file processed points count
             
         Returns:
             Updated job
@@ -125,14 +121,8 @@ class JobManager:
             if output_files:
                 job.output_files = output_files
             
-            if processed_preview_points:
-                job.processed_preview_points = processed_preview_points
-            
             if total_processed_points is not None:
                 job.total_processed_points = total_processed_points
-            
-            if per_file_processed_points is not None:
-                job.per_file_processed_points = per_file_processed_points
             
             if status in [JobStatus.COMPLETED, JobStatus.FAILED]:
                 job.completed_at = datetime.utcnow()

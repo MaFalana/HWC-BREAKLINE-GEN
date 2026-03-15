@@ -72,7 +72,7 @@ async def process_jobs_loop():
                     )
                     
                     # Process the job
-                    output_files, processed_preview_points, total_processed_points, per_file_processed_points = await processor_service.process_job(
+                    output_files, total_processed_points = await processor_service.process_job(
                         job.id,
                         job.input_files,
                         job.processing_parameters
@@ -83,9 +83,7 @@ async def process_jobs_loop():
                         job.id,
                         JobStatus.COMPLETED,
                         output_files=output_files,
-                        processed_preview_points=processed_preview_points,
-                        total_processed_points=total_processed_points,
-                        per_file_processed_points=per_file_processed_points
+                        total_processed_points=total_processed_points
                     )
                     
                     logger.info(f"Successfully processed job {job.id}")

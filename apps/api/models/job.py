@@ -55,15 +55,7 @@ class Job(BaseModel):
         default=None,
         description="Error message if job failed"
     )
-    processed_preview_points: Optional[Dict[str, List[Dict[str, Any]]]] = Field(
-        default=None,
-        description="Processed preview points per input file: {filename: [points in PNEZD format]}"
-    )
     total_processed_points: Optional[int] = Field(
         default=None,
         description="Total number of processed points across all files"
-    )
-    per_file_processed_points: Optional[Dict[str, int]] = Field(
-        default=None,
-        description="Number of processed points per input file: {filename: point_count}"
     )
