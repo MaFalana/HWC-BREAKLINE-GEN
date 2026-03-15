@@ -80,18 +80,12 @@ class MongoJobClient:
         """Get a job by ID"""
         try:
             job_doc = await self.jobs_collection.find_one({"_id": job_id})
-            
+
             if not job_doc:
                 raise JobNotFoundException(job_id)
-            
-            logger.info(f"Retrieved job document with input_files: {job_doc.get('input_files')}")
-            
-            # Remove MongoDB _id and convert back to Job
+
             job_doc.pop("_id", None)
-            job = Job(**job_doc)
-            
-            logger.info(f"Converted Job model with input_files: {job.input_files}")
-            return job
+            return Job(**job_doc)
             
         except JobNotFoundException:
             raise
@@ -125,27 +119,15 @@ class MongoJobClient:
     async def get_queued_jobs(self, limit: int = 10) -> List[Job]:
         """Get queued jobs in FIFO order"""
         try:
-            # Debug: Check what jobs exist with any status
-            all_jobs_count = await self.jobs_collection.count_documents({})
-            queued_count = await self.jobs_collection.count_documents({"status": JobStatus.QUEUED.value})
-            logger.info(f"Total jobs in DB: {all_jobs_count}, Queued jobs count: {queued_count}")
-            
-            # If no queued jobs found, check what statuses exist
-            if queued_count == 0:
-                statuses = await self.jobs_collection.distinct("status")
-                logger.info(f"Available job statuses: {statuses}")
-            
-            # Sort by _id which is always indexed and contains timestamp
             cursor = self.jobs_collection.find(
                 {"status": JobStatus.QUEUED.value}
             ).sort("_id", 1).limit(limit)
-            
+
             jobs = []
             async for job_doc in cursor:
                 job_doc.pop("_id", None)
                 jobs.append(Job(**job_doc))
-            
-            logger.info(f"Found {len(jobs)} queued jobs")
+
             return jobs
             
         except Exception as e:
