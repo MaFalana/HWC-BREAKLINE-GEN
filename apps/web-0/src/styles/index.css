@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50 text-hwc-dark;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold text-hwc-dark;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-6 py-3 bg-hwc-red text-white font-medium rounded-lg hover:bg-red-700 transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  
+  .btn-secondary {
+    @apply px-4 sm:px-6 py-2 sm:py-3 bg-white text-hwc-dark font-medium rounded-lg border-2 border-hwc-gray hover:bg-gray-50 transition-colors duration-200 text-sm;
+  }
+  
+  .input-field {
+    @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-hwc-red focus:border-transparent;
+  }
+  
+  .section-card {
+    @apply bg-white rounded-xl shadow-sm border border-gray-100 p-4 sm:p-6;
+  }
+  
+  .react-select-container {
+    @apply min-w-0;
+  }
+
+  /* Slider with recommended zones */
+  .slider-with-zones::-webkit-slider-thumb {
+    @apply appearance-none w-5 h-5 bg-hwc-red rounded-full cursor-pointer shadow-md hover:shadow-lg transition-shadow relative z-10;
+  }
+
+  .slider-with-zones::-moz-range-thumb {
+    @apply w-5 h-5 bg-hwc-red rounded-full cursor-pointer shadow-md hover:shadow-lg transition-shadow border-0 relative z-10;
+  }
+
+  .slider-with-zones::-ms-thumb {
+    @apply w-5 h-5 bg-hwc-red rounded-full cursor-pointer shadow-md hover:shadow-lg transition-shadow relative z-10;
+  }
+
+  .slider-with-zones:focus {
+    @apply outline-none;
+  }
+
+  .slider-with-zones:focus-visible::-webkit-slider-thumb {
+    @apply ring-2 ring-hwc-red ring-opacity-50;
+  }
+
+  .slider-with-zones:focus-visible::-moz-range-thumb {
+    @apply ring-2 ring-hwc-red ring-opacity-50;
+  }
+}

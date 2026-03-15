@@ -1,0 +1,39 @@
+env/
+__pycache__/
+*.pyc
+.claude/
+
+*.env
+*.env.*
+env.*
+
+*.Dockerfile.*
+Dockerfile.*
+
+# Logs
+*.log
+app.log
+app_output.log
+nohup.out
+
+# Directories
+test_output/
+comments/
+issues/
+
+# Test files
+test*.las
+*.las
+test*.laz
+*.laz
+*.laz.zip
+job_id.txt
+preview_test.json
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

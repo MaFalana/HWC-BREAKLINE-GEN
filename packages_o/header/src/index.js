@@ -1,1 +1,0 @@
-export { default as HwcHeader } from "./main.jsx";

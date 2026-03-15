@@ -1,0 +1,454 @@
+"""
+Azure Blob Storage service for file operations
+"""
+
+import io
+import logging
+from typing import List, Optional, BinaryIO, Dict
+from datetime import datetime, timedelta
+
+from azure.storage.blob import BlobServiceClient, BlobClient, ContainerClient, BlobSasPermissions, generate_blob_sas
+from azure.core.exceptions import ResourceNotFoundError, ResourceExistsError
+
+from app.config import settings
+from app.utils.exceptions import StorageException
+
+
+logger = logging.getLogger(__name__)
+
+
+class StorageService:
+    """Service for Azure Blob Storage operations"""
+    
+    def __init__(self):
+        """Initialize Azure Blob Storage client"""
+        try:
+            self.blob_service_client = BlobServiceClient.from_connection_string(
+                settings.azure_connection_string
+            )
+            self.container_client = self.blob_service_client.get_container_client(
+                settings.azure_storage_container
+            )
+            
+            # Extract account name and key from connection string for SAS generation
+            conn_parts = dict(part.split('=', 1) for part in settings.azure_connection_string.split(';') if '=' in part)
+            self.account_name = conn_parts.get('AccountName')
+            self.account_key = conn_parts.get('AccountKey')
+            
+            if not self.account_name or not self.account_key:
+                logger.error(f"Failed to extract account credentials. Found account_name: {bool(self.account_name)}, account_key: {bool(self.account_key)}")
+                raise StorageException("initialization", "Could not extract account credentials from connection string")
+            
+            # Ensure container exists
+            self._ensure_container_exists()
+        except Exception as e:
+            logger.error(f"Failed to initialize storage service: {str(e)}")
+            raise StorageException("initialization", str(e))
+    
+    def _ensure_container_exists(self) -> None:
+        """Create container if it doesn't exist"""
+        try:
+            self.container_client.create_container()
+            logger.info(f"Created container '{settings.azure_storage_container}'")
+        except ResourceExistsError:
+            logger.info(f"Container '{settings.azure_storage_container}' already exists")
+        except Exception as e:
+            logger.error(f"Failed to create container: {str(e)}")
+            raise StorageException("container creation", str(e))
+    
+    async def upload_file(
+        self,
+        file_stream: BinaryIO,
+        blob_name: str,
+        content_type: str = "application/octet-stream"
+    ) -> str:
+        """
+        Upload a file to blob storage with comprehensive validation
+        
+        Args:
+            file_stream: File stream to upload
+            blob_name: Name for the blob (including path)
+            content_type: MIME type of the file
+            
+        Returns:
+            Blob URL
+            
+        Raises:
+            StorageException: If upload fails
+        """
+        try:
+            # Ensure we're at the beginning of the file stream
+            file_stream.seek(0)
+            
+            # Read file data to ensure it's not empty
+            file_data = file_stream.read()
+            if not file_data:
+                raise StorageException("file upload", f"File stream is empty for blob {blob_name}")
+            
+            logger.info(f"Uploading {len(file_data)} bytes to blob: {blob_name}")
+            
+            # Get blob client
+            blob_client = self.container_client.get_blob_client(blob_name)
+            
+            # Delete existing blob if it exists (for clean overwrite)
+            try:
+                await self._run_in_executor(blob_client.delete_blob)
+                logger.info(f"Deleted existing blob: {blob_name}")
+            except Exception:
+                pass  # Blob doesn't exist, which is fine
+            
+            # Upload the file with proper error handling
+            from azure.storage.blob import ContentSettings
+            content_settings = ContentSettings(content_type=content_type)
+            
+            # Use run_in_executor to properly handle sync operation in async context
+            def _upload_with_settings():
+                return blob_client.upload_blob(
+                    file_data,
+                    overwrite=True,
+                    content_settings=content_settings
+                )
+            
+            upload_result = await self._run_in_executor(_upload_with_settings)
+            
+            logger.info(f"Upload result: {upload_result}")
+            
+            # Immediately verify the upload succeeded
+            try:
+                exists = await self._run_in_executor(blob_client.exists)
+                if not exists:
+                    raise StorageException("file upload", f"Upload appeared successful but blob {blob_name} does not exist")
+                
+                # Get blob properties to verify size
+                properties = await self._run_in_executor(blob_client.get_blob_properties)
+                uploaded_size = properties.size
+                
+                if uploaded_size != len(file_data):
+                    raise StorageException(
+                        "file upload", 
+                        f"Upload size mismatch for {blob_name}: expected {len(file_data)} bytes, got {uploaded_size} bytes"
+                    )
+                
+                logger.info(f"Successfully uploaded and verified {uploaded_size} bytes to blob: {blob_name}")
+                return blob_client.url
+                
+            except StorageException:
+                raise
+            except Exception as e:
+                raise StorageException("file upload", f"Upload verification failed for {blob_name}: {str(e)}")
+            
+        except StorageException:
+            raise
+        except Exception as e:
+            logger.error(f"Failed to upload file {blob_name}: {str(e)}")
+            logger.error(f"Container: {settings.azure_storage_container}")
+            logger.error(f"Connection string configured: {bool(settings.azure_connection_string)}")
+            raise StorageException("file upload", str(e))
+    
+    async def _run_in_executor(self, func, *args):
+        """Run synchronous function in thread pool executor"""
+        import asyncio
+        loop = asyncio.get_event_loop()
+        return await loop.run_in_executor(None, func, *args)
+    
+    async def download_file(self, blob_name: str) -> bytes:
+        """
+        Download a file from blob storage
+        
+        Args:
+            blob_name: Name of the blob to download
+            
+        Returns:
+            File contents as bytes
+            
+        Raises:
+            StorageException: If download fails
+        """
+        try:
+            logger.info(f"Attempting to download blob: {blob_name}")
+            blob_client = self.container_client.get_blob_client(blob_name)
+            
+            # Check if blob exists
+            exists = blob_client.exists()
+            logger.info(f"Blob exists check for {blob_name}: {exists}")
+            
+            if not exists:
+                logger.error(f"Blob not found: {blob_name}")
+                raise StorageException("file download", f"File not found: {blob_name}")
+            
+            # Download the file
+            download_stream = blob_client.download_blob()
+            data = download_stream.readall()
+            
+            logger.info(f"Downloaded file from blob: {blob_name}")
+            return data
+            
+        except ResourceNotFoundError:
+            logger.error(f"Blob not found: {blob_name}")
+            raise StorageException("file download", f"File not found: {blob_name}")
+        except Exception as e:
+            logger.error(f"Failed to download file {blob_name}: {str(e)}")
+            raise StorageException("file download", str(e))
+    
+    async def download_file_stream(self, blob_name: str) -> BinaryIO:
+        """
+        Download a file from blob storage as a stream
+        
+        Args:
+            blob_name: Name of the blob to download
+            
+        Returns:
+            File stream
+            
+        Raises:
+            StorageException: If download fails
+        """
+        try:
+            blob_client = self.container_client.get_blob_client(blob_name)
+            
+            # Download the file as stream
+            download_stream = blob_client.download_blob()
+            stream = io.BytesIO()
+            download_stream.readinto(stream)
+            stream.seek(0)
+            
+            logger.info(f"Downloaded file stream from blob: {blob_name}")
+            return stream
+            
+        except ResourceNotFoundError:
+            logger.error(f"Blob not found: {blob_name}")
+            raise StorageException("file download", f"File not found: {blob_name}")
+        except Exception as e:
+            logger.error(f"Failed to download file {blob_name}: {str(e)}")
+            raise StorageException("file download", str(e))
+    
+    async def delete_file(self, blob_name: str) -> None:
+        """
+        Delete a file from blob storage
+        
+        Args:
+            blob_name: Name of the blob to delete
+            
+        Raises:
+            StorageException: If deletion fails
+        """
+        try:
+            blob_client = self.container_client.get_blob_client(blob_name)
+            blob_client.delete_blob()
+            
+            logger.info(f"Deleted blob: {blob_name}")
+            
+        except ResourceNotFoundError:
+            logger.warning(f"Blob not found for deletion: {blob_name}")
+        except Exception as e:
+            logger.error(f"Failed to delete file {blob_name}: {str(e)}")
+            raise StorageException("file deletion", str(e))
+    
+    async def delete_job_files(self, job_id: str) -> None:
+        """
+        Delete all files associated with a job
+        
+        Args:
+            job_id: Job identifier
+        """
+        try:
+            # List all blobs with job_id prefix
+            prefixes = [f"uploads/{job_id}/", f"outputs/{job_id}/"]
+            
+            for prefix in prefixes:
+                blobs = self.container_client.list_blobs(name_starts_with=prefix)
+                
+                for blob in blobs:
+                    await self.delete_file(blob.name)
+            
+            logger.info(f"Deleted all files for job: {job_id}")
+            
+        except Exception as e:
+            logger.error(f"Failed to delete files for job {job_id}: {str(e)}")
+            raise StorageException("job files deletion", str(e))
+    
+    async def delete_job_files_cross_container(self, job_id: str, containers: List[str] = None) -> None:
+        """
+        Delete all files associated with a job across multiple containers
+        
+        Args:
+            job_id: Job identifier
+            containers: List of container names to search. If None, defaults to common containers.
+        """
+        if containers is None:
+            containers = ["lidar-to-civil", "lidar-to-civil-dev"]
+        
+        deleted_count = 0
+        
+        for container_name in containers:
+            try:
+                container_client = self.blob_service_client.get_container_client(container_name)
+                
+                # Check if container exists before trying to list blobs
+                try:
+                    container_properties = await container_client.get_container_properties()
+                except ResourceNotFoundError:
+                    logger.info(f"Container {container_name} does not exist, skipping")
+                    continue
+                
+                # List all blobs with job_id prefix in this container
+                prefixes = [f"uploads/{job_id}/", f"outputs/{job_id}/"]
+                
+                for prefix in prefixes:
+                    blobs = container_client.list_blobs(name_starts_with=prefix)
+                    
+                    for blob in blobs:
+                        try:
+                            blob_client = container_client.get_blob_client(blob.name)
+                            await blob_client.delete_blob()
+                            deleted_count += 1
+                            logger.debug(f"Deleted blob {blob.name} from container {container_name}")
+                        except ResourceNotFoundError:
+                            logger.debug(f"Blob {blob.name} already deleted from container {container_name}")
+                        except Exception as blob_error:
+                            logger.error(f"Failed to delete blob {blob.name} from container {container_name}: {str(blob_error)}")
+                
+            except Exception as container_error:
+                logger.error(f"Failed to access container {container_name}: {str(container_error)}")
+        
+        if deleted_count > 0:
+            logger.info(f"Deleted {deleted_count} files for job {job_id} across {len(containers)} containers")
+        else:
+            logger.info(f"No files found for job {job_id} in any container")
+    
+    
+    def generate_download_url(
+        self,
+        blob_name: str,
+        expiry_hours: int = 1,
+        filename: Optional[str] = None
+    ) -> str:
+        """
+        Generate a SAS URL for downloading a blob
+        
+        Args:
+            blob_name: Name of the blob
+            expiry_hours: Hours until URL expires
+            filename: Optional filename for Content-Disposition header
+            
+        Returns:
+            SAS URL for downloading
+            
+        Raises:
+            StorageException: If URL generation fails
+        """
+        try:
+            blob_client = self.container_client.get_blob_client(blob_name)
+            
+            # Generate SAS token with proper parameters
+            expiry_time = datetime.utcnow() + timedelta(hours=expiry_hours)
+            
+            sas_token = generate_blob_sas(
+                account_name=self.account_name,
+                container_name=settings.azure_storage_container,
+                blob_name=blob_name,
+                account_key=self.account_key,
+                permission=BlobSasPermissions(read=True),
+                expiry=expiry_time,
+                content_disposition=f"attachment; filename={filename}" if filename else None
+            )
+            
+            # Build URL with SAS token
+            url = f"{blob_client.url}?{sas_token}"
+            
+            logger.info(f"Generated download URL for blob: {blob_name}")
+            return url
+            
+        except Exception as e:
+            logger.error(f"Failed to generate download URL for {blob_name}: {str(e)}")
+            raise StorageException("URL generation", str(e))
+    
+    def generate_download_urls(
+        self,
+        blob_names: List[str],
+        expiry_hours: int = 1
+    ) -> Dict[str, str]:
+        """
+        Generate SAS URLs for multiple blobs
+        
+        Args:
+            blob_names: List of blob names
+            expiry_hours: Hours until URLs expire
+            
+        Returns:
+            Dictionary mapping blob names to download URLs
+        """
+        urls = {}
+        
+        for blob_name in blob_names:
+            try:
+                # Extract just the filename for the download
+                from pathlib import Path
+                filename = Path(blob_name).name
+                urls[filename] = self.generate_download_url(
+                    blob_name,
+                    expiry_hours,
+                    filename
+                )
+            except Exception as e:
+                logger.error(f"Failed to generate URL for {blob_name}: {str(e)}")
+                urls[blob_name] = None
+        
+        return urls
+    
+    async def list_blobs(self, prefix: str) -> List[str]:
+        """
+        List blobs with a given prefix
+        
+        Args:
+            prefix: Blob name prefix
+            
+        Returns:
+            List of blob names
+        """
+        try:
+            blobs = self.container_client.list_blobs(name_starts_with=prefix)
+            blob_names = [blob.name for blob in blobs]
+            
+            logger.info(f"Listed {len(blob_names)} blobs with prefix: {prefix}")
+            return blob_names
+            
+        except Exception as e:
+            logger.error(f"Failed to list blobs with prefix {prefix}: {str(e)}")
+            return []
+    
+    async def blob_exists(self, blob_name: str) -> bool:
+        """
+        Check if a blob exists
+        
+        Args:
+            blob_name: Name of the blob
+            
+        Returns:
+            True if blob exists, False otherwise
+        """
+        try:
+            blob_client = self.container_client.get_blob_client(blob_name)
+            exists = await self._run_in_executor(blob_client.exists)
+            logger.info(f"Checking blob existence for '{blob_name}' in container '{settings.azure_storage_container}': {exists}")
+            return exists
+        except Exception as e:
+            logger.error(f"Failed to check blob existence {blob_name}: {str(e)}")
+            logger.error(f"Container: {settings.azure_storage_container}")
+            logger.error(f"Full blob path being checked: {blob_name}")
+            return False
+    
+    async def health_check(self) -> bool:
+        """
+        Check if Azure Blob Storage is accessible
+        
+        Returns:
+            True if healthy, False otherwise
+        """
+        try:
+            # Try to list containers
+            containers = list(self.blob_service_client.list_containers(max_results=1))
+            return True
+        except Exception as e:
+            logger.error(f"Azure Blob Storage health check failed: {str(e)}")
+            return False

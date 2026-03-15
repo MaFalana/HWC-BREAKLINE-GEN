@@ -1,10 +1,11 @@
-name: Build & Deploy Container App
+name: Build & Deploy FastAPI to Azure
 
 on:
   push:
     branches: ["main"]
     paths:
       - "apps/api/**"
+      - ".github/workflows/backend.yml"
       - "packages/**"
       - "package.json"
       - "package-lock.json"
@@ -14,30 +15,19 @@ on:
 
 env:
   DOCKER_IMAGE: mfalana/hwc-xxx-xxx
-  CONTAINER_APP: hwc-xxx-xxx
-  RESOURCE_GROUP: LiDAR-Breakline-Generator
+  CONTAINER_NAME: hwc-xxx-xxx
+
+concurrency:
+  group: dockerhub-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
-  build-and-deploy:
+  build-and-push:
     runs-on: ubuntu-latest
-    concurrency:
-      group: deploy-${{ github.ref }}
-      cancel-in-progress: true
-
+    
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Set up Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-
-      - name: Install Dependencies
-        run: npm install
-
-      - name: Build App
-        run: npm run build
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
@@ -48,10 +38,10 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-      - name: Build & Push Docker Image
+      - name: Build & push (latest + sha)
         uses: docker/build-push-action@v6
         with:
-          context: .
+          context: apps/api
           push: true
           tags: |
             docker.io/${{ env.DOCKER_IMAGE }}:${{ github.sha }}
@@ -66,24 +56,56 @@ jobs:
 
       - name: Create or Update Azure Container App
         run: |
-          echo "Deploying to Azure Container Apps..."
-
-          # Check if container app exists
-          if az containerapp show \
-            --name ${{ env.CONTAINER_APP }} \
-            --resource-group ${{ env.RESOURCE_GROUP }} > /dev/null 2>&1; then
-              echo "Container App exists. Updating..."
-              az containerapp update \
-                --name ${{ env.CONTAINER_APP }} \
-                --resource-group ${{ env.RESOURCE_GROUP }} \
-                --image docker.io/${{ env.DOCKER_IMAGE }}:${{ github.sha }}
+          echo "Checking if Container App exists..."
+          
+          # Use dedicated Container App Environment for this project
+          ENV_NAME="my-projects-env"
+          
+          # Check if environment exists, create if it doesn't
+          if ! az containerapp env show --name $ENV_NAME --resource-group ${{ secrets.AZURE_RESOURCE_GROUP }} >/dev/null 2>&1; then
+            echo "Container App Environment doesn't exist, creating..."
+            az containerapp env create \
+              --name $ENV_NAME \
+              --resource-group ${{ secrets.AZURE_RESOURCE_GROUP }} \
+              --location eastus
+            echo "Environment '$ENV_NAME' created successfully!"
           else
-              echo "Container App does NOT exist. Creating..."
-              az containerapp create \
-                --name ${{ env.CONTAINER_APP }} \
-                --resource-group ${{ env.RESOURCE_GROUP }} \
-                --image docker.io/${{ env.DOCKER_IMAGE }}:${{ github.sha }} \
-                --environment ${{ secrets.AZURE_CONTAINER_ENVIRONMENT }}
+            echo "Environment '$ENV_NAME' already exists"
           fi
-
-          echo "Deployment complete."
+          
+          # Check if container app exists
+          if az containerapp show --name ${{ env.CONTAINER_NAME }} --resource-group ${{ secrets.AZURE_RESOURCE_GROUP }} >/dev/null 2>&1; then
+            echo "Container App exists, updating..."
+            az containerapp update \
+              --name ${{ env.CONTAINER_NAME }} \
+              --resource-group ${{ secrets.AZURE_RESOURCE_GROUP }} \
+              --image docker.io/${{ env.DOCKER_IMAGE }}:${{ github.sha }} \
+              --set-env-vars \
+                PORT=8000 \
+                MONGO_CONNECTION_STRING="${{ secrets.MONGO_CONNECTION_STRING }}" \
+                NAME="${{ vars.NAME }}" \
+                AZURE_CONNECTION_STRING="${{ secrets.AZURE_CONNECTION_STRING }}"
+          else
+            echo "Container App doesn't exist, creating in environment: $ENV_NAME"
+            
+            # Create the container app in the environment
+            az containerapp create \
+              --name ${{ env.CONTAINER_NAME }} \
+              --resource-group ${{ secrets.AZURE_RESOURCE_GROUP }} \
+              --environment $ENV_NAME \
+              --image docker.io/${{ env.DOCKER_IMAGE }}:${{ github.sha }} \
+              --target-port 8000 \
+              --ingress external \
+              --min-replicas 0 \
+              --max-replicas 3 \
+              --cpu 0.25 \
+              --memory 0.5Gi \
+              --env-vars \
+                PORT=8000 \
+                MONGO_CONNECTION_STRING="${{ secrets.MONGO_CONNECTION_STRING }}" \
+                NAME="${{ vars.NAME }}" \
+                AZURE_CONNECTION_STRING="${{ secrets.AZURE_CONNECTION_STRING }}"
+          fi
+          
+          echo "Deployment completed successfully!"
+          echo "Image: docker.io/${{ env.DOCKER_IMAGE }}:${{ github.sha }}"
