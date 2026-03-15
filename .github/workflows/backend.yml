@@ -1,0 +1,89 @@
+name: Build & Deploy Container App
+
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - "apps/api/**"
+      - "packages/**"
+      - "package.json"
+      - "package-lock.json"
+      - "Dockerfile"
+      - "apps/api/Dockerfile"
+  workflow_dispatch:
+
+env:
+  DOCKER_IMAGE: mfalana/hwc-xxx-xxx
+  CONTAINER_APP: hwc-xxx-xxx
+  RESOURCE_GROUP: LiDAR-Breakline-Generator
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    concurrency:
+      group: deploy-${{ github.ref }}
+      cancel-in-progress: true
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build App
+        run: npm run build
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Log in to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: Build & Push Docker Image
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          push: true
+          tags: |
+            docker.io/${{ env.DOCKER_IMAGE }}:${{ github.sha }}
+            docker.io/${{ env.DOCKER_IMAGE }}:latest
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+      - name: Log in to Azure
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: Create or Update Azure Container App
+        run: |
+          echo "Deploying to Azure Container Apps..."
+
+          # Check if container app exists
+          if az containerapp show \
+            --name ${{ env.CONTAINER_APP }} \
+            --resource-group ${{ env.RESOURCE_GROUP }} > /dev/null 2>&1; then
+              echo "Container App exists. Updating..."
+              az containerapp update \
+                --name ${{ env.CONTAINER_APP }} \
+                --resource-group ${{ env.RESOURCE_GROUP }} \
+                --image docker.io/${{ env.DOCKER_IMAGE }}:${{ github.sha }}
+          else
+              echo "Container App does NOT exist. Creating..."
+              az containerapp create \
+                --name ${{ env.CONTAINER_APP }} \
+                --resource-group ${{ env.RESOURCE_GROUP }} \
+                --image docker.io/${{ env.DOCKER_IMAGE }}:${{ github.sha }} \
+                --environment ${{ secrets.AZURE_CONTAINER_ENVIRONMENT }}
+          fi
+
+          echo "Deployment complete."

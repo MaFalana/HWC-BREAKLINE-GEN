@@ -1,0 +1,25 @@
+{
+  "name": "hwc-monorepo-template",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "assets:sync": "node scripts/sync-assets.mjs",
+    "dev": "npm run dev:web & npm run dev:api",
+    "dev:web": "npm --workspace=@hwc/web run dev",
+    "dev:api": "python -m uvicorn app.main:app --reload --app-dir apps/api",
+    "build": "npm --workspace=@hwc/web run build",
+    "preview": "npm --workspace=@hwc/web run preview"
+  },
+  "dependencies": {
+    "leaflet": "^1.9.4",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "react-icons": "^5.5.0",
+    "react-leaflet": "^5.0.0",
+    "react-leaflet-cluster": "^4.0.0"
+  }
+}

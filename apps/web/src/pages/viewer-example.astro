@@ -1,0 +1,114 @@
+---
+import { HwcHeader } from "@hwc/header";
+import { ViewerApp } from "../components/ViewerApp";
+import "../styles/global.css";
+
+const project = {
+  _id: "test-project",
+  name: "Icon on Main",
+  location: { lat: 40.0, lon: -86.0, z: 800 },
+  crs: { proj4: '+proj=tmerc +lat_0=37.5 +lon_0=-85.66666666666667 +k=0.999966667 +x_0=500000 +y_0=0 +datum=NAD83 +units=us-ft +no_defs' },
+  cloud: { 
+    url: 'https://hwctopodot.blob.core.windows.net/hwc-potree/2021-274-S/metadata.json',
+    // Bounds would come from point cloud metadata
+    // bounds: { min: { x: 0, y: 0, z: 0 }, max: { x: 1000, y: 1000, z: 100 } }
+  },
+  ortho: { 
+    url: 'https://hwctopodot.blob.core.windows.net/hwc-potree/2021-274-S/ortho/ortho_thumbnail.png',
+    // Provide explicit bounds [[south, west], [north, east]]
+    // These bounds should match the actual ortho image coverage area
+    bounds: [[39.995, -86.005], [40.005, -85.995]]
+  }
+};
+
+const mapTilerKey = import.meta.env.PUBLIC_MAPTILER_API_KEY || '';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HWC Cloud Viewer | {project.name}</title>
+  <style>
+    :root {
+      --hwc-red: #EE2F27;
+      --hdr-bg: rgba(41, 44, 48, 0.95);
+      --hdr-fg: #ffffff;
+      --hdr-border: rgba(255, 255, 255, 0.1);
+      --accent: #EE2F27;
+      --header-h: 60px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #1a1c20;
+      color: #ffffff;
+      overflow: hidden;
+    }
+
+    .viewer-container {
+      position: absolute;
+      top: var(--header-h);
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: calc(100vh - var(--header-h));
+    }
+
+    .mode-toggle {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      z-index: 1000;
+      display: flex;
+      gap: 0.5rem;
+      background: var(--hdr-bg);
+      border-radius: 2rem;
+      padding: 0.5rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(8px);
+      border: 1px solid var(--hdr-border);
+    }
+
+    .mode-btn {
+      width: 2.75rem;
+      height: 2.75rem;
+      border-radius: 50%;
+      border: 2px solid transparent;
+      background: transparent;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--hdr-fg);
+      font-size: 0.75rem;
+      font-weight: 600;
+      transition: all 0.2s ease;
+    }
+
+    .mode-btn:hover {
+      border-color: rgba(255, 255, 255, 0.3);
+    }
+
+    .mode-btn.active {
+      border-color: var(--accent);
+      background: rgba(238, 47, 39, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <HwcHeader title={project.name} />
+  
+  <div class="viewer-container">
+    <ViewerApp client:only="react" project={project} mapTilerKey={mapTilerKey} />
+  </div>
+</body>
+</html>

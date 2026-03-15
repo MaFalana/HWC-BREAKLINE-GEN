@@ -1,0 +1,419 @@
+/* =========================
+   HWC Engineering Base Styles
+   ========================= */
+
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* =========================
+   Design Tokens
+   ========================= */
+:root {
+  /* Brand */
+  --hwc-red: #EE2F27;
+  --hwc-dark-gray: #292C30;
+  --hwc-medium-gray: #6C6864;
+  --hwc-light-gray: #DDD4CC;
+
+  /* Neutrals (app surfaces) */
+  --bg: #ffffff;
+  --fg: #0F1115;
+  --muted: #5B616E;
+  --border: rgba(15, 17, 21, 0.12);
+
+  /* Accent */
+  --accent: var(--hwc-red);
+  --accent-contrast: #ffffff;
+
+  /* Header / overlay theme */
+  --hdr-bg: rgba(26, 28, 32, 0.85);
+  --hdr-fg: #F5F7FA;
+  --hdr-border: rgba(255, 255, 255, 0.08);
+
+  /* Typography */
+  --font-sans: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+  --text-xs: 0.75rem;   /* 12px */
+  --text-sm: 0.875rem;  /* 14px */
+  --text-md: 1rem;      /* 16px */
+  --text-lg: 1.125rem;  /* 18px */
+  --text-xl: 1.25rem;   /* 20px */
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+
+  --leading-tight: 1.25;
+  --leading-normal: 1.5;
+
+  /* Radius + motion */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+
+  --transition-fast: 150ms ease;
+  --transition-med: 220ms ease;
+
+  /* Layout */
+  --header-h: 56px;
+
+  /* Z-index */
+  --z-header: 60;
+}
+
+/* =========================
+   Global reset-ish
+   ========================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Base typography */
+body {
+  color: var(--fg);
+  background: var(--bg);
+  font-family: var(--font-sans);
+  font-size: var(--text-md);
+  font-weight: var(--weight-regular);
+  line-height: var(--leading-normal);
+}
+
+/* Links & buttons */
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  font: inherit;
+}
+
+/* Media defaults */
+img,
+svg,
+video,
+canvas {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* =========================
+   Layout primitives
+   ========================= */
+
+/* If you truly need a full-screen viewer where the app manages scroll internally,
+   apply this class on a top-level container instead of forcing body overflow. */
+.fullscreen-app {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Astro often mounts to <body>; React often mounts to #root. Support both. */
+#root,
+#root > * {
+  min-height: 0;
+}
+
+/* Header base (works for @hwc/header too) */
+.app-header {
+  position: relative;
+  z-index: var(--z-header);
+  background: var(--hdr-bg);
+  color: var(--hdr-fg);
+  border-bottom: 1px solid var(--hdr-border);
+  backdrop-filter: saturate(120%) blur(8px);
+  -webkit-backdrop-filter: saturate(120%) blur(8px);
+  height: var(--header-h);
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+/* Dashboard container */
+.hwc-dashboard {
+  width: 100%;
+  height: calc(100vh - var(--header-h));
+  overflow: hidden;
+}
+
+/* Leaflet */
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+}
+
+/* =========================
+   Utilities
+   ========================= */
+.sr-only {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* =========================
+   Mobile Optimizations
+   ========================= */
+@media (max-width: 768px) {
+  body {
+    font-size: var(--text-sm);
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+  button,
+  a,
+  input,
+  select,
+  textarea {
+    min-height: 44px;
+    -webkit-tap-highlight-color: rgba(238, 47, 39, 0.2);
+  }
+
+  input,
+  select,
+  textarea {
+    font-size: 16px !important; /* Prevents iOS zoom */
+  }
+}
+
+/* High DPI / Retina displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+
+/* =========================
+   Mode Toggle (2D/3D Viewer)
+   ========================= */
+.mode-toggle {
+  position: absolute;
+  bottom: 10.5rem;
+  right: 1rem;
+  z-index: 1000;
+  display: flex;
+  gap: 0.5rem;
+  background: var(--hdr-bg);
+  border-radius: 2rem;
+  padding: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--hdr-border);
+}
+
+.mode-btn {
+  width: 2.75rem;
+  height: 2.75rem;
+  min-width: 44px;
+  min-height: 44px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--hdr-fg);
+  font-size: 0.75rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.mode-btn:hover {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.mode-btn.active {
+  border-color: var(--accent);
+  background: rgba(238, 47, 39, 0.2);
+}
+
+
+/* =========================
+   Layer Toggle (Streets/Satellite)
+   ========================= */
+.layer-toggles {
+  position: absolute;
+  bottom: 5.75rem;
+  right: 1rem;
+  z-index: 1000;
+  display: flex;
+  gap: 0.5rem;
+  background: var(--hdr-bg);
+  border-radius: 2rem;
+  padding: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  backdrop-filter: saturate(120%) blur(8px);
+  border: 1px solid var(--hdr-border);
+}
+
+.layer-btn {
+  width: 2.75rem;
+  height: 2.75rem;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 2px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.2s ease;
+  touch-action: manipulation;
+}
+
+.layer-btn:hover {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.layer-btn:active {
+  transform: scale(0.95);
+}
+
+.layer-btn[aria-checked="true"] {
+  border-color: var(--accent);
+}
+
+.layer-btn img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.active-dot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: var(--accent);
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.15s ease;
+  pointer-events: none;
+}
+
+.layer-btn[aria-checked="true"] .active-dot {
+  opacity: 1;
+}
+
+
+/* =========================
+   Ortho Opacity Control
+   ========================= */
+.ortho-opacity-control {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 1000;
+  background: var(--hdr-bg);
+  border-radius: var(--radius-md);
+  padding: 0.75rem 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--hdr-border);
+  min-width: 200px;
+}
+
+.ortho-opacity-control label {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--hdr-fg);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+  cursor: pointer;
+}
+
+.ortho-opacity-control input[type="range"] {
+  flex: 1;
+  height: 4px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.2);
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.ortho-opacity-control input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--accent);
+  cursor: pointer;
+  border: 2px solid white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  transition: transform 0.15s ease;
+}
+
+.ortho-opacity-control input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.1);
+}
+
+.ortho-opacity-control input[type="range"]::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--accent);
+  cursor: pointer;
+  border: 2px solid white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  transition: transform 0.15s ease;
+}
+
+.ortho-opacity-control input[type="range"]::-moz-range-thumb:hover {
+  transform: scale(1.1);
+}
+
+.ortho-opacity-control .opacity-value {
+  min-width: 3ch;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 768px) {
+  .ortho-opacity-control {
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: auto;
+    width: calc(100% - 2rem);
+    max-width: 300px;
+  }
+}
