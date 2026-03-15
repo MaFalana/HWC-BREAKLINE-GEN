@@ -105,7 +105,7 @@ class HealthResponse(BaseModel):
                 "version": "1.0.0",
                 "services": {
                     "azure_storage": True,
-                    "azure_tables": True,
+                    "mongodb": True,
                     "processor": True
                 }
             }
