@@ -1,5 +1,10 @@
 """
 Configuration management for Surface Generation API
+
+Env vars (set in .env locally, GitHub Actions secrets/vars in prod):
+  AZURE_CONNECTION_STRING            – Azure Blob Storage connection string
+  MONGO_CONNECTION_STRING          – Cosmos DB Mongo connection string
+  NAME                             – shared name for blob container + mongo db/collection
 """
 
 import os
@@ -14,48 +19,46 @@ load_dotenv()
 
 class Settings(BaseSettings):
     """Application settings with environment variable support"""
-    
-    # Azure Storage Configuration
+
+    # ── Env-driven settings (match .env / GitHub Actions) ──────────────
+
     azure_connection_string: str = Field(
-        ..., 
-        description="Azure Storage connection string",
+        ...,
+        description="Azure Blob Storage connection string",
         alias="AZURE_CONNECTION_STRING"
     )
-    azure_storage_account_name: Optional[str] = Field(
-        None,
-        description="Azure Storage account name"
-    )
-    azure_storage_account_key: Optional[str] = Field(
-        None,
-        description="Azure Storage account key"
-    )
-    azure_storage_container: str = Field(
+
+    mongo_connection_string: str = Field(
         ...,
-        description="Blob container name for file storage",
-        alias="AZURE_STORAGE_CONTAINER"
+        description="Cosmos DB MongoDB connection string",
+        alias="MONGO_CONNECTION_STRING"
     )
-    
-    # MongoDB Configuration
-    azure_mongo_connection_string: str = Field(
+
+    name: str = Field(
         ...,
-        description="Azure Cosmos DB MongoDB connection string",
-        alias="AZURE_MONGO_CONNECTION_STRING"
+        description="Shared project name used for blob container and mongo database/collection",
+        alias="NAME"
     )
-    azure_mongo_database_name: str = Field(
-        ...,
-        description="MongoDB database name",
-        alias="AZURE_MONGO_DATABASE_NAME"
-    )
-    jobs_collection_name: str = Field(
-        default="jobs",
-        description="Collection name for job tracking"
-    )
-    
-    # File Processing Configuration
+
+    # ── Derived helpers (use `name` as the single source) ──────────────
+
+    @property
+    def azure_storage_container(self) -> str:
+        return self.name
+
+    @property
+    def azure_mongo_database_name(self) -> str:
+        return self.name
+
+    @property
+    def jobs_collection_name(self) -> str:
+        return "jobs"
+
+    # ── File Processing ────────────────────────────────────────────────
+
     max_file_size_mb: int = Field(
         default=10000,
         description="Maximum upload file size in MB",
-        alias="MAX_FILE_SIZE_MB"
     )
     allowed_extensions: list[str] = Field(
         default=[".las", ".laz"],
@@ -65,76 +68,40 @@ class Settings(BaseSettings):
         default=24,
         description="Hours to retain files after job completion"
     )
-    
-    # API Configuration
-    api_title: str = Field(
-        default="Surface Generation API",
-        description="API title"
-    )
-    api_version: str = Field(
-        default="1.0.1",
-        description="API version"
-    )
-    api_prefix: str = Field(
-        default="/api/v1",
-        description="API route prefix"
-    )
-    
-    # Processing Configuration
-    default_voxel_size: int = Field(
-        default=25,
-        description="Default voxel size for point cloud processing",
-        alias="DEFAULT_VOXEL_SIZE"
-    )
-    default_threshold: float = Field(
-        default=0.5,
-        description="Default threshold for breakline detection",
-        alias="DEFAULT_THRESHOLD"
-    )
-    default_nth_point: int = Field(
-        default=1,
-        description="Default nth point sampling"
-    )
-    
-    # Server Configuration
-    host: str = Field(
-        default="0.0.0.0",
-        description="Server host"
-    )
-    port: int = Field(
-        default=8000,
-        description="Server port"
-    )
-    workers: int = Field(
-        default=1,
-        description="Number of worker processes"
-    )
-    
-    # Security Configuration
-    cors_origins: list[str] = Field(
-        default=["*"],
-        description="CORS allowed origins"
-    )
-    api_key: Optional[str] = Field(
-        None,
-        description="Optional API key for authentication"
-    )
-    
-    # Background Tasks Configuration
-    cleanup_interval_seconds: int = Field(
-        default=43200,
-        description="Interval for cleanup task in seconds (12 hours)"
-    )
-    job_processing_interval_seconds: int = Field(
-        default=10,
-        description="Interval for job processing check in seconds"
-    )
-    
+
+    # ── API ────────────────────────────────────────────────────────────
+
+    api_title: str = Field(default="Surface Generation API")
+    api_version: str = Field(default="1.0.1")
+    api_prefix: str = Field(default="/api/v1")
+
+    # ── Processing defaults ────────────────────────────────────────────
+
+    default_voxel_size: int = Field(default=25, ge=1, le=100)
+    default_threshold: float = Field(default=0.5, ge=0.1, le=5.0)
+    default_nth_point: int = Field(default=1, ge=1)
+
+    # ── Server ─────────────────────────────────────────────────────────
+
+    host: str = Field(default="0.0.0.0")
+    port: int = Field(default=8000)
+    workers: int = Field(default=1)
+
+    # ── Security ───────────────────────────────────────────────────────
+
+    cors_origins: list[str] = Field(default=["*"])
+    api_key: Optional[str] = Field(default=None)
+
+    # ── Background tasks ───────────────────────────────────────────────
+
+    cleanup_interval_seconds: int = Field(default=43200)
+    job_processing_interval_seconds: int = Field(default=10)
+
     class Config:
-        env_file = ".env.dev"
+        env_file = ".env"
         env_file_encoding = "utf-8"
         case_sensitive = False
-        extra = "ignore"  # Ignore extra fields from env file
+        extra = "ignore"
 
 
 # Global settings instance

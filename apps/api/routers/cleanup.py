@@ -98,7 +98,7 @@ async def find_orphaned_files():
         
         # Check both containers for job folders
         blob_service_client = BlobServiceClient.from_connection_string(settings.azure_connection_string)
-        containers_to_check = ["lidar-to-civil", "lidar-to-civil-dev"]
+        containers_to_check = [settings.azure_storage_container]
         
         orphaned_folders = {}
         
@@ -175,7 +175,7 @@ async def cleanup_orphaned_files():
         
         # Check both containers and clean up orphaned folders
         blob_service_client = BlobServiceClient.from_connection_string(settings.azure_connection_string)
-        containers_to_check = ["lidar-to-civil", "lidar-to-civil-dev"]
+        containers_to_check = [settings.azure_storage_container]
         
         total_deleted_files = 0
         cleanup_summary = {}

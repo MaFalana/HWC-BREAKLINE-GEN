@@ -276,7 +276,7 @@ class StorageService:
             containers: List of container names to search. If None, defaults to common containers.
         """
         if containers is None:
-            containers = ["lidar-to-civil", "lidar-to-civil-dev"]
+            containers = [settings.azure_storage_container]
         
         deleted_count = 0
         

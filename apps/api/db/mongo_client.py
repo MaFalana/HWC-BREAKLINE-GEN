@@ -23,7 +23,7 @@ class MongoJobClient:
     def __init__(self):
         """Initialize MongoDB client"""
         try:
-            self.client = AsyncIOMotorClient(settings.azure_mongo_connection_string)
+            self.client = AsyncIOMotorClient(settings.mongo_connection_string)
             self.database = self.client[settings.azure_mongo_database_name]
             self.jobs_collection = self.database[settings.jobs_collection_name]
             logger.info(f"Initialized MongoDB client for database: {settings.azure_mongo_database_name}")
