@@ -152,39 +152,24 @@ class StorageService:
         return await loop.run_in_executor(None, func, *args)
     
     async def download_file(self, blob_name: str) -> bytes:
-        """
-        Download a file from blob storage
-        
-        Args:
-            blob_name: Name of the blob to download
-            
-        Returns:
-            File contents as bytes
-            
-        Raises:
-            StorageException: If download fails
-        """
+        """Download a file from blob storage."""
         try:
-            logger.info(f"Attempting to download blob: {blob_name}")
             blob_client = self.container_client.get_blob_client(blob_name)
-            
-            # Check if blob exists
-            exists = blob_client.exists()
-            logger.info(f"Blob exists check for {blob_name}: {exists}")
-            
+
+            exists = await self._run_in_executor(blob_client.exists)
             if not exists:
-                logger.error(f"Blob not found: {blob_name}")
                 raise StorageException("file download", f"File not found: {blob_name}")
-            
-            # Download the file
-            download_stream = blob_client.download_blob()
-            data = download_stream.readall()
-            
-            logger.info(f"Downloaded file from blob: {blob_name}")
+
+            def _download():
+                return blob_client.download_blob().readall()
+
+            data = await self._run_in_executor(_download)
+            logger.info(f"Downloaded blob: {blob_name}")
             return data
-            
+
+        except StorageException:
+            raise
         except ResourceNotFoundError:
-            logger.error(f"Blob not found: {blob_name}")
             raise StorageException("file download", f"File not found: {blob_name}")
         except Exception as e:
             logger.error(f"Failed to download file {blob_name}: {str(e)}")
@@ -192,21 +177,11 @@ class StorageService:
     
     
     async def delete_file(self, blob_name: str) -> None:
-        """
-        Delete a file from blob storage
-        
-        Args:
-            blob_name: Name of the blob to delete
-            
-        Raises:
-            StorageException: If deletion fails
-        """
+        """Delete a file from blob storage."""
         try:
             blob_client = self.container_client.get_blob_client(blob_name)
-            blob_client.delete_blob()
-            
+            await self._run_in_executor(blob_client.delete_blob)
             logger.info(f"Deleted blob: {blob_name}")
-            
         except ResourceNotFoundError:
             logger.warning(f"Blob not found for deletion: {blob_name}")
         except Exception as e:
@@ -214,24 +189,14 @@ class StorageService:
             raise StorageException("file deletion", str(e))
     
     async def delete_job_files(self, job_id: str) -> None:
-        """
-        Delete all files associated with a job
-        
-        Args:
-            job_id: Job identifier
-        """
+        """Delete all files associated with a job."""
         try:
-            # List all blobs with job_id prefix
             prefixes = [f"uploads/{job_id}/", f"outputs/{job_id}/"]
-            
             for prefix in prefixes:
-                blobs = self.container_client.list_blobs(name_starts_with=prefix)
-                
-                for blob in blobs:
-                    await self.delete_file(blob.name)
-            
+                blob_names = await self.list_blobs(prefix)
+                for name in blob_names:
+                    await self.delete_file(name)
             logger.info(f"Deleted all files for job: {job_id}")
-            
         except Exception as e:
             logger.error(f"Failed to delete files for job {job_id}: {str(e)}")
             raise StorageException("job files deletion", str(e))
@@ -318,57 +283,34 @@ class StorageService:
         return urls
     
     async def list_blobs(self, prefix: str) -> List[str]:
-        """
-        List blobs with a given prefix
-        
-        Args:
-            prefix: Blob name prefix
-            
-        Returns:
-            List of blob names
-        """
+        """List blobs with a given prefix."""
         try:
-            blobs = self.container_client.list_blobs(name_starts_with=prefix)
-            blob_names = [blob.name for blob in blobs]
-            
+            def _list():
+                return [b.name for b in self.container_client.list_blobs(name_starts_with=prefix)]
+
+            blob_names = await self._run_in_executor(_list)
             logger.info(f"Listed {len(blob_names)} blobs with prefix: {prefix}")
             return blob_names
-            
         except Exception as e:
             logger.error(f"Failed to list blobs with prefix {prefix}: {str(e)}")
             return []
     
     async def blob_exists(self, blob_name: str) -> bool:
-        """
-        Check if a blob exists
-        
-        Args:
-            blob_name: Name of the blob
-            
-        Returns:
-            True if blob exists, False otherwise
-        """
+        """Check if a blob exists."""
         try:
             blob_client = self.container_client.get_blob_client(blob_name)
-            exists = await self._run_in_executor(blob_client.exists)
-            logger.info(f"Checking blob existence for '{blob_name}' in container '{settings.azure_storage_container}': {exists}")
-            return exists
+            return await self._run_in_executor(blob_client.exists)
         except Exception as e:
             logger.error(f"Failed to check blob existence {blob_name}: {str(e)}")
-            logger.error(f"Container: {settings.azure_storage_container}")
-            logger.error(f"Full blob path being checked: {blob_name}")
             return False
     
     async def health_check(self) -> bool:
-        """
-        Check if Azure Blob Storage is accessible
-        
-        Returns:
-            True if healthy, False otherwise
-        """
+        """Check if Azure Blob Storage is accessible."""
         try:
-            # Try to list containers
-            containers = list(self.blob_service_client.list_containers(max_results=1))
+            def _ping():
+                list(self.blob_service_client.list_containers(max_results=1))
+
+            await self._run_in_executor(_ping)
             return True
         except Exception as e:
             logger.error(f"Azure Blob Storage health check failed: {str(e)}")
