@@ -190,37 +190,6 @@ class StorageService:
             logger.error(f"Failed to download file {blob_name}: {str(e)}")
             raise StorageException("file download", str(e))
     
-    async def download_file_stream(self, blob_name: str) -> BinaryIO:
-        """
-        Download a file from blob storage as a stream
-        
-        Args:
-            blob_name: Name of the blob to download
-            
-        Returns:
-            File stream
-            
-        Raises:
-            StorageException: If download fails
-        """
-        try:
-            blob_client = self.container_client.get_blob_client(blob_name)
-            
-            # Download the file as stream
-            download_stream = blob_client.download_blob()
-            stream = io.BytesIO()
-            download_stream.readinto(stream)
-            stream.seek(0)
-            
-            logger.info(f"Downloaded file stream from blob: {blob_name}")
-            return stream
-            
-        except ResourceNotFoundError:
-            logger.error(f"Blob not found: {blob_name}")
-            raise StorageException("file download", f"File not found: {blob_name}")
-        except Exception as e:
-            logger.error(f"Failed to download file {blob_name}: {str(e)}")
-            raise StorageException("file download", str(e))
     
     async def delete_file(self, blob_name: str) -> None:
         """
@@ -267,54 +236,6 @@ class StorageService:
             logger.error(f"Failed to delete files for job {job_id}: {str(e)}")
             raise StorageException("job files deletion", str(e))
     
-    async def delete_job_files_cross_container(self, job_id: str, containers: List[str] = None) -> None:
-        """
-        Delete all files associated with a job across multiple containers
-        
-        Args:
-            job_id: Job identifier
-            containers: List of container names to search. If None, defaults to common containers.
-        """
-        if containers is None:
-            containers = [settings.azure_storage_container]
-        
-        deleted_count = 0
-        
-        for container_name in containers:
-            try:
-                container_client = self.blob_service_client.get_container_client(container_name)
-                
-                # Check if container exists before trying to list blobs
-                try:
-                    container_properties = await container_client.get_container_properties()
-                except ResourceNotFoundError:
-                    logger.info(f"Container {container_name} does not exist, skipping")
-                    continue
-                
-                # List all blobs with job_id prefix in this container
-                prefixes = [f"uploads/{job_id}/", f"outputs/{job_id}/"]
-                
-                for prefix in prefixes:
-                    blobs = container_client.list_blobs(name_starts_with=prefix)
-                    
-                    for blob in blobs:
-                        try:
-                            blob_client = container_client.get_blob_client(blob.name)
-                            await blob_client.delete_blob()
-                            deleted_count += 1
-                            logger.debug(f"Deleted blob {blob.name} from container {container_name}")
-                        except ResourceNotFoundError:
-                            logger.debug(f"Blob {blob.name} already deleted from container {container_name}")
-                        except Exception as blob_error:
-                            logger.error(f"Failed to delete blob {blob.name} from container {container_name}: {str(blob_error)}")
-                
-            except Exception as container_error:
-                logger.error(f"Failed to access container {container_name}: {str(container_error)}")
-        
-        if deleted_count > 0:
-            logger.info(f"Deleted {deleted_count} files for job {job_id} across {len(containers)} containers")
-        else:
-            logger.info(f"No files found for job {job_id} in any container")
     
     
     def generate_download_url(

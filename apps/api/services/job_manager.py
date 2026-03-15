@@ -7,7 +7,7 @@ from typing import List, Optional, Dict, Any
 from datetime import datetime
 import uuid
 
-from app.models.job import Job, JobCreate, JobUpdate, JobStatus
+from app.models.job import Job, JobStatus
 from app.models.processing import ProcessingParameters
 from app.db.mongo_client import MongoJobClient
 from app.services.storage import StorageService
@@ -52,28 +52,8 @@ class JobManager:
         input_files: List[str],
         processing_params: Optional[ProcessingParameters] = None
     ) -> Job:
-        """
-        Create a new job with specific ID
-        
-        Args:
-            job_id: Specific job identifier
-            input_files: List of input file blob names
-            processing_params: Optional processing parameters
-            
-        Returns:
-            Created job
-        """
+        """Create a new job with a specific ID."""
         try:
-            logger.info(f"Creating job {job_id} with input_files: {input_files}")
-            
-            # Validate input_files format
-            for i, input_file in enumerate(input_files):
-                if '/' not in input_file:
-                    logger.warning(f"Job {job_id} input_file[{i}] appears to be filename-only: '{input_file}'. Expected full blob path.")
-                else:
-                    logger.info(f"Job {job_id} input_file[{i}] has correct blob path format: '{input_file}'")
-            
-            # Create job model
             job = Job(
                 id=job_id,
                 status=JobStatus.QUEUED,
@@ -82,25 +62,11 @@ class JobManager:
                 created_at=datetime.utcnow(),
                 updated_at=datetime.utcnow()
             )
-            
-            logger.info(f"Job model created with input_files: {job.input_files}")
-            
-            # Save to MongoDB
+
             await self.mongo_client.create_job(job)
-            
-            # Verify what was actually stored
-            stored_job = await self.mongo_client.get_job(job_id)
-            logger.info(f"Stored job retrieved with input_files: {stored_job.input_files}")
-            
-            # Double-check for any discrepancies
-            if stored_job.input_files != input_files:
-                logger.error(f"CRITICAL: Job {job_id} storage inconsistency detected!")
-                logger.error(f"Expected: {input_files}")
-                logger.error(f"Stored: {stored_job.input_files}")
-            
             logger.info(f"Created job {job.id} with {len(input_files)} input files")
             return job
-            
+
         except Exception as e:
             logger.error(f"Failed to create job: {str(e)}")
             raise StorageException("job creation", str(e))
@@ -217,31 +183,13 @@ class JobManager:
             await self.storage_service.delete_job_files(job.id)
             
             # Hard delete job from MongoDB
-            await self.mongo_client.mark_job_deleted(job.id)
+            await self.mongo_client.delete_job(job.id)
             
             logger.info(f"Hard deleted job {job.id} and all associated files")
             
         except Exception as e:
             logger.error(f"Failed to delete files for job {job.id}: {str(e)}")
     
-    async def delete_job_files_cross_container(self, job: Job) -> None:
-        """
-        Delete all files associated with a job across multiple containers
-        
-        Args:
-            job: Job model
-        """
-        try:
-            # Delete all files from blob storage across containers
-            await self.storage_service.delete_job_files_cross_container(job.id)
-            
-            # Hard delete job from MongoDB
-            await self.mongo_client.mark_job_deleted(job.id)
-            
-            logger.info(f"Hard deleted job {job.id} and all associated files across containers")
-            
-        except Exception as e:
-            logger.error(f"Failed to delete files for job {job.id}: {str(e)}")
     
     async def list_jobs(
         self,

@@ -153,81 +153,30 @@ class MongoJobClient:
             return []
     
     async def get_old_completed_jobs(self, hours: int) -> List[Job]:
-        """Get old jobs that should be cleaned up"""
+        """Get completed/failed jobs older than the retention cutoff"""
         try:
             cutoff_time = datetime.utcnow() - timedelta(hours=hours)
-            
-            logger.info(f"Cleanup query: Looking for jobs older than {cutoff_time} (cutoff: {hours} hours)")
-            
-            # First, let's see what jobs exist in general
-            total_count = await self.jobs_collection.count_documents({})
-            logger.info(f"Total jobs in database: {total_count}")
-            
-            # Check job statuses
-            for status in [JobStatus.COMPLETED, JobStatus.FAILED, JobStatus.PROCESSING, JobStatus.QUEUED]:
-                count = await self.jobs_collection.count_documents({"status": status.value})
-                logger.info(f"Jobs with status '{status.value}': {count}")
-            
-            # Find jobs that should be cleaned up:
-            # 1. Any job with DELETED status (old soft-deleted jobs that should be hard-deleted)
-            # 2. Completed jobs older than cutoff (using completed_at if available, otherwise updated_at)
-            # 3. Failed jobs older than cutoff (using updated_at)
-            # 4. Any job older than cutoff based on created_at (fallback for jobs without proper timestamps)
+
             query = {
-                "$or": [
-                    # Clean up old soft-deleted jobs (these should have been hard-deleted)
-                    {"status": JobStatus.DELETED.value},
-                    # Old completed/failed jobs
-                    {
-                        "$and": [
-                            {"status": {"$ne": JobStatus.DELETED.value}},  # Don't double-process deleted jobs
-                            {
-                                "$or": [
-                                    # Completed jobs with completed_at timestamp
-                                    {
-                                        "status": JobStatus.COMPLETED.value,
-                                        "completed_at": {"$exists": True, "$lt": cutoff_time}
-                                    },
-                                    # Failed jobs older than cutoff
-                                    {
-                                        "status": JobStatus.FAILED.value,
-                                        "updated_at": {"$lt": cutoff_time}
-                                    },
-                                    # Completed jobs without completed_at (fallback to updated_at)
-                                    {
-                                        "status": JobStatus.COMPLETED.value,
-                                        "completed_at": {"$exists": False},
-                                        "updated_at": {"$lt": cutoff_time}
-                                    },
-                                    # Very old jobs based on creation time (safety net)
-                                    {
-                                        "created_at": {"$lt": cutoff_time}
-                                    }
-                                ]
-                            }
-                        ]
-                    }
-                ]
+                "status": {"$in": [JobStatus.COMPLETED.value, JobStatus.FAILED.value]},
+                "created_at": {"$lt": cutoff_time},
             }
-            
-            logger.info(f"Cleanup query: {query}")
-            
+
             cursor = self.jobs_collection.find(query)
-            
+
             jobs = []
             async for job_doc in cursor:
-                logger.info(f"Found old job: {job_doc.get('_id')} - status: {job_doc.get('status')} - created: {job_doc.get('created_at')} - updated: {job_doc.get('updated_at')} - completed: {job_doc.get('completed_at')}")
                 job_doc.pop("_id", None)
                 jobs.append(Job(**job_doc))
-            
+
             logger.info(f"Found {len(jobs)} old jobs to clean up (older than {hours} hours)")
             return jobs
-            
+
         except Exception as e:
             logger.error(f"Failed to get old jobs for cleanup: {str(e)}")
             return []
     
-    async def mark_job_deleted(self, job_id: str) -> None:
+    async def delete_job(self, job_id: str) -> None:
         """Hard delete a job from MongoDB"""
         try:
             result = await self.jobs_collection.delete_one({"_id": job_id})

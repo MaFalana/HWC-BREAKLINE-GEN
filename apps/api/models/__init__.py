@@ -2,7 +2,7 @@
 Data models for Surface Generation API
 """
 
-from .job import Job, JobCreate, JobUpdate, JobStatus, JobEntity
+from .job import Job, JobStatus
 from .processing import ProcessingParameters
 from .responses import (
     UploadResponse,
@@ -15,10 +15,7 @@ from .responses import (
 
 __all__ = [
     "Job",
-    "JobCreate",
-    "JobUpdate",
     "JobStatus",
-    "JobEntity",
     "ProcessingParameters",
     "UploadResponse",
     "JobStatusResponse",
