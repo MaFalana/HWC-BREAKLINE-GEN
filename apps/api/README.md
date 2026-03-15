@@ -10,18 +10,18 @@ apps/api/
 │   ├── main.py              # FastAPI entry point, lifespan, background job loop
 │   ├── config.py            # Pydantic settings (reads .env)
 │   ├── models/              # Pydantic request/response models
-│   ├── routers/             # API endpoint handlers
-│   │   ├── upload.py        # POST /upload — file upload + job creation
-│   │   ├── jobs.py          # GET/DELETE /jobs — status, preview, retry, diagnostic
-│   │   ├── download.py      # GET /download — SAS URL generation
-│   │   ├── health.py        # GET /health — liveness/readiness
-│   │   └── cleanup.py       # POST /cleanup — manual + orphan cleanup
-│   ├── services/            # Business logic
-│   │   ├── storage.py       # Azure Blob Storage operations
-│   │   ├── job_manager.py   # Job CRUD via MongoDB
-│   │   ├── processor.py     # Wraps source/process.py for async job processing
-│   │   ├── preview.py       # LAS/LAZ file preview generation
-│   │   └── cleanup.py       # Scheduled + forced file/job cleanup
+│   ├── routers/
+│   │   ├── upload.py        # POST /upload
+│   │   ├── jobs.py          # GET/DELETE /jobs, preview, retry
+│   │   ├── download.py      # GET /download (SAS URLs)
+│   │   ├── health.py        # GET /health, /ready, /live
+│   │   └── cleanup.py       # POST /cleanup/force, GET /cleanup/status
+│   ├── services/
+│   │   ├── storage.py       # Azure Blob Storage (async via executor)
+│   │   ├── job_manager.py   # Job orchestration (MongoDB + Storage)
+│   │   ├── processor.py     # Wraps source/process.py for async jobs
+│   │   ├── preview.py       # Preview generation (live LAS + CSV-based)
+│   │   └── cleanup.py       # Scheduled + forced cleanup
 │   ├── db/
 │   │   └── mongo_client.py  # Motor async MongoDB client (Cosmos DB)
 │   └── utils/
@@ -29,7 +29,7 @@ apps/api/
 │       └── validators.py    # File validation, sanitization
 ├── source/
 │   ├── process.py           # Core LiDAR processing engine
-│   └── examples.py          # Usage examples
+│   └── examples.py          # Standalone usage examples
 ├── pyproject.toml            # Python dependencies (single source of truth)
 ├── Dockerfile                # Production container image
 └── .env                      # Local env vars (not committed)
@@ -37,12 +37,21 @@ apps/api/
 
 ## Processing Flow
 
-1. Upload LAS/LAZ files → stored in Azure Blob Storage
-2. Job created in MongoDB (Cosmos DB) with status `queued`
-3. Background loop picks up queued jobs, downloads files, runs LiDAR processing
-4. Output DXF/CSV uploaded to blob storage, job marked `completed`
-5. Download via time-limited SAS URLs
-6. Cleanup service deletes old jobs + files after retention period
+1. `POST /upload` — upload LAS/LAZ files + processing params
+2. Files stored in Azure Blob Storage (`uploads/{job_id}/`)
+3. Job created in MongoDB with status `queued`
+4. Background loop picks up queued jobs every 10s
+5. Downloads files, runs LiDAR processing (ground filter → voxel downsample → breakline extraction)
+6. Outputs (DXF, CSV, preview CSV) uploaded to `outputs/{job_id}/`
+7. Job marked `completed` with output file paths
+8. `GET /download/{job_id}` returns time-limited SAS URLs
+9. Cleanup service deletes old jobs + files after 24h retention
+
+## Preview System
+
+For completed jobs, a lightweight `_preview.csv` is generated during processing containing the first 50 PNEZD points. The preview endpoint reads this file directly from blob storage — no LAS parsing or MongoDB lookups needed.
+
+For in-progress/queued jobs, preview falls back to live LAS file analysis.
 
 ## Environment Variables
 
@@ -62,13 +71,6 @@ pip install -e ".[dev]"
 uvicorn app.main:app --reload
 ```
 
-Or from the monorepo root:
-
-```bash
-npm run dev:api
-```
-
 ## Deployment
 
-Deployed as an Azure Container App via GitHub Actions (`.github/workflows/backend.yml`).
-Docker image pushed to Docker Hub, then deployed to Azure Container Apps.
+Docker image built and pushed to Docker Hub via GitHub Actions (`.github/workflows/backend.yml`), then deployed to Azure Container Apps.

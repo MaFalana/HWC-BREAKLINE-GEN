@@ -1,5 +1,5 @@
 {
-  "name": "hwc-monorepo-template",
+  "name": "hwc-breakline-generator",
   "private": true,
   "type": "module",
   "workspaces": [

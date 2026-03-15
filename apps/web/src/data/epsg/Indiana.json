@@ -1,0 +1,3884 @@
+[
+  {
+    "name": "NAD27 / Indiana West",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=37.5 +lon_0=-87.0833333333333 +k=0.999966667 +x_0=152400.30480061 +y_0=0 +ellps=clrk66 +nadgrids=ca_nrc_ntv2_0.tif +units=us-ft +no_defs +type=crs",
+    "_id": 26774
+  },
+  {
+    "name": "NAD27 / Indiana East",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=37.5 +lon_0=-85.6666666666667 +k=0.999966667 +x_0=152400.30480061 +y_0=0 +ellps=clrk66 +nadgrids=ca_nrc_ntv2_0.tif +units=us-ft +no_defs +type=crs",
+    "_id": 26773
+  },
+  {
+    "name": "NAD83 / Indiana West (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=37.5 +lon_0=-87.0833333333333 +k=0.999966667 +x_0=900000 +y_0=249999.9998984 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2966
+  },
+  {
+    "name": "NAD83 / Indiana East (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=37.5 +lon_0=-85.6666666666667 +k=0.999966667 +x_0=99999.9998983997 +y_0=249999.9998984 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2965
+  },
+  {
+    "name": "NAD83(NSRS2007) / Indiana West (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=37.5 +lon_0=-87.0833333333333 +k=0.999966667 +x_0=900000 +y_0=249999.9998984 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3535
+  },
+  {
+    "name": "NAD83(2011) / Indiana West (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=37.5 +lon_0=-87.0833333333333 +k=0.999966667 +x_0=900000 +y_0=249999.9998984 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6461
+  },
+  {
+    "name": "NAD83(HARN) / Indiana West (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=37.5 +lon_0=-87.0833333333333 +k=0.999966667 +x_0=900000 +y_0=249999.9998984 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2968
+  },
+  {
+    "name": "NAD83(NSRS2007) / Indiana East (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=37.5 +lon_0=-85.6666666666667 +k=0.999966667 +x_0=99999.9998983997 +y_0=249999.9998984 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3533
+  },
+  {
+    "name": "NAD83(2011) / Indiana East (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=37.5 +lon_0=-85.6666666666667 +k=0.999966667 +x_0=99999.9998983997 +y_0=249999.9998984 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6459
+  },
+  {
+    "name": "NAD83(HARN) / Indiana East (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=37.5 +lon_0=-85.6666666666667 +k=0.999966667 +x_0=99999.9998983997 +y_0=249999.9998984 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2967
+  },
+  {
+    "name": "NAD83(2011) / InGCS Adams (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=40.55 +lon_0=-84.95 +k=1.000034 +x_0=240000 +y_0=36000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7258
+  },
+  {
+    "name": "NAD83(2011) / InGCS Allen (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=40.9 +lon_0=-85.05 +k=1.000031 +x_0=240000 +y_0=36000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7260
+  },
+  {
+    "name": "NAD83(2011) / InGCS Bartholomew (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=39 +lon_0=-85.85 +k=1.000026 +x_0=240000 +y_0=36000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7262
+  },
+  {
+    "name": "NAD83(2011) / InGCS Benton (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=40.45 +lon_0=-87.3 +k=1.000029 +x_0=240000 +y_0=36000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7264
+  },
+  {
+    "name": "NAD83(2011) / InGCS Brown (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=39 +lon_0=-86.3 +k=1.00003 +x_0=240000 +y_0=36000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7270
+  },
+  {
+    "name": "NAD83(2011) / InGCS Carroll (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=40.4 +lon_0=-86.65 +k=1.000026 +x_0=240000 +y_0=36000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7272
+  },
+  {
+    "name": "NAD83(2011) / InGCS Cass (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=40.55 +lon_0=-86.4 +k=1.000028 +x_0=240000 +y_0=36000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7274
+  },
+  {
+    "name": "NAD83(2011) / InGCS Clay (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=39.15 +lon_0=-87.15 +k=1.000024 +x_0=240000 +y_0=36000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7278
+  },
+  {
+    "name": "NAD83(2011) / InGCS Clinton (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=40.15 +lon_0=-86.6 +k=1.000032 +x_0=240000 +y_0=36000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7280
+  },
+  {
+    "name": "NAD83(2011) / InGCS DeKalb (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=41.25 +lon_0=-84.95 +k=1.000036 +x_0=240000 +y_0=36000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7290
+  },
+  {
+    "name": "NAD83(2011) / InGCS Gibson (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=38.15 +lon_0=-87.65 +k=1.000013 +x_0=240000 +y_0=36000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7302
+  },
+  {
+    "name": "NAD83(2011) / InGCS Grant (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=40.35 +lon_0=-85.7 +k=1.000034 +x_0=240000 +y_0=36000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7304
+  },
+  {
+    "name": "NAD83(2011) / InGCS Henry (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=39.75 +lon_0=-85.45 +k=1.000043 +x_0=240000 +y_0=36000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7312
+  },
+  {
+    "name": "NAD83(2011) / InGCS Jackson (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=38.7 +lon_0=-85.95 +k=1.000022 +x_0=240000 +y_0=36000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7318
+  },
+  {
+    "name": "NAD83(2011) / InGCS Jay (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=40.3 +lon_0=-85 +k=1.000038 +x_0=240000 +y_0=36000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7322
+  },
+  {
+    "name": "NAD83(2011) / InGCS Jefferson (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=38.55 +lon_0=-85.35 +k=1.000028 +x_0=240000 +y_0=36000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7324
+  },
+  {
+    "name": "NAD83(2011) / InGCS Jennings (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=38.8 +lon_0=-85.8 +k=1.000025 +x_0=240000 +y_0=36000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7326
+  },
+  {
+    "name": "NAD83(2011) / InGCS Knox (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=38.4 +lon_0=-87.45 +k=1.000015 +x_0=240000 +y_0=36000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7330
+  },
+  {
+    "name": "NAD83(2011) / InGCS Owen (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=39.15 +lon_0=-86.9 +k=1.000026 +x_0=240000 +y_0=36000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7342
+  },
+  {
+    "name": "NAD83(2011) / InGCS Perry (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=37.8 +lon_0=-86.7 +k=1.00002 +x_0=240000 +y_0=36000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7346
+  },
+  {
+    "name": "NAD83(2011) / InGCS Posey (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=37.75 +lon_0=-87.95 +k=1.000013 +x_0=240000 +y_0=36000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7350
+  },
+  {
+    "name": "NAD83(2011) / InGCS Ripley (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=38.9 +lon_0=-85.3 +k=1.000038 +x_0=240000 +y_0=36000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7354
+  },
+  {
+    "name": "NAD83(2011) / InGCS Shelby (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=39.3 +lon_0=-85.9 +k=1.00003 +x_0=240000 +y_0=36000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7356
+  },
+  {
+    "name": "NAD83(2011) / InGCS Spencer (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=37.75 +lon_0=-87.05 +k=1.000014 +x_0=240000 +y_0=36000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7358
+  },
+  {
+    "name": "NAD83(2011) / InGCS Steuben (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=41.5 +lon_0=-85 +k=1.000041 +x_0=240000 +y_0=36000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7360
+  },
+  {
+    "name": "NAD83(2011) / InGCS Sullivan (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=38.9 +lon_0=-87.5 +k=1.000017 +x_0=240000 +y_0=36000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7362
+  },
+  {
+    "name": "NAD83(2011) / InGCS Vanderburgh (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=37.8 +lon_0=-87.55 +k=1.000015 +x_0=240000 +y_0=36000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7366
+  },
+  {
+    "name": "NAD83(2011) / InGCS Vigo (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=39.25 +lon_0=-87.45 +k=1.00002 +x_0=240000 +y_0=36000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7368
+  },
+  {
+    "name": "NAD83(2011) / InGCS Wells (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=40.55 +lon_0=-85.25 +k=1.000034 +x_0=240000 +y_0=36000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7370
+  },
+  {
+    "name": "NAD83(2011) / InGCS Blackford-Delaware (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=40.05 +lon_0=-85.4 +k=1.000038 +x_0=240000 +y_0=36000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7266
+  },
+  {
+    "name": "NAD83(2011) / InGCS Boone-Hendricks (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=39.6 +lon_0=-86.5 +k=1.000036 +x_0=240000 +y_0=36000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7268
+  },
+  {
+    "name": "NAD83(2011) / InGCS Daviess-Greene (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=38.45 +lon_0=-87.1 +k=1.000018 +x_0=240000 +y_0=36000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7284
+  },
+  {
+    "name": "NAD83(2011) / InGCS Decatur-Rush (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=39.1 +lon_0=-85.65 +k=1.000036 +x_0=240000 +y_0=36000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7288
+  },
+  {
+    "name": "NAD83(2011) / InGCS Dubois-Martin (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=38.2 +lon_0=-86.95 +k=1.00002 +x_0=240000 +y_0=36000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7292
+  },
+  {
+    "name": "NAD83(2011) / InGCS Fountain-Warren (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=39.95 +lon_0=-87.3 +k=1.000025 +x_0=240000 +y_0=36000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7298
+  },
+  {
+    "name": "NAD83(2011) / InGCS Hamilton-Tipton (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=39.9 +lon_0=-86 +k=1.000034 +x_0=240000 +y_0=36000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7306
+  },
+  {
+    "name": "NAD83(2011) / InGCS Hancock-Madison (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=39.65 +lon_0=-85.8 +k=1.000036 +x_0=240000 +y_0=36000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7308
+  },
+  {
+    "name": "NAD83(2011) / InGCS Harrison-Washington (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=37.95 +lon_0=-86.15 +k=1.000027 +x_0=240000 +y_0=36000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7310
+  },
+  {
+    "name": "NAD83(2011) / InGCS Howard-Miami (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=40.35 +lon_0=-86.15 +k=1.000031 +x_0=240000 +y_0=36000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7314
+  },
+  {
+    "name": "NAD83(2011) / InGCS Huntington-Whitley (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=40.65 +lon_0=-85.5 +k=1.000034 +x_0=240000 +y_0=36000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7316
+  },
+  {
+    "name": "NAD83(2011) / InGCS Jasper-Porter (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=40.7 +lon_0=-87.1 +k=1.000027 +x_0=240000 +y_0=36000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7320
+  },
+  {
+    "name": "NAD83(2011) / InGCS Johnson-Marion (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=39.3 +lon_0=-86.15 +k=1.000031 +x_0=240000 +y_0=36000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7328
+  },
+  {
+    "name": "NAD83(2011) / InGCS LaGrange-Noble (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=41.25 +lon_0=-85.45 +k=1.000037 +x_0=240000 +y_0=36000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7332
+  },
+  {
+    "name": "NAD83(2011) / InGCS Lake-Newton (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=40.7 +lon_0=-87.4 +k=1.000026 +x_0=240000 +y_0=36000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7334
+  },
+  {
+    "name": "NAD83(2011) / InGCS Monroe-Morgan (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=38.95 +lon_0=-86.5 +k=1.000028 +x_0=240000 +y_0=36000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7338
+  },
+  {
+    "name": "NAD83(2011) / InGCS Montgomery-Putnam (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=39.45 +lon_0=-86.95 +k=1.000031 +x_0=240000 +y_0=36000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7340
+  },
+  {
+    "name": "NAD83(2011) / InGCS Parke-Vermillion (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=39.6 +lon_0=-87.35 +k=1.000022 +x_0=240000 +y_0=36000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7344
+  },
+  {
+    "name": "NAD83(2011) / InGCS Pike-Warrick (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=37.85 +lon_0=-87.3 +k=1.000015 +x_0=240000 +y_0=36000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7348
+  },
+  {
+    "name": "NAD83(2011) / InGCS Randolph-Wayne (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=39.7 +lon_0=-85.05 +k=1.000044 +x_0=240000 +y_0=36000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7352
+  },
+  {
+    "name": "NAD83(2011) / InGCS Tippecanoe-White (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=40.2 +lon_0=-86.9 +k=1.000026 +x_0=240000 +y_0=36000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7364
+  },
+  {
+    "name": "NAD83(2011) / InGCS Clark-Floyd-Scott (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=38.15 +lon_0=-85.6 +k=1.000021 +x_0=240000 +y_0=36000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7276
+  },
+  {
+    "name": "NAD83(2011) / InGCS Crawford-Lawrence-Orange (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=38.1 +lon_0=-86.5 +k=1.000025 +x_0=240000 +y_0=36000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7282
+  },
+  {
+    "name": "NAD83(2011) / InGCS Dearborn-Ohio-Switzerland (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=38.65 +lon_0=-84.9 +k=1.000029 +x_0=240000 +y_0=36000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7286
+  },
+  {
+    "name": "NAD83(2011) / InGCS Elkhart-Kosciusko-Wabash (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=40.65 +lon_0=-85.85 +k=1.000033 +x_0=240000 +y_0=36000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7294
+  },
+  {
+    "name": "NAD83(2011) / InGCS Fayette-Franklin-Union (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=39.25 +lon_0=-85.05 +k=1.000038 +x_0=240000 +y_0=36000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7296
+  },
+  {
+    "name": "NAD83(2011) / InGCS LaPorte-Pulaski-Starke (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=40.9 +lon_0=-86.75 +k=1.000027 +x_0=240000 +y_0=36000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7336
+  },
+  {
+    "name": "NAD83(2011) / InGCS Fulton-Marshall-St. Joseph (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=40.9 +lon_0=-86.3 +k=1.000031 +x_0=240000 +y_0=36000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7300
+  },
+  {
+    "name": "NAD83(NSRS2007) / Pennsylvania South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=39.3333333333333 +lon_0=-77.75 +lat_1=40.9666666666667 +lat_2=39.9333333333333 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3652
+  },
+  {
+    "name": "NAD83(2011) / Pennsylvania South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=39.3333333333333 +lon_0=-77.75 +lat_1=40.9666666666667 +lat_2=39.9333333333333 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6565
+  },
+  {
+    "name": "NAD83 / Pennsylvania South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=39.3333333333333 +lon_0=-77.75 +lat_1=40.9666666666667 +lat_2=39.9333333333333 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2272
+  },
+  {
+    "name": "NAD83(HARN) / Pennsylvania South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=39.3333333333333 +lon_0=-77.75 +lat_1=40.9666666666667 +lat_2=39.9333333333333 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3365
+  },
+  {
+    "name": "NAD27 / Pennsylvania South",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=39.3333333333333 +lon_0=-77.75 +lat_1=40.9666666666667 +lat_2=39.9333333333333 +x_0=609601.219202438 +y_0=0 +ellps=clrk66 +nadgrids=ca_nrc_ntv2_0.tif +units=us-ft +no_defs +type=crs",
+    "_id": 4455
+  },
+  {
+    "name": "NAD83 / BLM 16N (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=0 +lon_0=-87 +k=0.9996 +x_0=500000.001016002 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 32166
+  },
+  {
+    "name": "NGVD29 height (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+vunits=us-ft +no_defs +type=crs",
+    "_id": 5702
+  },
+  {
+    "name": "NGVD29 depth (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+vunits=us-ft +no_defs +type=crs",
+    "_id": 6359
+  },
+  {
+    "name": "NAVD88 depth (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+vunits=us-ft +no_defs +type=crs",
+    "_id": 6358
+  },
+  {
+    "name": "NAVD88 height (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+vunits=us-ft +no_defs +type=crs",
+    "_id": 6360
+  },
+  {
+    "name": "NAD27 / BLM 16N (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=0 +lon_0=-87 +k=0.9996 +x_0=500000.001016002 +y_0=0 +ellps=clrk66 +nadgrids=ca_nrc_ntv2_0.tif +units=us-ft +no_defs +type=crs",
+    "_id": 32066
+  },
+  {
+    "name": "NAD83(NSRS2007) / Vermont (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=42.5 +lon_0=-72.5 +k=0.999964286 +x_0=500000.00001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 5655
+  },
+  {
+    "name": "NAD83(NSRS2007) / Arkansas North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=34.3333333333333 +lon_0=-92 +lat_1=36.2333333333333 +lat_2=34.9333333333333 +x_0=399999.99998984 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3485
+  },
+  {
+    "name": "NAD83(NSRS2007) / Arkansas South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=32.6666666666667 +lon_0=-92 +lat_1=34.7666666666667 +lat_2=33.3 +x_0=399999.99998984 +y_0=399999.99998984 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3487
+  },
+  {
+    "name": "NAD83(NSRS2007) / California zone 1 (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=39.3333333333333 +lon_0=-122 +lat_1=41.6666666666667 +lat_2=40 +x_0=2000000.0001016 +y_0=500000.0001016 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3490
+  },
+  {
+    "name": "NAD83(NSRS2007) / California zone 2 (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=37.6666666666667 +lon_0=-122 +lat_1=39.8333333333333 +lat_2=38.3333333333333 +x_0=2000000.0001016 +y_0=500000.0001016 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3492
+  },
+  {
+    "name": "NAD83(NSRS2007) / California zone 3 (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=36.5 +lon_0=-120.5 +lat_1=38.4333333333333 +lat_2=37.0666666666667 +x_0=2000000.0001016 +y_0=500000.0001016 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3494
+  },
+  {
+    "name": "NAD83(NSRS2007) / California zone 4 (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=35.3333333333333 +lon_0=-119 +lat_1=37.25 +lat_2=36 +x_0=2000000.0001016 +y_0=500000.0001016 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3496
+  },
+  {
+    "name": "NAD83(NSRS2007) / California zone 5 (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=33.5 +lon_0=-118 +lat_1=35.4666666666667 +lat_2=34.0333333333333 +x_0=2000000.0001016 +y_0=500000.0001016 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3498
+  },
+  {
+    "name": "NAD83(NSRS2007) / California zone 6 (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=32.1666666666667 +lon_0=-116.25 +lat_1=33.8833333333333 +lat_2=32.7833333333333 +x_0=2000000.0001016 +y_0=500000.0001016 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3500
+  },
+  {
+    "name": "NAD83(NSRS2007) / Colorado Central (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=37.8333333333333 +lon_0=-105.5 +lat_1=39.75 +lat_2=38.45 +x_0=914401.828803657 +y_0=304800.609601219 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3502
+  },
+  {
+    "name": "NAD83(NSRS2007) / Colorado North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=39.3333333333333 +lon_0=-105.5 +lat_1=40.7833333333333 +lat_2=39.7166666666667 +x_0=914401.828803657 +y_0=304800.609601219 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3504
+  },
+  {
+    "name": "NAD83(NSRS2007) / Colorado South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=36.6666666666667 +lon_0=-105.5 +lat_1=38.4333333333333 +lat_2=37.2333333333333 +x_0=914401.828803657 +y_0=304800.609601219 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3506
+  },
+  {
+    "name": "NAD83(NSRS2007) / Connecticut (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=40.8333333333333 +lon_0=-72.75 +lat_1=41.8666666666667 +lat_2=41.2 +x_0=304800.609601219 +y_0=152400.30480061 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3508
+  },
+  {
+    "name": "NAD83(NSRS2007) / Delaware (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=38 +lon_0=-75.4166666666667 +k=0.999995 +x_0=200000.0001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3510
+  },
+  {
+    "name": "NAD83(NSRS2007) / Florida East (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=24.3333333333333 +lon_0=-81 +k=0.999941177 +x_0=200000.0001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3512
+  },
+  {
+    "name": "NAD83(NSRS2007) / Florida North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=29 +lon_0=-84.5 +lat_1=30.75 +lat_2=29.5833333333333 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3515
+  },
+  {
+    "name": "NAD83(NSRS2007) / Florida West (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=24.3333333333333 +lon_0=-82 +k=0.999941177 +x_0=200000.0001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3517
+  },
+  {
+    "name": "NAD83(NSRS2007) / Georgia East (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=30 +lon_0=-82.1666666666667 +k=0.9999 +x_0=200000.0001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3519
+  },
+  {
+    "name": "NAD83(NSRS2007) / Georgia West (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=30 +lon_0=-84.1666666666667 +k=0.9999 +x_0=699999.999898399 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3521
+  },
+  {
+    "name": "NAD83(NSRS2007) / Idaho Central (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=41.6666666666667 +lon_0=-114 +k=0.999947368 +x_0=500000.0001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3523
+  },
+  {
+    "name": "NAD83(NSRS2007) / Idaho East (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=41.6666666666667 +lon_0=-112.166666666667 +k=0.999947368 +x_0=200000.0001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3525
+  },
+  {
+    "name": "NAD83(NSRS2007) / Idaho West (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=41.6666666666667 +lon_0=-115.75 +k=0.999933333 +x_0=800000.0001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3527
+  },
+  {
+    "name": "NAD83(NSRS2007) / Illinois East (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=36.6666666666667 +lon_0=-88.3333333333333 +k=0.999975 +x_0=300000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3529
+  },
+  {
+    "name": "NAD83(NSRS2007) / Illinois West (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=36.6666666666667 +lon_0=-90.1666666666667 +k=0.999941177 +x_0=699999.99998984 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3531
+  },
+  {
+    "name": "NAD83(NSRS2007) / Iowa North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=41.5 +lon_0=-93.5 +lat_1=43.2666666666667 +lat_2=42.0666666666667 +x_0=1500000 +y_0=999999.999989839 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3537
+  },
+  {
+    "name": "NAD83(NSRS2007) / Iowa South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=40 +lon_0=-93.5 +lat_1=41.7833333333333 +lat_2=40.6166666666667 +x_0=500000.00001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3539
+  },
+  {
+    "name": "NAD83(NSRS2007) / Kansas North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=38.3333333333333 +lon_0=-98 +lat_1=39.7833333333333 +lat_2=38.7166666666667 +x_0=399999.99998984 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3541
+  },
+  {
+    "name": "NAD83(NSRS2007) / Kansas South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=36.6666666666667 +lon_0=-98.5 +lat_1=38.5666666666667 +lat_2=37.2666666666667 +x_0=399999.99998984 +y_0=399999.99998984 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3543
+  },
+  {
+    "name": "NAD83(NSRS2007) / Kentucky North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=37.5 +lon_0=-84.25 +lat_1=37.9666666666667 +lat_2=38.9666666666667 +x_0=500000.0001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3545
+  },
+  {
+    "name": "NAD83(NSRS2007) / Kentucky Single Zone (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=36.3333333333333 +lon_0=-85.75 +lat_1=37.0833333333333 +lat_2=38.6666666666667 +x_0=1500000 +y_0=999999.999898399 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3547
+  },
+  {
+    "name": "NAD83(NSRS2007) / Kentucky South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=36.3333333333333 +lon_0=-85.75 +lat_1=37.9333333333333 +lat_2=36.7333333333333 +x_0=500000.0001016 +y_0=500000.0001016 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3549
+  },
+  {
+    "name": "NAD83(NSRS2007) / Louisiana North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=30.5 +lon_0=-92.5 +lat_1=32.6666666666667 +lat_2=31.1666666666667 +x_0=999999.999989839 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3551
+  },
+  {
+    "name": "NAD83(NSRS2007) / Louisiana South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=28.5 +lon_0=-91.3333333333333 +lat_1=30.7 +lat_2=29.3 +x_0=999999.999989839 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3553
+  },
+  {
+    "name": "NAD83(NSRS2007) / Maryland (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=37.6666666666667 +lon_0=-77 +lat_1=39.45 +lat_2=38.3 +x_0=399999.9998984 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3582
+  },
+  {
+    "name": "NAD83(NSRS2007) / Massachusetts Island (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=41 +lon_0=-70.5 +lat_1=41.4833333333333 +lat_2=41.2833333333333 +x_0=500000.0001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3584
+  },
+  {
+    "name": "NAD83(NSRS2007) / Massachusetts Mainland (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=41 +lon_0=-71.5 +lat_1=42.6833333333333 +lat_2=41.7166666666667 +x_0=200000.0001016 +y_0=750000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3586
+  },
+  {
+    "name": "NAD83(NSRS2007) / Mississippi East (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=29.5 +lon_0=-88.8333333333333 +k=0.99995 +x_0=300000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3598
+  },
+  {
+    "name": "NAD83(NSRS2007) / Mississippi West (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=29.5 +lon_0=-90.3333333333333 +k=0.99995 +x_0=699999.999898399 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3600
+  },
+  {
+    "name": "NAD83(NSRS2007) / Nevada Central (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=34.75 +lon_0=-116.666666666667 +k=0.9999 +x_0=500000.00001016 +y_0=6000000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3608
+  },
+  {
+    "name": "NAD83(NSRS2007) / Nevada East (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=34.75 +lon_0=-115.583333333333 +k=0.9999 +x_0=200000.00001016 +y_0=8000000.00001016 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3610
+  },
+  {
+    "name": "NAD83(NSRS2007) / Nevada West (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=34.75 +lon_0=-118.583333333333 +k=0.9999 +x_0=800000.00001016 +y_0=3999999.99998984 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3612
+  },
+  {
+    "name": "NAD83(NSRS2007) / New Hampshire (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=42.5 +lon_0=-71.6666666666667 +k=0.999966667 +x_0=300000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3614
+  },
+  {
+    "name": "NAD83(NSRS2007) / New Jersey (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=38.8333333333333 +lon_0=-74.5 +k=0.9999 +x_0=150000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3616
+  },
+  {
+    "name": "NAD83(NSRS2007) / New Mexico Central (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=31 +lon_0=-106.25 +k=0.9999 +x_0=500000.0001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3618
+  },
+  {
+    "name": "NAD83(NSRS2007) / New Mexico East (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=31 +lon_0=-104.333333333333 +k=0.999909091 +x_0=165000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3620
+  },
+  {
+    "name": "NAD83(NSRS2007) / New Mexico West (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=31 +lon_0=-107.833333333333 +k=0.999916667 +x_0=830000.0001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3622
+  },
+  {
+    "name": "NAD83(NSRS2007) / New York Central (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=40 +lon_0=-76.5833333333333 +k=0.9999375 +x_0=249999.9998984 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3624
+  },
+  {
+    "name": "NAD83(NSRS2007) / New York East (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=38.8333333333333 +lon_0=-74.5 +k=0.9999 +x_0=150000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3626
+  },
+  {
+    "name": "NAD83(NSRS2007) / New York Long Island (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=40.1666666666667 +lon_0=-74 +lat_1=41.0333333333333 +lat_2=40.6666666666667 +x_0=300000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3628
+  },
+  {
+    "name": "NAD83(NSRS2007) / New York West (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=40 +lon_0=-78.5833333333333 +k=0.9999375 +x_0=350000.0001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3630
+  },
+  {
+    "name": "NAD83(NSRS2007) / North Carolina (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=33.75 +lon_0=-79 +lat_1=36.1666666666667 +lat_2=34.3333333333333 +x_0=609601.219202438 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3632
+  },
+  {
+    "name": "NAD83(NSRS2007) / Oklahoma North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=35 +lon_0=-98 +lat_1=36.7666666666667 +lat_2=35.5666666666667 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3640
+  },
+  {
+    "name": "NAD83(NSRS2007) / Oklahoma South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=33.3333333333333 +lon_0=-98 +lat_1=35.2333333333333 +lat_2=33.9333333333333 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3642
+  },
+  {
+    "name": "NAD83(NSRS2007) / Pennsylvania North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=40.1666666666667 +lon_0=-77.75 +lat_1=41.95 +lat_2=40.8833333333333 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3650
+  },
+  {
+    "name": "NAD83(NSRS2007) / Rhode Island (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=41.0833333333333 +lon_0=-71.5 +k=0.99999375 +x_0=99999.9999898399 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3654
+  },
+  {
+    "name": "NAD83(NSRS2007) / South Dakota North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=43.8333333333333 +lon_0=-100 +lat_1=45.6833333333333 +lat_2=44.4166666666667 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3658
+  },
+  {
+    "name": "NAD83(NSRS2007) / South Dakota South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=42.3333333333333 +lon_0=-100.333333333333 +lat_1=44.4 +lat_2=42.8333333333333 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3660
+  },
+  {
+    "name": "NAD83(NSRS2007) / Tennessee (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=34.3333333333333 +lon_0=-86 +lat_1=36.4166666666667 +lat_2=35.25 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3662
+  },
+  {
+    "name": "NAD83(NSRS2007) / Texas Central (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=29.6666666666667 +lon_0=-100.333333333333 +lat_1=31.8833333333333 +lat_2=30.1166666666667 +x_0=699999.999898399 +y_0=3000000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3664
+  },
+  {
+    "name": "NAD83(NSRS2007) / Texas North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=34 +lon_0=-101.5 +lat_1=36.1833333333333 +lat_2=34.65 +x_0=200000.0001016 +y_0=999999.999898399 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3668
+  },
+  {
+    "name": "NAD83(NSRS2007) / Texas North Central (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=31.6666666666667 +lon_0=-98.5 +lat_1=33.9666666666667 +lat_2=32.1333333333333 +x_0=600000 +y_0=2000000.0001016 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3670
+  },
+  {
+    "name": "NAD83(NSRS2007) / Texas South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=25.6666666666667 +lon_0=-98.5 +lat_1=27.8333333333333 +lat_2=26.1666666666667 +x_0=300000 +y_0=5000000.0001016 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3672
+  },
+  {
+    "name": "NAD83(NSRS2007) / Texas South Central (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=27.8333333333333 +lon_0=-99 +lat_1=30.2833333333333 +lat_2=28.3833333333333 +x_0=600000 +y_0=3999999.9998984 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3674
+  },
+  {
+    "name": "NAD83(NSRS2007) / Utah Central (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=38.3333333333333 +lon_0=-111.5 +lat_1=40.65 +lat_2=39.0166666666667 +x_0=500000.00001016 +y_0=2000000.00001016 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3677
+  },
+  {
+    "name": "NAD83(NSRS2007) / Utah North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=40.3333333333333 +lon_0=-111.5 +lat_1=41.7833333333333 +lat_2=40.7166666666667 +x_0=500000.00001016 +y_0=999999.999989839 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3680
+  },
+  {
+    "name": "NAD83(NSRS2007) / Utah South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=36.6666666666667 +lon_0=-111.5 +lat_1=38.35 +lat_2=37.2166666666667 +x_0=500000.00001016 +y_0=3000000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3683
+  },
+  {
+    "name": "NAD83(NSRS2007) / Virginia North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=37.6666666666667 +lon_0=-78.5 +lat_1=39.2 +lat_2=38.0333333333333 +x_0=3500000.0001016 +y_0=2000000.0001016 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3686
+  },
+  {
+    "name": "NAD83(NSRS2007) / Virginia South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=36.3333333333333 +lon_0=-78.5 +lat_1=37.9666666666667 +lat_2=36.7666666666667 +x_0=3500000.0001016 +y_0=999999.999898399 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3688
+  },
+  {
+    "name": "NAD83(NSRS2007) / Washington North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=47 +lon_0=-120.833333333333 +lat_1=48.7333333333333 +lat_2=47.5 +x_0=500000.0001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3690
+  },
+  {
+    "name": "NAD83(NSRS2007) / Washington South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=45.3333333333333 +lon_0=-120.5 +lat_1=47.3333333333333 +lat_2=45.8333333333333 +x_0=500000.0001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3692
+  },
+  {
+    "name": "NAD83(NSRS2007) / Wisconsin Central (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=43.8333333333333 +lon_0=-90 +lat_1=45.5 +lat_2=44.25 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3696
+  },
+  {
+    "name": "NAD83(NSRS2007) / Wisconsin North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=45.1666666666667 +lon_0=-90 +lat_1=46.7666666666667 +lat_2=45.5666666666667 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3698
+  },
+  {
+    "name": "NAD83(NSRS2007) / Wisconsin South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=42 +lon_0=-90 +lat_1=44.0666666666667 +lat_2=42.7333333333333 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3700
+  },
+  {
+    "name": "NAD83(NSRS2007) / Ohio North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=39.6666666666667 +lon_0=-82.5 +lat_1=41.7 +lat_2=40.4333333333333 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3728
+  },
+  {
+    "name": "NAD83(NSRS2007) / Ohio South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=38 +lon_0=-82.5 +lat_1=40.0333333333333 +lat_2=38.7333333333333 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3729
+  },
+  {
+    "name": "NAD83(NSRS2007) / Wyoming East (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=40.5 +lon_0=-105.166666666667 +k=0.9999375 +x_0=200000.00001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3730
+  },
+  {
+    "name": "NAD83(NSRS2007) / Wyoming East Central (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=40.5 +lon_0=-107.333333333333 +k=0.9999375 +x_0=399999.99998984 +y_0=99999.9999898399 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3731
+  },
+  {
+    "name": "NAD83(NSRS2007) / Wyoming West Central (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=40.5 +lon_0=-108.75 +k=0.9999375 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3732
+  },
+  {
+    "name": "NAD83(NSRS2007) / Wyoming West (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=40.5 +lon_0=-110.083333333333 +k=0.9999375 +x_0=800000.00001016 +y_0=99999.9999898399 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3733
+  },
+  {
+    "name": "NAD83(2011) / Alabama East (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=30.5 +lon_0=-85.8333333333333 +k=0.99996 +x_0=200000.0001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 9748
+  },
+  {
+    "name": "NAD83(2011) / Alabama West (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=30 +lon_0=-87.5 +k=0.999933333 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 9749
+  },
+  {
+    "name": "NAD83(2011) / Adjusted Jackson (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=44.2533353222222 +lon_0=-90.8442965138889 +k=1.0000353 +x_0=27000 +y_0=24999.9998983998 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 10516
+  },
+  {
+    "name": "NAD83(2011) / San Francisco SFO-B18 (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=ortho +lat_0=37.6289686531 +lon_0=-122.3939412704 +alpha=27.7928209333 +k=0.9999968 +x_0=0 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 10622
+  },
+  {
+    "name": "NAD83(2011) / Arkansas North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=34.3333333333333 +lon_0=-92 +lat_1=36.2333333333333 +lat_2=34.9333333333333 +x_0=399999.99998984 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6411
+  },
+  {
+    "name": "NAD83(2011) / Arkansas South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=32.6666666666667 +lon_0=-92 +lat_1=34.7666666666667 +lat_2=33.3 +x_0=399999.99998984 +y_0=399999.99998984 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6413
+  },
+  {
+    "name": "NAD83(2011) / California zone 1 (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=39.3333333333333 +lon_0=-122 +lat_1=41.6666666666667 +lat_2=40 +x_0=2000000.0001016 +y_0=500000.0001016 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6416
+  },
+  {
+    "name": "NAD83(2011) / California zone 2 (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=37.6666666666667 +lon_0=-122 +lat_1=39.8333333333333 +lat_2=38.3333333333333 +x_0=2000000.0001016 +y_0=500000.0001016 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6418
+  },
+  {
+    "name": "NAD83(2011) / California zone 3 (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=36.5 +lon_0=-120.5 +lat_1=38.4333333333333 +lat_2=37.0666666666667 +x_0=2000000.0001016 +y_0=500000.0001016 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6420
+  },
+  {
+    "name": "NAD83(2011) / California zone 4 (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=35.3333333333333 +lon_0=-119 +lat_1=37.25 +lat_2=36 +x_0=2000000.0001016 +y_0=500000.0001016 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6422
+  },
+  {
+    "name": "NAD83(2011) / California zone 5 (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=33.5 +lon_0=-118 +lat_1=35.4666666666667 +lat_2=34.0333333333333 +x_0=2000000.0001016 +y_0=500000.0001016 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6424
+  },
+  {
+    "name": "NAD83(2011) / California zone 6 (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=32.1666666666667 +lon_0=-116.25 +lat_1=33.8833333333333 +lat_2=32.7833333333333 +x_0=2000000.0001016 +y_0=500000.0001016 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6426
+  },
+  {
+    "name": "NAD83(2011) / Colorado Central (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=37.8333333333333 +lon_0=-105.5 +lat_1=39.75 +lat_2=38.45 +x_0=914401.828803657 +y_0=304800.609601219 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6428
+  },
+  {
+    "name": "NAD83(2011) / Colorado North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=39.3333333333333 +lon_0=-105.5 +lat_1=40.7833333333333 +lat_2=39.7166666666667 +x_0=914401.828803657 +y_0=304800.609601219 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6430
+  },
+  {
+    "name": "NAD83(2011) / Colorado South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=36.6666666666667 +lon_0=-105.5 +lat_1=38.4333333333333 +lat_2=37.2333333333333 +x_0=914401.828803657 +y_0=304800.609601219 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6432
+  },
+  {
+    "name": "NAD83(2011) / Connecticut (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=40.8333333333333 +lon_0=-72.75 +lat_1=41.8666666666667 +lat_2=41.2 +x_0=304800.609601219 +y_0=152400.30480061 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6434
+  },
+  {
+    "name": "NAD83(2011) / Delaware (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=38 +lon_0=-75.4166666666667 +k=0.999995 +x_0=200000.0001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6436
+  },
+  {
+    "name": "NAD83(2011) / Florida East (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=24.3333333333333 +lon_0=-81 +k=0.999941177 +x_0=200000.0001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6438
+  },
+  {
+    "name": "NAD83(2011) / Florida North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=29 +lon_0=-84.5 +lat_1=30.75 +lat_2=29.5833333333333 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6441
+  },
+  {
+    "name": "NAD83(2011) / Florida West (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=24.3333333333333 +lon_0=-82 +k=0.999941177 +x_0=200000.0001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6443
+  },
+  {
+    "name": "NAD83(2011) / Georgia East (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=30 +lon_0=-82.1666666666667 +k=0.9999 +x_0=200000.0001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6445
+  },
+  {
+    "name": "NAD83(2011) / Georgia West (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=30 +lon_0=-84.1666666666667 +k=0.9999 +x_0=699999.999898399 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6447
+  },
+  {
+    "name": "NAD83(2011) / Idaho Central (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=41.6666666666667 +lon_0=-114 +k=0.999947368 +x_0=500000.0001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6449
+  },
+  {
+    "name": "NAD83(2011) / Idaho East (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=41.6666666666667 +lon_0=-112.166666666667 +k=0.999947368 +x_0=200000.0001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6451
+  },
+  {
+    "name": "NAD83(2011) / Idaho West (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=41.6666666666667 +lon_0=-115.75 +k=0.999933333 +x_0=800000.0001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6453
+  },
+  {
+    "name": "NAD83(2011) / Illinois East (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=36.6666666666667 +lon_0=-88.3333333333333 +k=0.999975 +x_0=300000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6455
+  },
+  {
+    "name": "NAD83(2011) / Illinois West (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=36.6666666666667 +lon_0=-90.1666666666667 +k=0.999941177 +x_0=699999.99998984 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6457
+  },
+  {
+    "name": "NAD83(2011) / Iowa North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=41.5 +lon_0=-93.5 +lat_1=43.2666666666667 +lat_2=42.0666666666667 +x_0=1500000 +y_0=999999.999989839 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6463
+  },
+  {
+    "name": "NAD83(2011) / Iowa South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=40 +lon_0=-93.5 +lat_1=41.7833333333333 +lat_2=40.6166666666667 +x_0=500000.00001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6465
+  },
+  {
+    "name": "NAD83(2011) / Kansas North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=38.3333333333333 +lon_0=-98 +lat_1=39.7833333333333 +lat_2=38.7166666666667 +x_0=399999.99998984 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6467
+  },
+  {
+    "name": "NAD83(2011) / Kansas South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=36.6666666666667 +lon_0=-98.5 +lat_1=38.5666666666667 +lat_2=37.2666666666667 +x_0=399999.99998984 +y_0=399999.99998984 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6469
+  },
+  {
+    "name": "NAD83(2011) / Kentucky North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=37.5 +lon_0=-84.25 +lat_1=37.9666666666667 +lat_2=38.9666666666667 +x_0=500000.0001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6471
+  },
+  {
+    "name": "NAD83(2011) / Kentucky Single Zone (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=36.3333333333333 +lon_0=-85.75 +lat_1=37.0833333333333 +lat_2=38.6666666666667 +x_0=1500000 +y_0=999999.999898399 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6473
+  },
+  {
+    "name": "NAD83(2011) / Kentucky South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=36.3333333333333 +lon_0=-85.75 +lat_1=37.9333333333333 +lat_2=36.7333333333333 +x_0=500000.0001016 +y_0=500000.0001016 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6475
+  },
+  {
+    "name": "NAD83(2011) / Louisiana North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=30.5 +lon_0=-92.5 +lat_1=32.6666666666667 +lat_2=31.1666666666667 +x_0=999999.999989839 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6477
+  },
+  {
+    "name": "NAD83(2011) / Louisiana South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=28.5 +lon_0=-91.3333333333333 +lat_1=30.7 +lat_2=29.3 +x_0=999999.999989839 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6479
+  },
+  {
+    "name": "NAD83(2011) / Maine East (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=43.6666666666667 +lon_0=-68.5 +k=0.9999 +x_0=300000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6484
+  },
+  {
+    "name": "NAD83(2011) / Maine West (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=42.8333333333333 +lon_0=-70.1666666666667 +k=0.999966667 +x_0=900000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6486
+  },
+  {
+    "name": "NAD83(2011) / Maryland (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=37.6666666666667 +lon_0=-77 +lat_1=39.45 +lat_2=38.3 +x_0=399999.9998984 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6488
+  },
+  {
+    "name": "NAD83(2011) / Massachusetts Island (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=41 +lon_0=-70.5 +lat_1=41.4833333333333 +lat_2=41.2833333333333 +x_0=500000.0001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6490
+  },
+  {
+    "name": "NAD83(2011) / Massachusetts Mainland (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=41 +lon_0=-71.5 +lat_1=42.6833333333333 +lat_2=41.7166666666667 +x_0=200000.0001016 +y_0=750000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6492
+  },
+  {
+    "name": "NAD83(2011) / Minnesota Central (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=45 +lon_0=-94.25 +lat_1=47.05 +lat_2=45.6166666666667 +x_0=800000.00001016 +y_0=99999.9999898399 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6501
+  },
+  {
+    "name": "NAD83(2011) / Minnesota North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=46.5 +lon_0=-93.1 +lat_1=48.6333333333333 +lat_2=47.0333333333333 +x_0=800000.00001016 +y_0=99999.9999898399 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6503
+  },
+  {
+    "name": "NAD83(2011) / Minnesota South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=43 +lon_0=-94 +lat_1=45.2166666666667 +lat_2=43.7833333333333 +x_0=800000.00001016 +y_0=99999.9999898399 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6505
+  },
+  {
+    "name": "NAD83(2011) / Mississippi East (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=29.5 +lon_0=-88.8333333333333 +k=0.99995 +x_0=300000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6507
+  },
+  {
+    "name": "NAD83(2011) / Mississippi West (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=29.5 +lon_0=-90.3333333333333 +k=0.99995 +x_0=699999.999898399 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6510
+  },
+  {
+    "name": "NAD83(2011) / Nevada Central (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=34.75 +lon_0=-116.666666666667 +k=0.9999 +x_0=500000.00001016 +y_0=6000000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6519
+  },
+  {
+    "name": "NAD83(2011) / Nevada East (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=34.75 +lon_0=-115.583333333333 +k=0.9999 +x_0=200000.00001016 +y_0=8000000.00001016 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6521
+  },
+  {
+    "name": "NAD83(2011) / Nevada West (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=34.75 +lon_0=-118.583333333333 +k=0.9999 +x_0=800000.00001016 +y_0=3999999.99998984 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6523
+  },
+  {
+    "name": "NAD83(2011) / New Hampshire (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=42.5 +lon_0=-71.6666666666667 +k=0.999966667 +x_0=300000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6525
+  },
+  {
+    "name": "NAD83(2011) / New Jersey (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=38.8333333333333 +lon_0=-74.5 +k=0.9999 +x_0=150000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6527
+  },
+  {
+    "name": "NAD83(2011) / New Mexico Central (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=31 +lon_0=-106.25 +k=0.9999 +x_0=500000.0001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6529
+  },
+  {
+    "name": "NAD83(2011) / New Mexico East (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=31 +lon_0=-104.333333333333 +k=0.999909091 +x_0=165000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6531
+  },
+  {
+    "name": "NAD83(2011) / New Mexico West (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=31 +lon_0=-107.833333333333 +k=0.999916667 +x_0=830000.0001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6533
+  },
+  {
+    "name": "NAD83(2011) / New York Central (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=40 +lon_0=-76.5833333333333 +k=0.9999375 +x_0=249999.9998984 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6535
+  },
+  {
+    "name": "NAD83(2011) / New York East (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=38.8333333333333 +lon_0=-74.5 +k=0.9999 +x_0=150000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6537
+  },
+  {
+    "name": "NAD83(2011) / New York Long Island (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=40.1666666666667 +lon_0=-74 +lat_1=41.0333333333333 +lat_2=40.6666666666667 +x_0=300000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6539
+  },
+  {
+    "name": "NAD83(2011) / New York West (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=40 +lon_0=-78.5833333333333 +k=0.9999375 +x_0=350000.0001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6541
+  },
+  {
+    "name": "NAD83(2011) / North Carolina (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=33.75 +lon_0=-79 +lat_1=36.1666666666667 +lat_2=34.3333333333333 +x_0=609601.219202438 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6543
+  },
+  {
+    "name": "NAD83(2011) / Ohio North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=39.6666666666667 +lon_0=-82.5 +lat_1=41.7 +lat_2=40.4333333333333 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6549
+  },
+  {
+    "name": "NAD83(2011) / Ohio South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=38 +lon_0=-82.5 +lat_1=40.0333333333333 +lat_2=38.7333333333333 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6551
+  },
+  {
+    "name": "NAD83(2011) / Oklahoma North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=35 +lon_0=-98 +lat_1=36.7666666666667 +lat_2=35.5666666666667 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6553
+  },
+  {
+    "name": "NAD83(2011) / Oklahoma South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=33.3333333333333 +lon_0=-98 +lat_1=35.2333333333333 +lat_2=33.9333333333333 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6555
+  },
+  {
+    "name": "NAD83(2011) / Pennsylvania North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=40.1666666666667 +lon_0=-77.75 +lat_1=41.95 +lat_2=40.8833333333333 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6563
+  },
+  {
+    "name": "NAD83(2011) / Rhode Island (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=41.0833333333333 +lon_0=-71.5 +k=0.99999375 +x_0=99999.9999898399 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6568
+  },
+  {
+    "name": "NAD83(2011) / South Dakota North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=43.8333333333333 +lon_0=-100 +lat_1=45.6833333333333 +lat_2=44.4166666666667 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6572
+  },
+  {
+    "name": "NAD83(2011) / South Dakota South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=42.3333333333333 +lon_0=-100.333333333333 +lat_1=44.4 +lat_2=42.8333333333333 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6574
+  },
+  {
+    "name": "NAD83(2011) / Tennessee (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=34.3333333333333 +lon_0=-86 +lat_1=36.4166666666667 +lat_2=35.25 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6576
+  },
+  {
+    "name": "NAD83(2011) / Texas Central (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=29.6666666666667 +lon_0=-100.333333333333 +lat_1=31.8833333333333 +lat_2=30.1166666666667 +x_0=699999.999898399 +y_0=3000000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6578
+  },
+  {
+    "name": "NAD83(2011) / Texas North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=34 +lon_0=-101.5 +lat_1=36.1833333333333 +lat_2=34.65 +x_0=200000.0001016 +y_0=999999.999898399 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6582
+  },
+  {
+    "name": "NAD83(2011) / Texas North Central (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=31.6666666666667 +lon_0=-98.5 +lat_1=33.9666666666667 +lat_2=32.1333333333333 +x_0=600000 +y_0=2000000.0001016 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6584
+  },
+  {
+    "name": "NAD83(2011) / Texas South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=25.6666666666667 +lon_0=-98.5 +lat_1=27.8333333333333 +lat_2=26.1666666666667 +x_0=300000 +y_0=5000000.0001016 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6586
+  },
+  {
+    "name": "NAD83(2011) / Texas South Central (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=27.8333333333333 +lon_0=-99 +lat_1=30.2833333333333 +lat_2=28.3833333333333 +x_0=600000 +y_0=3999999.9998984 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6588
+  },
+  {
+    "name": "NAD83(2011) / Vermont (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=42.5 +lon_0=-72.5 +k=0.999964286 +x_0=500000.00001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6590
+  },
+  {
+    "name": "NAD83(2011) / Virginia North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=37.6666666666667 +lon_0=-78.5 +lat_1=39.2 +lat_2=38.0333333333333 +x_0=3500000.0001016 +y_0=2000000.0001016 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6593
+  },
+  {
+    "name": "NAD83(2011) / Virginia South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=36.3333333333333 +lon_0=-78.5 +lat_1=37.9666666666667 +lat_2=36.7666666666667 +x_0=3500000.0001016 +y_0=999999.999898399 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6595
+  },
+  {
+    "name": "NAD83(2011) / Washington North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=47 +lon_0=-120.833333333333 +lat_1=48.7333333333333 +lat_2=47.5 +x_0=500000.0001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6597
+  },
+  {
+    "name": "NAD83(2011) / Washington South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=45.3333333333333 +lon_0=-120.5 +lat_1=47.3333333333333 +lat_2=45.8333333333333 +x_0=500000.0001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6599
+  },
+  {
+    "name": "NAD83(2011) / West Virginia North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=38.5 +lon_0=-79.5 +lat_1=40.25 +lat_2=39 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6601
+  },
+  {
+    "name": "NAD83(2011) / West Virginia South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=37 +lon_0=-81 +lat_1=38.8833333333333 +lat_2=37.4833333333333 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6603
+  },
+  {
+    "name": "NAD83(2011) / Wisconsin Central (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=43.8333333333333 +lon_0=-90 +lat_1=45.5 +lat_2=44.25 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6605
+  },
+  {
+    "name": "NAD83(2011) / Wisconsin North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=45.1666666666667 +lon_0=-90 +lat_1=46.7666666666667 +lat_2=45.5666666666667 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6607
+  },
+  {
+    "name": "NAD83(2011) / Wisconsin South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=42 +lon_0=-90 +lat_1=44.0666666666667 +lat_2=42.7333333333333 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6609
+  },
+  {
+    "name": "NAD83(2011) / Wyoming East (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=40.5 +lon_0=-105.166666666667 +k=0.9999375 +x_0=200000.00001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6612
+  },
+  {
+    "name": "NAD83(2011) / Wyoming East Central (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=40.5 +lon_0=-107.333333333333 +k=0.9999375 +x_0=399999.99998984 +y_0=99999.9999898399 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6614
+  },
+  {
+    "name": "NAD83(2011) / Wyoming West (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=40.5 +lon_0=-110.083333333333 +k=0.9999375 +x_0=800000.00001016 +y_0=99999.9999898399 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6616
+  },
+  {
+    "name": "NAD83(2011) / Wyoming West Central (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=40.5 +lon_0=-108.75 +k=0.9999375 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6618
+  },
+  {
+    "name": "NAD83(2011) / Utah Central (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=38.3333333333333 +lon_0=-111.5 +lat_1=40.65 +lat_2=39.0166666666667 +x_0=500000.00001016 +y_0=2000000.00001016 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6625
+  },
+  {
+    "name": "NAD83(2011) / Utah North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=40.3333333333333 +lon_0=-111.5 +lat_1=41.7833333333333 +lat_2=40.7166666666667 +x_0=500000.00001016 +y_0=999999.999989839 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6626
+  },
+  {
+    "name": "NAD83(2011) / Utah South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=36.6666666666667 +lon_0=-111.5 +lat_1=38.35 +lat_2=37.2166666666667 +x_0=500000.00001016 +y_0=3000000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6627
+  },
+  {
+    "name": "NAD83(2011) / Nebraska (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=39.8333333333333 +lon_0=-100 +lat_1=43 +lat_2=40 +x_0=500000.00001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6880
+  },
+  {
+    "name": "NAD83(2011) / Kansas LCC (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=36 +lon_0=-98.25 +lat_1=39.5 +lat_2=37.5 +x_0=399999.99998984 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6925
+  },
+  {
+    "name": "NAD83(2011) / IaRCS zone 1",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=43.2 +lat_0=43.2 +lon_0=-95.25 +k_0=1.000052 +x_0=3505207.01041402 +y_0=2926085.8521717 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7057
+  },
+  {
+    "name": "NAD83(2011) / IaRCS zone 2",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=43.1666666666667 +lat_0=43.1666666666667 +lon_0=-92.75 +k_0=1.000043 +x_0=3810007.62001524 +y_0=2987045.97409195 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7058
+  },
+  {
+    "name": "NAD83(2011) / IaRCS zone 3",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=40.25 +lon_0=-91.2 +k=1.000035 +x_0=4114808.22961646 +y_0=2529845.05969012 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7059
+  },
+  {
+    "name": "NAD83(2011) / IaRCS zone 4",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=42.5333333333333 +lat_0=42.5333333333333 +lon_0=-94.8333333333333 +k_0=1.000045 +x_0=4419608.83921768 +y_0=2621285.24257048 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7060
+  },
+  {
+    "name": "NAD83(2011) / IaRCS zone 5",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=42.65 +lat_0=42.65 +lon_0=-92.25 +k_0=1.000032 +x_0=4724409.4488189 +y_0=2712725.42545085 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7061
+  },
+  {
+    "name": "NAD83(2011) / IaRCS zone 6",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=40.25 +lon_0=-95.7333333333333 +k=1.000039 +x_0=5029210.05842011 +y_0=2011684.02336805 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7062
+  },
+  {
+    "name": "NAD83(2011) / IaRCS zone 7",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=40.25 +lon_0=-94.6333333333333 +k=1.000045 +x_0=5334010.66802133 +y_0=2072644.14528829 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7063
+  },
+  {
+    "name": "NAD83(2011) / IaRCS zone 8",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=40.25 +lon_0=-93.7166666666667 +k=1.000033 +x_0=5638811.27762255 +y_0=2133604.26720853 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7064
+  },
+  {
+    "name": "NAD83(2011) / IaRCS zone 9",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=40.25 +lon_0=-92.8166666666667 +k=1.000027 +x_0=5943611.88722377 +y_0=2194564.38912878 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7065
+  },
+  {
+    "name": "NAD83(2011) / IaRCS zone 10",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=41.8333333333333 +lat_0=41.8333333333333 +lon_0=-91.6666666666667 +k_0=1.00002 +x_0=6248412.49682499 +y_0=2438404.87680975 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7066
+  },
+  {
+    "name": "NAD83(2011) / IaRCS zone 11",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=40.25 +lon_0=-90.5333333333333 +k=1.000027 +x_0=6553213.10642621 +y_0=2316484.63296926 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7067
+  },
+  {
+    "name": "NAD83(2011) / IaRCS zone 12",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=40.9166666666667 +lat_0=40.9166666666667 +lon_0=-93.75 +k_0=1.000037 +x_0=6858013.71602743 +y_0=1889763.77952756 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7068
+  },
+  {
+    "name": "NAD83(2011) / IaRCS zone 13",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=40.25 +lon_0=-91.9166666666667 +k=1.00002 +x_0=7162814.32562865 +y_0=1950723.9014478 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7069
+  },
+  {
+    "name": "NAD83(2011) / IaRCS zone 14",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=40.25 +lon_0=-91.25 +k=1.000018 +x_0=7467614.93522987 +y_0=1889763.77952756 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7070
+  },
+  {
+    "name": "NAD83(2011) / RMTCRS Wind River (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=42.6666666666667 +lon_0=-108.333333333333 +k=1.00024 +x_0=99999.9999898399 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7128
+  },
+  {
+    "name": "NAD83(2011) / San Francisco CS13 (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=37.75 +lon_0=-122.45 +k=1.000007 +x_0=48000 +y_0=24000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7132
+  },
+  {
+    "name": "NAD83(2011) / WISCRS Adams and Juneau (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=43.3666666666667 +lon_0=-90 +k=1.0000365285 +x_0=147218.694132588 +y_0=0.00365760731521463 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7587
+  },
+  {
+    "name": "NAD83(2011) / WISCRS Ashland (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=45.7061111111111 +lon_0=-90.6222222222222 +k=1.0000495683 +x_0=172821.945948692 +y_0=0.00182880365760731 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7588
+  },
+  {
+    "name": "NAD83(2011) / WISCRS Barron (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=45.1333333333333 +lon_0=-91.85 +k=1.0000486665 +x_0=93150 +y_0=0.00304800609601219 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7589
+  },
+  {
+    "name": "NAD83(2011) / WISCRS Bayfield (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=46.6696483772222 +lat_0=46.6696483772222 +lon_0=-91.1527777777778 +k_0=1.0000331195 +x_0=228600.457505715 +y_0=148551.483566167 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7590
+  },
+  {
+    "name": "NAD83(2011) / WISCRS Brown (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=43 +lon_0=-88 +k=1.00002 +x_0=31599.9998983998 +y_0=4599.99989839979 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7591
+  },
+  {
+    "name": "NAD83(2011) / WISCRS Buffalo (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=43.4813888888889 +lon_0=-91.7972222222222 +k=1.0000382778 +x_0=175260.3502159 +y_0=0.0048768097536195 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7592
+  },
+  {
+    "name": "NAD83(2011) / WISCRS Burnett (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=45.8987148658333 +lat_0=45.8987148658333 +lon_0=-92.4577777777778 +k_0=1.0000383841 +x_0=64008.1277114554 +y_0=59445.9041910083 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7593
+  },
+  {
+    "name": "NAD83(2011) / WISCRS Calumet, Fond du Lac, Outagamie and Winnebago (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=42.7194444444444 +lon_0=-88.5 +k=1.0000286569 +x_0=244754.889204978 +y_0=0.0048768097536195 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7594
+  },
+  {
+    "name": "NAD83(2011) / WISCRS Chippewa (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=44.9778568986111 +lat_0=44.9778568986111 +lon_0=-91.2944444444444 +k_0=1.0000391127 +x_0=60045.7200914401 +y_0=44091.434493269 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7595
+  },
+  {
+    "name": "NAD83(2011) / WISCRS Clark (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=43.6 +lon_0=-90.7083333333333 +k=1.0000463003 +x_0=199949.198983998 +y_0=0.00853441706883413 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7596
+  },
+  {
+    "name": "NAD83(2011) / WISCRS Columbia (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=43.4625466458333 +lat_0=43.4625466458333 +lon_0=-89.3944444444444 +k_0=1.00003498 +x_0=169164.338023876 +y_0=111569.613512827 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7597
+  },
+  {
+    "name": "NAD83(2011) / WISCRS Crawford (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=43.200055605 +lat_0=43.200055605 +lon_0=-90.9388888888889 +k_0=1.0000349151 +x_0=113690.627381255 +y_0=53703.1202438405 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7598
+  },
+  {
+    "name": "NAD83(2011) / WISCRS Dane (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=43.0695160375 +lat_0=43.0695160375 +lon_0=-89.4222222222222 +k_0=1.0000384786 +x_0=247193.294386589 +y_0=146591.989636779 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7599
+  },
+  {
+    "name": "NAD83(2011) / WISCRS Dodge and Jefferson (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=41.4722222222222 +lon_0=-88.775 +k=1.0000346418 +x_0=263347.726390653 +y_0=0.00762001524003048 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7600
+  },
+  {
+    "name": "NAD83(2011) / WISCRS Door (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=44.4 +lon_0=-87.2722222222222 +k=1.0000187521 +x_0=158801.117602235 +y_0=0.00243840487680975 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7601
+  },
+  {
+    "name": "NAD83(2011) / WISCRS Douglas (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=45.8833333333333 +lon_0=-91.9166666666667 +k=1.0000385418 +x_0=59131.3182626365 +y_0=0.00396240792481585 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7602
+  },
+  {
+    "name": "NAD83(2011) / WISCRS Dunn (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=44.4083333333333 +lon_0=-91.8944444444444 +k=1.0000410324 +x_0=51816.1039370078 +y_0=0.00304800609601219 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7603
+  },
+  {
+    "name": "NAD83(2011) / WISCRS Eau Claire (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=44.8722811263889 +lat_0=44.8722811263889 +lon_0=-91.2888888888889 +k_0=1.000035079 +x_0=120091.44018288 +y_0=91687.9239014477 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7604
+  },
+  {
+    "name": "NAD83(2011) / WISCRS Florence (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=45.4388888888889 +lon_0=-88.1416666666667 +k=1.0000552095 +x_0=133502.668224536 +y_0=0.0064008128016256 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7605
+  },
+  {
+    "name": "NAD83(2011) / WISCRS Forest (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=44.0055555555556 +lon_0=-88.6333333333333 +k=1.0000673004 +x_0=275844.553213106 +y_0=0.0158496316992634 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7606
+  },
+  {
+    "name": "NAD83(2011) / WISCRS Grant (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=41.4111111111111 +lon_0=-90.8 +k=1.0000349452 +x_0=242316.484023368 +y_0=0.0100584201168402 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7607
+  },
+  {
+    "name": "NAD83(2011) / WISCRS Green and Lafayette (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=42.6375622769444 +lat_0=42.6375622769444 +lon_0=-89.8388888888889 +k_0=1.0000390487 +x_0=170078.74015748 +y_0=45830.2948437897 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7608
+  },
+  {
+    "name": "NAD83(2011) / WISCRS Green Lake and Marquette (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=43.8070001177778 +lat_0=43.8070001177778 +lon_0=-89.2416666666667 +k_0=1.0000344057 +x_0=150876.301752603 +y_0=79170.7793751587 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7609
+  },
+  {
+    "name": "NAD83(2011) / WISCRS Iowa (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=42.5388888888889 +lon_0=-90.1611111111111 +k=1.0000394961 +x_0=113081.026162052 +y_0=0.00457200914401829 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7610
+  },
+  {
+    "name": "NAD83(2011) / WISCRS Iron (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=45.4333333333333 +lon_0=-90.2555555555556 +k=1.0000677153 +x_0=220980.441960884 +y_0=0.00853441706883413 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7611
+  },
+  {
+    "name": "NAD83(2011) / WISCRS Jackson (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=44.2533351277778 +lon_0=-90.8442965194444 +k=1.0000353 +x_0=27000 +y_0=24999.9998983998 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7612
+  },
+  {
+    "name": "NAD83(2011) / WISCRS Kenosha, Milwaukee, Ozaukee and Racine (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=42.2166666666667 +lon_0=-87.8944444444444 +k=1.0000260649 +x_0=185928.372771145 +y_0=0.000914401828803657 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7613
+  },
+  {
+    "name": "NAD83(2011) / WISCRS Kewaunee, Manitowoc and Sheboygan (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=43.2666666666667 +lon_0=-87.55 +k=1.0000233704 +x_0=79857.761544323 +y_0=0.00121920243840488 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7614
+  },
+  {
+    "name": "NAD83(2011) / WISCRS La Crosse (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=43.4511111111111 +lon_0=-91.3166666666667 +k=1.0000319985 +x_0=130454.659690119 +y_0=0.00335280670561341 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7615
+  },
+  {
+    "name": "NAD83(2011) / WISCRS Langlade (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=45.1542371052778 +lat_0=45.1542371052778 +lon_0=-89.0333333333333 +k_0=1.0000627024 +x_0=198425.196850394 +y_0=105279.782880366 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7616
+  },
+  {
+    "name": "NAD83(2011) / WISCRS Lincoln (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=44.8444444444444 +lon_0=-89.7333333333333 +k=1.0000599003 +x_0=116129.032258064 +y_0=0.00579121158242316 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7617
+  },
+  {
+    "name": "NAD83(2011) / WISCRS Marathon (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=44.9009044236111 +lat_0=44.9009044236111 +lon_0=-89.77 +k_0=1.000053289 +x_0=74676.1493522987 +y_0=55049.2669545339 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7618
+  },
+  {
+    "name": "NAD83(2011) / WISCRS Marinette (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=44.6916666666667 +lon_0=-87.7111111111111 +k=1.0000234982 +x_0=238658.879451359 +y_0=0.00304800609601219 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7619
+  },
+  {
+    "name": "NAD83(2011) / WISCRS Menominee (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=44.7166666666667 +lon_0=-88.4166666666667 +k=1.0000362499 +x_0=105461.012141224 +y_0=0.00304800609601219 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7620
+  },
+  {
+    "name": "NAD83(2011) / WISCRS Monroe (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=44.0000739286111 +lat_0=44.0000739286111 +lon_0=-90.6416666666667 +k_0=1.0000434122 +x_0=204521.209042418 +y_0=121923.986182372 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7621
+  },
+  {
+    "name": "NAD83(2011) / WISCRS Oconto (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=44.3972222222222 +lon_0=-87.9083333333333 +k=1.0000236869 +x_0=182880.367589535 +y_0=0.00335280670561341 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7622
+  },
+  {
+    "name": "NAD83(2011) / WISCRS Oneida (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=45.7042237702778 +lat_0=45.7042237702778 +lon_0=-89.5444444444444 +k_0=1.0000686968 +x_0=70104.1402082804 +y_0=57588.0347472695 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7623
+  },
+  {
+    "name": "NAD83(2011) / WISCRS Pepin and Pierce (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=44.6361488719444 +lat_0=44.6361488719444 +lon_0=-92.2277777777778 +k_0=1.0000362977 +x_0=167640.33528067 +y_0=86033.0877317754 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7624
+  },
+  {
+    "name": "NAD83(2011) / WISCRS Polk (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=44.6611111111111 +lon_0=-92.6333333333333 +k=1.0000433849 +x_0=141732.282245364 +y_0=0.00579121158242316 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7625
+  },
+  {
+    "name": "NAD83(2011) / WISCRS Portage (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=44.4168239752778 +lat_0=44.4168239752778 +lon_0=-89.5 +k_0=1.000039936 +x_0=56388.1127762255 +y_0=50022.1874523749 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7626
+  },
+  {
+    "name": "NAD83(2011) / WISCRS Price (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=44.5555555555556 +lon_0=-90.4888888888889 +k=1.0000649554 +x_0=227990.854457709 +y_0=0.0109728219456439 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7627
+  },
+  {
+    "name": "NAD83(2011) / WISCRS Richland (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=43.3223129275 +lat_0=43.3223129275 +lon_0=-90.4305555555556 +k_0=1.0000375653 +x_0=202387.604775209 +y_0=134255.425450851 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7628
+  },
+  {
+    "name": "NAD83(2011) / WISCRS Rock (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=41.9444444444444 +lon_0=-89.0722222222222 +k=1.0000337311 +x_0=146304.292608585 +y_0=0.00670561341122682 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7629
+  },
+  {
+    "name": "NAD83(2011) / WISCRS Rusk (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=43.9194444444444 +lon_0=-91.0666666666667 +k=1.0000495976 +x_0=250546.101397003 +y_0=0.0234696469392939 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7630
+  },
+  {
+    "name": "NAD83(2011) / WISCRS Sauk (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=42.8194444444444 +lon_0=-89.9 +k=1.0000373868 +x_0=185623.571551943 +y_0=0.00518161036322072 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7631
+  },
+  {
+    "name": "NAD83(2011) / WISCRS Sawyer (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=45.9000991313889 +lat_0=45.9000991313889 +lon_0=-91.1166666666667 +k_0=1.0000573461 +x_0=216713.233731267 +y_0=120734.163169926 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7632
+  },
+  {
+    "name": "NAD83(2011) / WISCRS Shawano (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=44.0361111111111 +lon_0=-88.6055555555556 +k=1.000032144 +x_0=262433.32517145 +y_0=0.00944881889763779 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7633
+  },
+  {
+    "name": "NAD83(2011) / WISCRS St. Croix (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=44.0361111111111 +lon_0=-92.6333333333333 +k=1.0000381803 +x_0=165506.73009906 +y_0=0.0103632207264414 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7634
+  },
+  {
+    "name": "NAD83(2011) / WISCRS Taylor (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=45.1778220858333 +lat_0=45.1778220858333 +lon_0=-90.4833333333333 +k_0=1.0000597566 +x_0=187147.574295148 +y_0=107746.752146304 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7635
+  },
+  {
+    "name": "NAD83(2011) / WISCRS Trempealeau (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=43.1611111111111 +lon_0=-91.3666666666667 +k=1.0000361538 +x_0=256946.913893828 +y_0=0.00396240792481585 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7636
+  },
+  {
+    "name": "NAD83(2011) / WISCRS Vernon (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=43.5750329397222 +lat_0=43.5750329397222 +lon_0=-90.7833333333333 +k_0=1.0000408158 +x_0=222504.44500889 +y_0=47532.0603505207 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7637
+  },
+  {
+    "name": "NAD83(2011) / WISCRS Vilas (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=46.0778440905556 +lat_0=46.0778440905556 +lon_0=-89.4888888888889 +k_0=1.0000730142 +x_0=134417.068834138 +y_0=50337.1092710185 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7638
+  },
+  {
+    "name": "NAD83(2011) / WISCRS Walworth (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=42.6694620969444 +lat_0=42.6694620969444 +lon_0=-88.5416666666667 +k_0=1.0000367192 +x_0=232562.86512573 +y_0=111088.222402845 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7639
+  },
+  {
+    "name": "NAD83(2011) / WISCRS Washburn (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=45.9612198333333 +lat_0=45.9612198333333 +lon_0=-91.7833333333333 +k_0=1.0000475376 +x_0=234086.868173736 +y_0=188358.605943612 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7640
+  },
+  {
+    "name": "NAD83(2011) / WISCRS Washington (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=42.9180555555556 +lon_0=-88.0638888888889 +k=1.00003738 +x_0=120091.441402083 +y_0=0.00304800609601219 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7641
+  },
+  {
+    "name": "NAD83(2011) / WISCRS Waukesha (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=42.5694444444444 +lon_0=-88.225 +k=1.0000346179 +x_0=208788.417881636 +y_0=0.00335280670561341 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7642
+  },
+  {
+    "name": "NAD83(2011) / WISCRS Waupaca (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=43.4202777777778 +lon_0=-88.8166666666667 +k=1.0000333645 +x_0=185013.970942342 +y_0=0.00701041402082804 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7643
+  },
+  {
+    "name": "NAD83(2011) / WISCRS Waushara (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=44.1139440458333 +lat_0=44.1139440458333 +lon_0=-89.2416666666667 +k_0=1.0000392096 +x_0=120091.44018288 +y_0=45069.7588011176 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7644
+  },
+  {
+    "name": "NAD83(2011) / WISCRS Wood (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=44.3625954694444 +lat_0=44.3625954694444 +lon_0=-90 +k_0=1.0000421209 +x_0=208483.617272034 +y_0=134589.753924308 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 7645
+  },
+  {
+    "name": "NAD83(2011) / NCRS Las Vegas (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=36.25 +lon_0=-114.966666666667 +k=1.0001 +x_0=99999.9999898399 +y_0=200000.00001016 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8384
+  },
+  {
+    "name": "NAD83(2011) / NCRS Las Vegas high (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=36.25 +lon_0=-114.966666666667 +k=1.000135 +x_0=300000 +y_0=399999.99998984 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8387
+  },
+  {
+    "name": "NAD83(2011) / KS RCS zone 1",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=37.5 +lon_0=-101.6 +k=1.000156 +x_0=457200.914401829 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8518
+  },
+  {
+    "name": "NAD83(2011) / KS RCS zone 2",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=37.5 +lon_0=-100.95 +k=1.000134 +x_0=762001.524003047 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8519
+  },
+  {
+    "name": "NAD83(2011) / KS RCS zone 3",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=37.5 +lon_0=-100.35 +k=1.000116 +x_0=1066802.13360427 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8520
+  },
+  {
+    "name": "NAD83(2011) / KS RCS zone 4",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=37.5 +lon_0=-99.45 +k=1.000082 +x_0=1371602.74320549 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8521
+  },
+  {
+    "name": "NAD83(2011) / KS RCS zone 5",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=37.5 +lon_0=-98.6666666666667 +k=1.000078 +x_0=1676403.3528067 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8522
+  },
+  {
+    "name": "NAD83(2011) / KS RCS zone 6",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=37.5 +lon_0=-98.15 +k=1.000068 +x_0=1981203.96240792 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8523
+  },
+  {
+    "name": "NAD83(2011) / KS RCS zone 7",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=37.5 +lon_0=-97.3333333333333 +k=1.000049 +x_0=2286004.57200914 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8524
+  },
+  {
+    "name": "NAD83(2011) / KS RCS zone 8",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=39.1666666666667 +lat_0=39.1666666666667 +lon_0=-96.5 +k_0=1.000044 +x_0=2590805.18161036 +y_0=182880.365760731 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8525
+  },
+  {
+    "name": "NAD83(2011) / KS RCS zone 9",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=38.5 +lat_0=38.5 +lon_0=-96.5 +k_0=1.00005 +x_0=2895605.79121158 +y_0=91440.1828803657 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8526
+  },
+  {
+    "name": "NAD83(2011) / KS RCS zone 10",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=39.6333333333333 +lat_0=39.6333333333333 +lon_0=-95.75 +k_0=1.00004 +x_0=3200406.4008128 +y_0=213360.426720853 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8527
+  },
+  {
+    "name": "NAD83(2011) / KS RCS zone 11",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=39.1 +lat_0=39.1 +lon_0=-95.25 +k_0=1.000033 +x_0=3505207.01041402 +y_0=182880.365760731 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8528
+  },
+  {
+    "name": "NAD83(2011) / KS RCS zone 12",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=36.75 +lon_0=-101.416666666667 +k=1.00014 +x_0=3810007.62001524 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8529
+  },
+  {
+    "name": "NAD83(2011) / KS RCS zone 13",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=36.75 +lon_0=-100.4 +k=1.000109 +x_0=4114808.22961646 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8531
+  },
+  {
+    "name": "NAD83(2011) / KS RCS zone 14",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=36.75 +lon_0=-99.6666666666667 +k=1.000097 +x_0=4419608.83921768 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8533
+  },
+  {
+    "name": "NAD83(2011) / KS RCS zone 15",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=36.75 +lon_0=-99.2 +k=1.000087 +x_0=4724409.4488189 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8534
+  },
+  {
+    "name": "NAD83(2011) / KS RCS zone 16",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=36.75 +lon_0=-98.55 +k=1.000069 +x_0=5029210.05842011 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8535
+  },
+  {
+    "name": "NAD83(2011) / KS RCS zone 17",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=37.7666666666667 +lat_0=37.7666666666667 +lon_0=-97.5 +k_0=1.000059 +x_0=5334010.66802133 +y_0=121920.243840488 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8536
+  },
+  {
+    "name": "NAD83(2011) / KS RCS zone 18",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=37.1833333333333 +lat_0=37.1833333333333 +lon_0=-97.5 +k_0=1.000055 +x_0=5638811.27762255 +y_0=60960.1219202438 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8538
+  },
+  {
+    "name": "NAD83(2011) / KS RCS zone 19",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=36.75 +lon_0=-95.9666666666667 +k=1.000034 +x_0=5943611.88722377 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8539
+  },
+  {
+    "name": "NAD83(2011) / KS RCS zone 20",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=36.75 +lon_0=-95.0833333333333 +k=1.000031 +x_0=6248412.49682499 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8540
+  },
+  {
+    "name": "NAD83(2011) / ICS83-Freeport (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=42.2 +lat_0=42.2 +lon_0=-89.95 +k_0=1.000029 +x_0=549860.299720599 +y_0=230124.46024892 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 23301
+  },
+  {
+    "name": "NAD83(2011) / ICS83-Rockford (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=41.25 +lon_0=-89.25 +k=1.000029 +x_0=860147.32029464 +y_0=149961.8999238 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 23302
+  },
+  {
+    "name": "NAD83(2011) / ICS83-Aurora (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=41.25 +lon_0=-88.5 +k=1.00003 +x_0=1150012.7000254 +y_0=149961.8999238 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 23303
+  },
+  {
+    "name": "NAD83(2011) / ICS83-Chicago (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=41.25 +lon_0=-87.8 +k=1.000023 +x_0=1449936.499873 +y_0=149961.8999238 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 23304
+  },
+  {
+    "name": "NAD83(2011) / ICS83-Moline (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=41.55 +lat_0=41.55 +lon_0=-90.6 +k_0=1.000024 +x_0=1749860.2997206 +y_0=230124.46024892 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 23305
+  },
+  {
+    "name": "NAD83(2011) / ICS83-Sterling (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=41.55 +lat_0=41.55 +lon_0=-90.05 +k_0=1.00002 +x_0=2050088.9001778 +y_0=230124.46024892 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 23306
+  },
+  {
+    "name": "NAD83(2011) / ICS83-Ottawa (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=41.3 +lat_0=41.3 +lon_0=-89.05 +k_0=1.000023 +x_0=2360071.12014224 +y_0=230124.46024892 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 23307
+  },
+  {
+    "name": "NAD83(2011) / ICS83-Joliet (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=40.55 +lon_0=-88 +k=1.000022 +x_0=2649936.499873 +y_0=149961.8999238 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 23308
+  },
+  {
+    "name": "NAD83(2011) / ICS83-Monmouth (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=40.2 +lon_0=-90.85 +k=1.000024 +x_0=2949860.2997206 +y_0=149961.8999238 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 23309
+  },
+  {
+    "name": "NAD83(2011) / ICS83-Galesburg (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=37.25 +lon_0=-90.1 +k=1.000023 +x_0=70104.1402082804 +y_0=149961.8999238 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 23310
+  },
+  {
+    "name": "NAD83(2011) / ICS83-Peoria (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=37.4 +lon_0=-89.65 +k=1.000023 +x_0=420015.24003048 +y_0=189585.979171958 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 23311
+  },
+  {
+    "name": "NAD83(2011) / ICS83-Eureka (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=37.45 +lon_0=-89.3 +k=1.000025 +x_0=840030.48006096 +y_0=130149.860299721 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 23312
+  },
+  {
+    "name": "NAD83(2011) / ICS83-Bloomington (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=40.5 +lat_0=40.5 +lon_0=-88.85 +k_0=1.000031 +x_0=1150012.7000254 +y_0=530048.26009652 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 23313
+  },
+  {
+    "name": "NAD83(2011) / ICS83-Pontiac (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=40.9 +lat_0=40.9 +lon_0=-88.55 +k_0=1.000025 +x_0=1449936.499873 +y_0=530048.26009652 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 23314
+  },
+  {
+    "name": "NAD83(2011) / ICS83-Watseka (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=40.75 +lat_0=40.75 +lon_0=-87.95 +k_0=1.000024 +x_0=1749860.2997206 +y_0=530048.26009652 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 23315
+  },
+  {
+    "name": "NAD83(2011) / ICS83-Quincy (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=36.75 +lon_0=-91.25 +k=1.000023 +x_0=2050088.9001778 +y_0=149961.8999238 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 23316
+  },
+  {
+    "name": "NAD83(2011) / ICS83-Macomb (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=36.8 +lon_0=-90.6 +k=1.000024 +x_0=2350012.7000254 +y_0=149961.8999238 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 23317
+  },
+  {
+    "name": "NAD83(2011) / ICS83-Lincoln (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=40.15 +lat_0=40.15 +lon_0=-89.8 +k_0=1.000018 +x_0=2670053.34010668 +y_0=530048.26009652 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 23318
+  },
+  {
+    "name": "NAD83(2011) / ICS83-Decatur (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=36.3 +lon_0=-88.8 +k=1.000024 +x_0=2949860.2997206 +y_0=149961.8999238 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 23319
+  },
+  {
+    "name": "NAD83(2011) / ICS83-Champaign (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=40.15 +lat_0=40.15 +lon_0=-88 +k_0=1.000026 +x_0=99974.5999491998 +y_0=860147.32029464 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 23320
+  },
+  {
+    "name": "NAD83(2011) / ICS83-Jacksonville (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=39.65 +lat_0=39.65 +lon_0=-90.6 +k_0=1.000023 +x_0=380086.36017272 +y_0=860147.32029464 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 23321
+  },
+  {
+    "name": "NAD83(2011) / ICS83-Springfield (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=39.75 +lat_0=39.75 +lon_0=-89.65 +k_0=1.000022 +x_0=709880.619761239 +y_0=879959.359918719 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 23322
+  },
+  {
+    "name": "NAD83(2011) / ICS83-Charleston (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=39.65 +lat_0=39.65 +lon_0=-88 +k_0=1.000024 +x_0=1150012.7000254 +y_0=840030.48006096 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 23323
+  },
+  {
+    "name": "NAD83(2011) / ICS83-Jerseyville (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=32.85 +lon_0=-90.5 +k=1.000019 +x_0=1449936.499873 +y_0=149961.8999238 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 23324
+  },
+  {
+    "name": "NAD83(2011) / ICS83-Carlinville (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=39.3 +lat_0=39.3 +lon_0=-90.15 +k_0=1.00002 +x_0=1749860.2997206 +y_0=840030.48006096 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 23325
+  },
+  {
+    "name": "NAD83(2011) / ICS83-Taylorville (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=33.15 +lon_0=-89.4 +k=1.000023 +x_0=2050088.9001778 +y_0=149961.8999238 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 23326
+  },
+  {
+    "name": "NAD83(2011) / ICS83-Effingham (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=38.95 +lat_0=38.95 +lon_0=-89 +k_0=1.000019 +x_0=2350012.7000254 +y_0=840030.48006096 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 23327
+  },
+  {
+    "name": "NAD83(2011) / ICS83-Robinson (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=39.1 +lat_0=39.1 +lon_0=-88 +k_0=1.000017 +x_0=2649936.499873 +y_0=840030.48006096 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 23328
+  },
+  {
+    "name": "NAD83(2011) / ICS83-Belleville (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=32.35 +lon_0=-90 +k=1.000016 +x_0=2949860.2997206 +y_0=149961.8999238 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 23329
+  },
+  {
+    "name": "NAD83(2011) / ICS83-Mount Vernon (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=38.45 +lat_0=38.45 +lon_0=-89.15 +k_0=1.000015 +x_0=99974.5999491998 +y_0=1150012.7000254 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 23330
+  },
+  {
+    "name": "NAD83(2011) / ICS83-Olney (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=38.55 +lat_0=38.55 +lon_0=-88.15 +k_0=1.000013 +x_0=380086.36017272 +y_0=1150012.7000254 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 23331
+  },
+  {
+    "name": "NAD83(2011) / ICS83-Carbondale (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=37.9 +lat_0=37.9 +lon_0=-88.95 +k_0=1.000012 +x_0=729997.45999492 +y_0=1150012.7000254 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 23332
+  },
+  {
+    "name": "NAD83(2011) / ICS83-Metropolis (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=37.2 +lat_0=37.2 +lon_0=-88.9 +k_0=1.00001 +x_0=1110083.82016764 +y_0=1170129.54025908 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 23333
+  },
+  {
+    "name": "NAD83(NSRS2007) / Maine East (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=43.6666666666667 +lon_0=-68.5 +k=0.9999 +x_0=300000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 26863
+  },
+  {
+    "name": "NAD83(NSRS2007) / Maine West (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=42.8333333333333 +lon_0=-70.1666666666667 +k=0.999966667 +x_0=900000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 26864
+  },
+  {
+    "name": "NAD83(NSRS2007) / Minnesota North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=46.5 +lon_0=-93.1 +lat_1=48.6333333333333 +lat_2=47.0333333333333 +x_0=800000.00001016 +y_0=99999.9999898399 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 26865
+  },
+  {
+    "name": "NAD83(NSRS2007) / Minnesota Central (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=45 +lon_0=-94.25 +lat_1=47.05 +lat_2=45.6166666666667 +x_0=800000.00001016 +y_0=99999.9999898399 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 26866
+  },
+  {
+    "name": "NAD83(NSRS2007) / Minnesota South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=43 +lon_0=-94 +lat_1=45.2166666666667 +lat_2=43.7833333333333 +x_0=800000.00001016 +y_0=99999.9999898399 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 26867
+  },
+  {
+    "name": "NAD83(NSRS2007) / Nebraska (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=39.8333333333333 +lon_0=-100 +lat_1=43 +lat_2=40 +x_0=500000.00001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 26868
+  },
+  {
+    "name": "NAD83(NSRS2007) / West Virginia North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=38.5 +lon_0=-79.5 +lat_1=40.25 +lat_2=39 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 26869
+  },
+  {
+    "name": "NAD83(NSRS2007) / West Virginia South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=37 +lon_0=-81 +lat_1=38.8833333333333 +lat_2=37.4833333333333 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 26870
+  },
+  {
+    "name": "NAD83 / Vermont (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=42.5 +lon_0=-72.5 +k=0.999964286 +x_0=500000.00001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 5646
+  },
+  {
+    "name": "NAD83 / California zone 1 (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=39.3333333333333 +lon_0=-122 +lat_1=41.6666666666667 +lat_2=40 +x_0=2000000.0001016 +y_0=500000.0001016 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2225
+  },
+  {
+    "name": "NAD83 / California zone 2 (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=37.6666666666667 +lon_0=-122 +lat_1=39.8333333333333 +lat_2=38.3333333333333 +x_0=2000000.0001016 +y_0=500000.0001016 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2226
+  },
+  {
+    "name": "NAD83 / California zone 3 (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=36.5 +lon_0=-120.5 +lat_1=38.4333333333333 +lat_2=37.0666666666667 +x_0=2000000.0001016 +y_0=500000.0001016 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2227
+  },
+  {
+    "name": "NAD83 / California zone 4 (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=35.3333333333333 +lon_0=-119 +lat_1=37.25 +lat_2=36 +x_0=2000000.0001016 +y_0=500000.0001016 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2228
+  },
+  {
+    "name": "NAD83 / California zone 5 (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=33.5 +lon_0=-118 +lat_1=35.4666666666667 +lat_2=34.0333333333333 +x_0=2000000.0001016 +y_0=500000.0001016 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2229
+  },
+  {
+    "name": "NAD83 / California zone 6 (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=32.1666666666667 +lon_0=-116.25 +lat_1=33.8833333333333 +lat_2=32.7833333333333 +x_0=2000000.0001016 +y_0=500000.0001016 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2230
+  },
+  {
+    "name": "NAD83 / Colorado North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=39.3333333333333 +lon_0=-105.5 +lat_1=40.7833333333333 +lat_2=39.7166666666667 +x_0=914401.828803657 +y_0=304800.609601219 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2231
+  },
+  {
+    "name": "NAD83 / Colorado Central (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=37.8333333333333 +lon_0=-105.5 +lat_1=39.75 +lat_2=38.45 +x_0=914401.828803657 +y_0=304800.609601219 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2232
+  },
+  {
+    "name": "NAD83 / Colorado South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=36.6666666666667 +lon_0=-105.5 +lat_1=38.4333333333333 +lat_2=37.2333333333333 +x_0=914401.828803657 +y_0=304800.609601219 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2233
+  },
+  {
+    "name": "NAD83 / Connecticut (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=40.8333333333333 +lon_0=-72.75 +lat_1=41.8666666666667 +lat_2=41.2 +x_0=304800.609601219 +y_0=152400.30480061 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2234
+  },
+  {
+    "name": "NAD83 / Delaware (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=38 +lon_0=-75.4166666666667 +k=0.999995 +x_0=200000.0001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2235
+  },
+  {
+    "name": "NAD83 / Florida East (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=24.3333333333333 +lon_0=-81 +k=0.999941177 +x_0=200000.0001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2236
+  },
+  {
+    "name": "NAD83 / Florida West (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=24.3333333333333 +lon_0=-82 +k=0.999941177 +x_0=200000.0001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2237
+  },
+  {
+    "name": "NAD83 / Florida North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=29 +lon_0=-84.5 +lat_1=30.75 +lat_2=29.5833333333333 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2238
+  },
+  {
+    "name": "NAD83 / Georgia East (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=30 +lon_0=-82.1666666666667 +k=0.9999 +x_0=200000.0001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2239
+  },
+  {
+    "name": "NAD83 / Georgia West (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=30 +lon_0=-84.1666666666667 +k=0.9999 +x_0=699999.999898399 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2240
+  },
+  {
+    "name": "NAD83 / Idaho East (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=41.6666666666667 +lon_0=-112.166666666667 +k=0.999947368 +x_0=200000.0001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2241
+  },
+  {
+    "name": "NAD83 / Idaho Central (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=41.6666666666667 +lon_0=-114 +k=0.999947368 +x_0=500000.0001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2242
+  },
+  {
+    "name": "NAD83 / Idaho West (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=41.6666666666667 +lon_0=-115.75 +k=0.999933333 +x_0=800000.0001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2243
+  },
+  {
+    "name": "NAD83 / Kentucky North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=37.5 +lon_0=-84.25 +lat_1=37.9666666666667 +lat_2=38.9666666666667 +x_0=500000.0001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2246
+  },
+  {
+    "name": "NAD83 / Kentucky South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=36.3333333333333 +lon_0=-85.75 +lat_1=37.9333333333333 +lat_2=36.7333333333333 +x_0=500000.0001016 +y_0=500000.0001016 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2247
+  },
+  {
+    "name": "NAD83 / Maryland (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=37.6666666666667 +lon_0=-77 +lat_1=39.45 +lat_2=38.3 +x_0=399999.9998984 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2248
+  },
+  {
+    "name": "NAD83 / Massachusetts Mainland (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=41 +lon_0=-71.5 +lat_1=42.6833333333333 +lat_2=41.7166666666667 +x_0=200000.0001016 +y_0=750000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2249
+  },
+  {
+    "name": "NAD83 / Massachusetts Island (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=41 +lon_0=-70.5 +lat_1=41.4833333333333 +lat_2=41.2833333333333 +x_0=500000.0001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2250
+  },
+  {
+    "name": "NAD83 / Mississippi East (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=29.5 +lon_0=-88.8333333333333 +k=0.99995 +x_0=300000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2254
+  },
+  {
+    "name": "NAD83 / Mississippi West (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=29.5 +lon_0=-90.3333333333333 +k=0.99995 +x_0=699999.999898399 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2255
+  },
+  {
+    "name": "NAD83 / New Mexico East (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=31 +lon_0=-104.333333333333 +k=0.999909091 +x_0=165000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2257
+  },
+  {
+    "name": "NAD83 / New Mexico Central (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=31 +lon_0=-106.25 +k=0.9999 +x_0=500000.0001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2258
+  },
+  {
+    "name": "NAD83 / New Mexico West (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=31 +lon_0=-107.833333333333 +k=0.999916667 +x_0=830000.0001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2259
+  },
+  {
+    "name": "NAD83 / New York East (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=38.8333333333333 +lon_0=-74.5 +k=0.9999 +x_0=150000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2260
+  },
+  {
+    "name": "NAD83 / New York Central (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=40 +lon_0=-76.5833333333333 +k=0.9999375 +x_0=249999.9998984 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2261
+  },
+  {
+    "name": "NAD83 / New York West (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=40 +lon_0=-78.5833333333333 +k=0.9999375 +x_0=350000.0001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2262
+  },
+  {
+    "name": "NAD83 / New York Long Island (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=40.1666666666667 +lon_0=-74 +lat_1=41.0333333333333 +lat_2=40.6666666666667 +x_0=300000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2263
+  },
+  {
+    "name": "NAD83 / North Carolina (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=33.75 +lon_0=-79 +lat_1=36.1666666666667 +lat_2=34.3333333333333 +x_0=609601.219202438 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2264
+  },
+  {
+    "name": "NAD83 / Oklahoma North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=35 +lon_0=-98 +lat_1=36.7666666666667 +lat_2=35.5666666666667 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2267
+  },
+  {
+    "name": "NAD83 / Oklahoma South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=33.3333333333333 +lon_0=-98 +lat_1=35.2333333333333 +lat_2=33.9333333333333 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2268
+  },
+  {
+    "name": "NAD83 / Pennsylvania North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=40.1666666666667 +lon_0=-77.75 +lat_1=41.95 +lat_2=40.8833333333333 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2271
+  },
+  {
+    "name": "NAD83 / Tennessee (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=34.3333333333333 +lon_0=-86 +lat_1=36.4166666666667 +lat_2=35.25 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2274
+  },
+  {
+    "name": "NAD83 / Texas North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=34 +lon_0=-101.5 +lat_1=36.1833333333333 +lat_2=34.65 +x_0=200000.0001016 +y_0=999999.999898399 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2275
+  },
+  {
+    "name": "NAD83 / Texas North Central (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=31.6666666666667 +lon_0=-98.5 +lat_1=33.9666666666667 +lat_2=32.1333333333333 +x_0=600000 +y_0=2000000.0001016 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2276
+  },
+  {
+    "name": "NAD83 / Texas Central (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=29.6666666666667 +lon_0=-100.333333333333 +lat_1=31.8833333333333 +lat_2=30.1166666666667 +x_0=699999.999898399 +y_0=3000000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2277
+  },
+  {
+    "name": "NAD83 / Texas South Central (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=27.8333333333333 +lon_0=-99 +lat_1=30.2833333333333 +lat_2=28.3833333333333 +x_0=600000 +y_0=3999999.9998984 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2278
+  },
+  {
+    "name": "NAD83 / Texas South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=25.6666666666667 +lon_0=-98.5 +lat_1=27.8333333333333 +lat_2=26.1666666666667 +x_0=300000 +y_0=5000000.0001016 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2279
+  },
+  {
+    "name": "NAD83 / Virginia North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=37.6666666666667 +lon_0=-78.5 +lat_1=39.2 +lat_2=38.0333333333333 +x_0=3500000.0001016 +y_0=2000000.0001016 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2283
+  },
+  {
+    "name": "NAD83 / Virginia South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=36.3333333333333 +lon_0=-78.5 +lat_1=37.9666666666667 +lat_2=36.7666666666667 +x_0=3500000.0001016 +y_0=999999.999898399 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2284
+  },
+  {
+    "name": "NAD83 / Washington North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=47 +lon_0=-120.833333333333 +lat_1=48.7333333333333 +lat_2=47.5 +x_0=500000.0001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2285
+  },
+  {
+    "name": "NAD83 / Washington South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=45.3333333333333 +lon_0=-120.5 +lat_1=47.3333333333333 +lat_2=45.8333333333333 +x_0=500000.0001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2286
+  },
+  {
+    "name": "NAD83 / Wisconsin North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=45.1666666666667 +lon_0=-90 +lat_1=46.7666666666667 +lat_2=45.5666666666667 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2287
+  },
+  {
+    "name": "NAD83 / Wisconsin Central (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=43.8333333333333 +lon_0=-90 +lat_1=45.5 +lat_2=44.25 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2288
+  },
+  {
+    "name": "NAD83 / Wisconsin South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=42 +lon_0=-90 +lat_1=44.0666666666667 +lat_2=42.7333333333333 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2289
+  },
+  {
+    "name": "NAD83 / Kentucky Single Zone (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=36.3333333333333 +lon_0=-85.75 +lat_1=37.0833333333333 +lat_2=38.6666666666667 +x_0=1500000 +y_0=999999.999898399 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3089
+  },
+  {
+    "name": "NAD83 / Iowa North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=41.5 +lon_0=-93.5 +lat_1=43.2666666666667 +lat_2=42.0666666666667 +x_0=1500000 +y_0=999999.999989839 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3417
+  },
+  {
+    "name": "NAD83 / Iowa South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=40 +lon_0=-93.5 +lat_1=41.7833333333333 +lat_2=40.6166666666667 +x_0=500000.00001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3418
+  },
+  {
+    "name": "NAD83 / Kansas North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=38.3333333333333 +lon_0=-98 +lat_1=39.7833333333333 +lat_2=38.7166666666667 +x_0=399999.99998984 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3419
+  },
+  {
+    "name": "NAD83 / Kansas South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=36.6666666666667 +lon_0=-98.5 +lat_1=38.5666666666667 +lat_2=37.2666666666667 +x_0=399999.99998984 +y_0=399999.99998984 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3420
+  },
+  {
+    "name": "NAD83 / Nevada East (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=34.75 +lon_0=-115.583333333333 +k=0.9999 +x_0=200000.00001016 +y_0=8000000.00001016 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3421
+  },
+  {
+    "name": "NAD83 / Nevada Central (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=34.75 +lon_0=-116.666666666667 +k=0.9999 +x_0=500000.00001016 +y_0=6000000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3422
+  },
+  {
+    "name": "NAD83 / Nevada West (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=34.75 +lon_0=-118.583333333333 +k=0.9999 +x_0=800000.00001016 +y_0=3999999.99998984 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3423
+  },
+  {
+    "name": "NAD83 / New Jersey (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=38.8333333333333 +lon_0=-74.5 +k=0.9999 +x_0=150000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3424
+  },
+  {
+    "name": "NAD83 / Arkansas North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=34.3333333333333 +lon_0=-92 +lat_1=36.2333333333333 +lat_2=34.9333333333333 +x_0=399999.99998984 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3433
+  },
+  {
+    "name": "NAD83 / Arkansas South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=32.6666666666667 +lon_0=-92 +lat_1=34.7666666666667 +lat_2=33.3 +x_0=399999.99998984 +y_0=399999.99998984 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3434
+  },
+  {
+    "name": "NAD83 / Illinois East (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=36.6666666666667 +lon_0=-88.3333333333333 +k=0.999975 +x_0=300000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3435
+  },
+  {
+    "name": "NAD83 / Illinois West (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=36.6666666666667 +lon_0=-90.1666666666667 +k=0.999941177 +x_0=699999.99998984 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3436
+  },
+  {
+    "name": "NAD83 / New Hampshire (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=42.5 +lon_0=-71.6666666666667 +k=0.999966667 +x_0=300000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3437
+  },
+  {
+    "name": "NAD83 / Rhode Island (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=41.0833333333333 +lon_0=-71.5 +k=0.99999375 +x_0=99999.9999898399 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3438
+  },
+  {
+    "name": "NAD83 / Louisiana North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=30.5 +lon_0=-92.5 +lat_1=32.6666666666667 +lat_2=31.1666666666667 +x_0=999999.999989839 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3451
+  },
+  {
+    "name": "NAD83 / Louisiana South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=28.5 +lon_0=-91.3333333333333 +lat_1=30.7 +lat_2=29.3 +x_0=999999.999989839 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3452
+  },
+  {
+    "name": "NAD83 / Louisiana Offshore (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=25.5 +lon_0=-91.3333333333333 +lat_1=27.8333333333333 +lat_2=26.1666666666667 +x_0=999999.999989839 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3453
+  },
+  {
+    "name": "NAD83 / South Dakota South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=42.3333333333333 +lon_0=-100.333333333333 +lat_1=44.4 +lat_2=42.8333333333333 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3455
+  },
+  {
+    "name": "NAD83 / Utah North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=40.3333333333333 +lon_0=-111.5 +lat_1=41.7833333333333 +lat_2=40.7166666666667 +x_0=500000.00001016 +y_0=999999.999989839 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3560
+  },
+  {
+    "name": "NAD83 / Utah Central (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=38.3333333333333 +lon_0=-111.5 +lat_1=40.65 +lat_2=39.0166666666667 +x_0=500000.00001016 +y_0=2000000.00001016 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3566
+  },
+  {
+    "name": "NAD83 / Utah South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=36.6666666666667 +lon_0=-111.5 +lat_1=38.35 +lat_2=37.2166666666667 +x_0=500000.00001016 +y_0=3000000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3567
+  },
+  {
+    "name": "NAD83 / Ohio North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=39.6666666666667 +lon_0=-82.5 +lat_1=41.7 +lat_2=40.4333333333333 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3734
+  },
+  {
+    "name": "NAD83 / Ohio South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=38 +lon_0=-82.5 +lat_1=40.0333333333333 +lat_2=38.7333333333333 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3735
+  },
+  {
+    "name": "NAD83 / Wyoming East (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=40.5 +lon_0=-105.166666666667 +k=0.9999375 +x_0=200000.00001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3736
+  },
+  {
+    "name": "NAD83 / Wyoming East Central (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=40.5 +lon_0=-107.333333333333 +k=0.9999375 +x_0=399999.99998984 +y_0=99999.9999898399 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3737
+  },
+  {
+    "name": "NAD83 / Wyoming West Central (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=40.5 +lon_0=-108.75 +k=0.9999375 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3738
+  },
+  {
+    "name": "NAD83 / Wyoming West (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=40.5 +lon_0=-110.083333333333 +k=0.9999375 +x_0=800000.00001016 +y_0=99999.9999898399 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3739
+  },
+  {
+    "name": "NAD83 / Hawaii zone 3 (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=21.1666666666667 +lon_0=-158 +k=0.99999 +x_0=500000.00001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3759
+  },
+  {
+    "name": "NAD83 / BLM 59N (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=0 +lon_0=171 +k=0.9996 +x_0=500000.001016002 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 4217
+  },
+  {
+    "name": "NAD83 / BLM 60N (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=0 +lon_0=177 +k=0.9996 +x_0=500000.001016002 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 4420
+  },
+  {
+    "name": "NAD83 / BLM 1N (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=0 +lon_0=-177 +k=0.9996 +x_0=500000.001016002 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 4421
+  },
+  {
+    "name": "NAD83 / BLM 2N (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=0 +lon_0=-171 +k=0.9996 +x_0=500000.001016002 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 4422
+  },
+  {
+    "name": "NAD83 / BLM 3N (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=0 +lon_0=-165 +k=0.9996 +x_0=500000.001016002 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 4423
+  },
+  {
+    "name": "NAD83 / BLM 4N (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=0 +lon_0=-159 +k=0.9996 +x_0=500000.001016002 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 4424
+  },
+  {
+    "name": "NAD83 / BLM 5N (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=0 +lon_0=-153 +k=0.9996 +x_0=500000.001016002 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 4425
+  },
+  {
+    "name": "NAD83 / BLM 6N (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=0 +lon_0=-147 +k=0.9996 +x_0=500000.001016002 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 4426
+  },
+  {
+    "name": "NAD83 / BLM 7N (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=0 +lon_0=-141 +k=0.9996 +x_0=500000.001016002 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 4427
+  },
+  {
+    "name": "NAD83 / BLM 8N (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=0 +lon_0=-135 +k=0.9996 +x_0=500000.001016002 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 4428
+  },
+  {
+    "name": "NAD83 / BLM 9N (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=0 +lon_0=-129 +k=0.9996 +x_0=500000.001016002 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 4429
+  },
+  {
+    "name": "NAD83 / BLM 10N (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=0 +lon_0=-123 +k=0.9996 +x_0=500000.001016002 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 4430
+  },
+  {
+    "name": "NAD83 / BLM 11N (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=0 +lon_0=-117 +k=0.9996 +x_0=500000.001016002 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 4431
+  },
+  {
+    "name": "NAD83 / BLM 12N (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=0 +lon_0=-111 +k=0.9996 +x_0=500000.001016002 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 4432
+  },
+  {
+    "name": "NAD83 / BLM 13N (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=0 +lon_0=-105 +k=0.9996 +x_0=500000.001016002 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 4433
+  },
+  {
+    "name": "NAD83 / BLM 18N (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=0 +lon_0=-75 +k=0.9996 +x_0=500000.001016002 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 4438
+  },
+  {
+    "name": "NAD83 / BLM 19N (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=0 +lon_0=-69 +k=0.9996 +x_0=500000.001016002 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 4439
+  },
+  {
+    "name": "NAD83 / South Dakota North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=43.8333333333333 +lon_0=-100 +lat_1=45.6833333333333 +lat_2=44.4166666666667 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 4457
+  },
+  {
+    "name": "NAD83 / TWDB GM",
+    "unit": "US survey foot",
+    "proj4": "+proj=aea +lat_0=31.25 +lon_0=-100 +lat_1=27.5 +lat_2=35 +x_0=1500000 +y_0=6000000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 10481
+  },
+  {
+    "name": "NAD83 / Kansas LCC (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=36 +lon_0=-98.25 +lat_1=39.5 +lat_2=37.5 +x_0=399999.99998984 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 6923
+  },
+  {
+    "name": "NAD83 / NCRS Las Vegas (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=36.25 +lon_0=-114.966666666667 +k=1.0001 +x_0=99999.9999898399 +y_0=200000.00001016 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8380
+  },
+  {
+    "name": "NAD83 / NCRS Las Vegas high (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=36.25 +lon_0=-114.966666666667 +k=1.000135 +x_0=300000 +y_0=399999.99998984 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8382
+  },
+  {
+    "name": "NAD83 / BLM 14N (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=0 +lon_0=-99 +k=0.9996 +x_0=500000.001016002 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 32164
+  },
+  {
+    "name": "NAD83 / BLM 15N (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=0 +lon_0=-93 +k=0.9996 +x_0=500000.001016002 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 32165
+  },
+  {
+    "name": "NAD83 / BLM 17N (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=0 +lon_0=-81 +k=0.9996 +x_0=500000.001016002 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 32167
+  },
+  {
+    "name": "NAD83 / Maine East (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=43.6666666666667 +lon_0=-68.5 +k=0.9999 +x_0=300000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 26847
+  },
+  {
+    "name": "NAD83 / Maine West (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=42.8333333333333 +lon_0=-70.1666666666667 +k=0.999966667 +x_0=900000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 26848
+  },
+  {
+    "name": "NAD83 / Minnesota North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=46.5 +lon_0=-93.1 +lat_1=48.6333333333333 +lat_2=47.0333333333333 +x_0=800000.00001016 +y_0=99999.9999898399 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 26849
+  },
+  {
+    "name": "NAD83 / Minnesota Central (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=45 +lon_0=-94.25 +lat_1=47.05 +lat_2=45.6166666666667 +x_0=800000.00001016 +y_0=99999.9999898399 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 26850
+  },
+  {
+    "name": "NAD83 / Minnesota South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=43 +lon_0=-94 +lat_1=45.2166666666667 +lat_2=43.7833333333333 +x_0=800000.00001016 +y_0=99999.9999898399 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 26851
+  },
+  {
+    "name": "NAD83 / Nebraska (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=39.8333333333333 +lon_0=-100 +lat_1=43 +lat_2=40 +x_0=500000.00001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 26852
+  },
+  {
+    "name": "NAD83 / West Virginia North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=38.5 +lon_0=-79.5 +lat_1=40.25 +lat_2=39 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 26853
+  },
+  {
+    "name": "NAD83 / West Virginia South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=37 +lon_0=-81 +lat_1=38.8833333333333 +lat_2=37.4833333333333 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 26854
+  },
+  {
+    "name": "NAD83(HARN) / Vermont (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=42.5 +lon_0=-72.5 +k=0.999964286 +x_0=500000.00001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 5654
+  },
+  {
+    "name": "NAD83(HARN) / California zone 1 (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=39.3333333333333 +lon_0=-122 +lat_1=41.6666666666667 +lat_2=40 +x_0=2000000.0001016 +y_0=500000.0001016 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2870
+  },
+  {
+    "name": "NAD83(HARN) / California zone 2 (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=37.6666666666667 +lon_0=-122 +lat_1=39.8333333333333 +lat_2=38.3333333333333 +x_0=2000000.0001016 +y_0=500000.0001016 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2871
+  },
+  {
+    "name": "NAD83(HARN) / California zone 3 (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=36.5 +lon_0=-120.5 +lat_1=38.4333333333333 +lat_2=37.0666666666667 +x_0=2000000.0001016 +y_0=500000.0001016 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2872
+  },
+  {
+    "name": "NAD83(HARN) / California zone 4 (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=35.3333333333333 +lon_0=-119 +lat_1=37.25 +lat_2=36 +x_0=2000000.0001016 +y_0=500000.0001016 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2873
+  },
+  {
+    "name": "NAD83(HARN) / California zone 5 (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=33.5 +lon_0=-118 +lat_1=35.4666666666667 +lat_2=34.0333333333333 +x_0=2000000.0001016 +y_0=500000.0001016 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2874
+  },
+  {
+    "name": "NAD83(HARN) / California zone 6 (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=32.1666666666667 +lon_0=-116.25 +lat_1=33.8833333333333 +lat_2=32.7833333333333 +x_0=2000000.0001016 +y_0=500000.0001016 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2875
+  },
+  {
+    "name": "NAD83(HARN) / Colorado North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=39.3333333333333 +lon_0=-105.5 +lat_1=40.7833333333333 +lat_2=39.7166666666667 +x_0=914401.828803657 +y_0=304800.609601219 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2876
+  },
+  {
+    "name": "NAD83(HARN) / Colorado Central (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=37.8333333333333 +lon_0=-105.5 +lat_1=39.75 +lat_2=38.45 +x_0=914401.828803657 +y_0=304800.609601219 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2877
+  },
+  {
+    "name": "NAD83(HARN) / Colorado South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=36.6666666666667 +lon_0=-105.5 +lat_1=38.4333333333333 +lat_2=37.2333333333333 +x_0=914401.828803657 +y_0=304800.609601219 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2878
+  },
+  {
+    "name": "NAD83(HARN) / Connecticut (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=40.8333333333333 +lon_0=-72.75 +lat_1=41.8666666666667 +lat_2=41.2 +x_0=304800.609601219 +y_0=152400.30480061 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2879
+  },
+  {
+    "name": "NAD83(HARN) / Delaware (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=38 +lon_0=-75.4166666666667 +k=0.999995 +x_0=200000.0001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2880
+  },
+  {
+    "name": "NAD83(HARN) / Florida East (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=24.3333333333333 +lon_0=-81 +k=0.999941177 +x_0=200000.0001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2881
+  },
+  {
+    "name": "NAD83(HARN) / Florida West (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=24.3333333333333 +lon_0=-82 +k=0.999941177 +x_0=200000.0001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2882
+  },
+  {
+    "name": "NAD83(HARN) / Florida North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=29 +lon_0=-84.5 +lat_1=30.75 +lat_2=29.5833333333333 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2883
+  },
+  {
+    "name": "NAD83(HARN) / Georgia East (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=30 +lon_0=-82.1666666666667 +k=0.9999 +x_0=200000.0001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2884
+  },
+  {
+    "name": "NAD83(HARN) / Georgia West (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=30 +lon_0=-84.1666666666667 +k=0.9999 +x_0=699999.999898399 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2885
+  },
+  {
+    "name": "NAD83(HARN) / Idaho East (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=41.6666666666667 +lon_0=-112.166666666667 +k=0.999947368 +x_0=200000.0001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2886
+  },
+  {
+    "name": "NAD83(HARN) / Idaho Central (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=41.6666666666667 +lon_0=-114 +k=0.999947368 +x_0=500000.0001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2887
+  },
+  {
+    "name": "NAD83(HARN) / Idaho West (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=41.6666666666667 +lon_0=-115.75 +k=0.999933333 +x_0=800000.0001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2888
+  },
+  {
+    "name": "NAD83(HARN) / Kentucky North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=37.5 +lon_0=-84.25 +lat_1=37.9666666666667 +lat_2=38.9666666666667 +x_0=500000.0001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2891
+  },
+  {
+    "name": "NAD83(HARN) / Kentucky South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=36.3333333333333 +lon_0=-85.75 +lat_1=37.9333333333333 +lat_2=36.7333333333333 +x_0=500000.0001016 +y_0=500000.0001016 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2892
+  },
+  {
+    "name": "NAD83(HARN) / Maryland (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=37.6666666666667 +lon_0=-77 +lat_1=39.45 +lat_2=38.3 +x_0=399999.9998984 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2893
+  },
+  {
+    "name": "NAD83(HARN) / Massachusetts Mainland (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=41 +lon_0=-71.5 +lat_1=42.6833333333333 +lat_2=41.7166666666667 +x_0=200000.0001016 +y_0=750000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2894
+  },
+  {
+    "name": "NAD83(HARN) / Massachusetts Island (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=41 +lon_0=-70.5 +lat_1=41.4833333333333 +lat_2=41.2833333333333 +x_0=500000.0001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2895
+  },
+  {
+    "name": "NAD83(HARN) / Mississippi East (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=29.5 +lon_0=-88.8333333333333 +k=0.99995 +x_0=300000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2899
+  },
+  {
+    "name": "NAD83(HARN) / Mississippi West (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=29.5 +lon_0=-90.3333333333333 +k=0.99995 +x_0=699999.999898399 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2900
+  },
+  {
+    "name": "NAD83(HARN) / New Mexico East (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=31 +lon_0=-104.333333333333 +k=0.999909091 +x_0=165000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2902
+  },
+  {
+    "name": "NAD83(HARN) / New Mexico Central (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=31 +lon_0=-106.25 +k=0.9999 +x_0=500000.0001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2903
+  },
+  {
+    "name": "NAD83(HARN) / New Mexico West (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=31 +lon_0=-107.833333333333 +k=0.999916667 +x_0=830000.0001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2904
+  },
+  {
+    "name": "NAD83(HARN) / New York East (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=38.8333333333333 +lon_0=-74.5 +k=0.9999 +x_0=150000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2905
+  },
+  {
+    "name": "NAD83(HARN) / New York Central (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=40 +lon_0=-76.5833333333333 +k=0.9999375 +x_0=249999.9998984 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2906
+  },
+  {
+    "name": "NAD83(HARN) / New York West (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=40 +lon_0=-78.5833333333333 +k=0.9999375 +x_0=350000.0001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2907
+  },
+  {
+    "name": "NAD83(HARN) / New York Long Island (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=40.1666666666667 +lon_0=-74 +lat_1=41.0333333333333 +lat_2=40.6666666666667 +x_0=300000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2908
+  },
+  {
+    "name": "NAD83(HARN) / Oklahoma North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=35 +lon_0=-98 +lat_1=36.7666666666667 +lat_2=35.5666666666667 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2911
+  },
+  {
+    "name": "NAD83(HARN) / Oklahoma South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=33.3333333333333 +lon_0=-98 +lat_1=35.2333333333333 +lat_2=33.9333333333333 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2912
+  },
+  {
+    "name": "NAD83(HARN) / Tennessee (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=34.3333333333333 +lon_0=-86 +lat_1=36.4166666666667 +lat_2=35.25 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2915
+  },
+  {
+    "name": "NAD83(HARN) / Texas North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=34 +lon_0=-101.5 +lat_1=36.1833333333333 +lat_2=34.65 +x_0=200000.0001016 +y_0=999999.999898399 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2916
+  },
+  {
+    "name": "NAD83(HARN) / Texas North Central (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=31.6666666666667 +lon_0=-98.5 +lat_1=33.9666666666667 +lat_2=32.1333333333333 +x_0=600000 +y_0=2000000.0001016 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2917
+  },
+  {
+    "name": "NAD83(HARN) / Texas Central (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=29.6666666666667 +lon_0=-100.333333333333 +lat_1=31.8833333333333 +lat_2=30.1166666666667 +x_0=699999.999898399 +y_0=3000000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2918
+  },
+  {
+    "name": "NAD83(HARN) / Texas South Central (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=27.8333333333333 +lon_0=-99 +lat_1=30.2833333333333 +lat_2=28.3833333333333 +x_0=600000 +y_0=3999999.9998984 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2919
+  },
+  {
+    "name": "NAD83(HARN) / Texas South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=25.6666666666667 +lon_0=-98.5 +lat_1=27.8333333333333 +lat_2=26.1666666666667 +x_0=300000 +y_0=5000000.0001016 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2920
+  },
+  {
+    "name": "NAD83(HARN) / Virginia North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=37.6666666666667 +lon_0=-78.5 +lat_1=39.2 +lat_2=38.0333333333333 +x_0=3500000.0001016 +y_0=2000000.0001016 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2924
+  },
+  {
+    "name": "NAD83(HARN) / Virginia South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=36.3333333333333 +lon_0=-78.5 +lat_1=37.9666666666667 +lat_2=36.7666666666667 +x_0=3500000.0001016 +y_0=999999.999898399 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2925
+  },
+  {
+    "name": "NAD83(HARN) / Washington North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=47 +lon_0=-120.833333333333 +lat_1=48.7333333333333 +lat_2=47.5 +x_0=500000.0001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2926
+  },
+  {
+    "name": "NAD83(HARN) / Washington South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=45.3333333333333 +lon_0=-120.5 +lat_1=47.3333333333333 +lat_2=45.8333333333333 +x_0=500000.0001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2927
+  },
+  {
+    "name": "NAD83(HARN) / Wisconsin North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=45.1666666666667 +lon_0=-90 +lat_1=46.7666666666667 +lat_2=45.5666666666667 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2928
+  },
+  {
+    "name": "NAD83(HARN) / Wisconsin Central (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=43.8333333333333 +lon_0=-90 +lat_1=45.5 +lat_2=44.25 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2929
+  },
+  {
+    "name": "NAD83(HARN) / Wisconsin South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=42 +lon_0=-90 +lat_1=44.0666666666667 +lat_2=42.7333333333333 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 2930
+  },
+  {
+    "name": "NAD83(HARN) / Kentucky Single Zone (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=36.3333333333333 +lon_0=-85.75 +lat_1=37.0833333333333 +lat_2=38.6666666666667 +x_0=1500000 +y_0=999999.999898399 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3091
+  },
+  {
+    "name": "NAD83(HARN) / Pennsylvania North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=40.1666666666667 +lon_0=-77.75 +lat_1=41.95 +lat_2=40.8833333333333 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3363
+  },
+  {
+    "name": "NAD83(HARN) / North Carolina (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=33.75 +lon_0=-79 +lat_1=36.1666666666667 +lat_2=34.3333333333333 +x_0=609601.219202438 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3404
+  },
+  {
+    "name": "NAD83(HARN) / Iowa North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=41.5 +lon_0=-93.5 +lat_1=43.2666666666667 +lat_2=42.0666666666667 +x_0=1500000 +y_0=999999.999989839 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3425
+  },
+  {
+    "name": "NAD83(HARN) / Iowa South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=40 +lon_0=-93.5 +lat_1=41.7833333333333 +lat_2=40.6166666666667 +x_0=500000.00001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3426
+  },
+  {
+    "name": "NAD83(HARN) / Kansas North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=38.3333333333333 +lon_0=-98 +lat_1=39.7833333333333 +lat_2=38.7166666666667 +x_0=399999.99998984 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3427
+  },
+  {
+    "name": "NAD83(HARN) / Kansas South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=36.6666666666667 +lon_0=-98.5 +lat_1=38.5666666666667 +lat_2=37.2666666666667 +x_0=399999.99998984 +y_0=399999.99998984 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3428
+  },
+  {
+    "name": "NAD83(HARN) / Nevada East (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=34.75 +lon_0=-115.583333333333 +k=0.9999 +x_0=200000.00001016 +y_0=8000000.00001016 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3429
+  },
+  {
+    "name": "NAD83(HARN) / Nevada Central (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=34.75 +lon_0=-116.666666666667 +k=0.9999 +x_0=500000.00001016 +y_0=6000000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3430
+  },
+  {
+    "name": "NAD83(HARN) / Nevada West (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=34.75 +lon_0=-118.583333333333 +k=0.9999 +x_0=800000.00001016 +y_0=3999999.99998984 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3431
+  },
+  {
+    "name": "NAD83(HARN) / New Jersey (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=38.8333333333333 +lon_0=-74.5 +k=0.9999 +x_0=150000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3432
+  },
+  {
+    "name": "NAD83(HARN) / Arkansas North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=34.3333333333333 +lon_0=-92 +lat_1=36.2333333333333 +lat_2=34.9333333333333 +x_0=399999.99998984 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3441
+  },
+  {
+    "name": "NAD83(HARN) / Arkansas South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=32.6666666666667 +lon_0=-92 +lat_1=34.7666666666667 +lat_2=33.3 +x_0=399999.99998984 +y_0=399999.99998984 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3442
+  },
+  {
+    "name": "NAD83(HARN) / Illinois East (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=36.6666666666667 +lon_0=-88.3333333333333 +k=0.999975 +x_0=300000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3443
+  },
+  {
+    "name": "NAD83(HARN) / Illinois West (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=36.6666666666667 +lon_0=-90.1666666666667 +k=0.999941177 +x_0=699999.99998984 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3444
+  },
+  {
+    "name": "NAD83(HARN) / New Hampshire (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=42.5 +lon_0=-71.6666666666667 +k=0.999966667 +x_0=300000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3445
+  },
+  {
+    "name": "NAD83(HARN) / Rhode Island (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=41.0833333333333 +lon_0=-71.5 +k=0.99999375 +x_0=99999.9999898399 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3446
+  },
+  {
+    "name": "NAD83(HARN) / Louisiana North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=30.5 +lon_0=-92.5 +lat_1=32.6666666666667 +lat_2=31.1666666666667 +x_0=999999.999989839 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3456
+  },
+  {
+    "name": "NAD83(HARN) / Louisiana South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=28.5 +lon_0=-91.3333333333333 +lat_1=30.7 +lat_2=29.3 +x_0=999999.999989839 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3457
+  },
+  {
+    "name": "NAD83(HARN) / South Dakota North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=43.8333333333333 +lon_0=-100 +lat_1=45.6833333333333 +lat_2=44.4166666666667 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3458
+  },
+  {
+    "name": "NAD83(HARN) / South Dakota South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=42.3333333333333 +lon_0=-100.333333333333 +lat_1=44.4 +lat_2=42.8333333333333 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3459
+  },
+  {
+    "name": "NAD83(HARN) / Utah North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=40.3333333333333 +lon_0=-111.5 +lat_1=41.7833333333333 +lat_2=40.7166666666667 +x_0=500000.00001016 +y_0=999999.999989839 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3568
+  },
+  {
+    "name": "NAD83(HARN) / Utah Central (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=38.3333333333333 +lon_0=-111.5 +lat_1=40.65 +lat_2=39.0166666666667 +x_0=500000.00001016 +y_0=2000000.00001016 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3569
+  },
+  {
+    "name": "NAD83(HARN) / Utah South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=36.6666666666667 +lon_0=-111.5 +lat_1=38.35 +lat_2=37.2166666666667 +x_0=500000.00001016 +y_0=3000000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3570
+  },
+  {
+    "name": "NAD83(HARN) / Ohio North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=39.6666666666667 +lon_0=-82.5 +lat_1=41.7 +lat_2=40.4333333333333 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3753
+  },
+  {
+    "name": "NAD83(HARN) / Ohio South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=38 +lon_0=-82.5 +lat_1=40.0333333333333 +lat_2=38.7333333333333 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3754
+  },
+  {
+    "name": "NAD83(HARN) / Wyoming East (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=40.5 +lon_0=-105.166666666667 +k=0.9999375 +x_0=200000.00001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3755
+  },
+  {
+    "name": "NAD83(HARN) / Wyoming East Central (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=40.5 +lon_0=-107.333333333333 +k=0.9999375 +x_0=399999.99998984 +y_0=99999.9999898399 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3756
+  },
+  {
+    "name": "NAD83(HARN) / Wyoming West Central (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=40.5 +lon_0=-108.75 +k=0.9999375 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3757
+  },
+  {
+    "name": "NAD83(HARN) / Wyoming West (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=40.5 +lon_0=-110.083333333333 +k=0.9999375 +x_0=800000.00001016 +y_0=99999.9999898399 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3758
+  },
+  {
+    "name": "NAD83(HARN) / Hawaii zone 3 (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=21.1666666666667 +lon_0=-158 +k=0.99999 +x_0=500000.00001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 3760
+  },
+  {
+    "name": "NAD83(HARN) / WISCRS Florence (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=45.4388888888889 +lon_0=-88.1416666666667 +k=1.0000552095 +x_0=133502.668224536 +y_0=0.0064008128016256 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8091
+  },
+  {
+    "name": "NAD83(HARN) / WISCRS Eau Claire (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=44.8722811263889 +lat_0=44.8722811263889 +lon_0=-91.2888888888889 +k_0=1.000035079 +x_0=120091.44018288 +y_0=91687.9239014477 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8093
+  },
+  {
+    "name": "NAD83(HARN) / WISCRS Wood (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=44.3625954694444 +lat_0=44.3625954694444 +lon_0=-90 +k_0=1.0000421209 +x_0=208483.617272034 +y_0=134589.753924308 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8096
+  },
+  {
+    "name": "NAD83(HARN) / WISCRS Waushara (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=44.1139440458333 +lat_0=44.1139440458333 +lon_0=-89.2416666666667 +k_0=1.0000392096 +x_0=120091.44018288 +y_0=45069.7588011176 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8098
+  },
+  {
+    "name": "NAD83(HARN) / WISCRS Waupaca (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=43.4202777777778 +lon_0=-88.8166666666667 +k=1.0000333645 +x_0=185013.970942342 +y_0=0.00701041402082804 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8100
+  },
+  {
+    "name": "NAD83(HARN) / WISCRS Waukesha (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=42.5694444444444 +lon_0=-88.225 +k=1.0000346179 +x_0=208788.417881636 +y_0=0.00335280670561341 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8102
+  },
+  {
+    "name": "NAD83(HARN) / WISCRS Washington (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=42.9180555555556 +lon_0=-88.0638888888889 +k=1.00003738 +x_0=120091.441402083 +y_0=0.00304800609601219 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8104
+  },
+  {
+    "name": "NAD83(HARN) / WISCRS Washburn (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=45.9612198333333 +lat_0=45.9612198333333 +lon_0=-91.7833333333333 +k_0=1.0000475376 +x_0=234086.868173736 +y_0=188358.605943612 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8106
+  },
+  {
+    "name": "NAD83(HARN) / WISCRS Walworth (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=42.6694620969444 +lat_0=42.6694620969444 +lon_0=-88.5416666666667 +k_0=1.0000367192 +x_0=232562.86512573 +y_0=111088.222402845 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8108
+  },
+  {
+    "name": "NAD83(HARN) / WISCRS Vilas (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=46.0778440905556 +lat_0=46.0778440905556 +lon_0=-89.4888888888889 +k_0=1.0000730142 +x_0=134417.068834138 +y_0=50337.1092710185 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8110
+  },
+  {
+    "name": "NAD83(HARN) / WISCRS Vernon (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=43.5750329397222 +lat_0=43.5750329397222 +lon_0=-90.7833333333333 +k_0=1.0000408158 +x_0=222504.44500889 +y_0=47532.0603505207 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8112
+  },
+  {
+    "name": "NAD83(HARN) / WISCRS Trempealeau (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=43.1611111111111 +lon_0=-91.3666666666667 +k=1.0000361538 +x_0=256946.913893828 +y_0=0.00396240792481585 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8114
+  },
+  {
+    "name": "NAD83(HARN) / WISCRS Taylor (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=45.1778220858333 +lat_0=45.1778220858333 +lon_0=-90.4833333333333 +k_0=1.0000597566 +x_0=187147.574295148 +y_0=107746.752146304 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8116
+  },
+  {
+    "name": "NAD83(HARN) / WISCRS St. Croix (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=44.0361111111111 +lon_0=-92.6333333333333 +k=1.0000381803 +x_0=165506.73009906 +y_0=0.0103632207264414 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8118
+  },
+  {
+    "name": "NAD83(HARN) / WISCRS Shawano (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=44.0361111111111 +lon_0=-88.6055555555556 +k=1.000032144 +x_0=262433.32517145 +y_0=0.00944881889763779 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8120
+  },
+  {
+    "name": "NAD83(HARN) / WISCRS Sawyer (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=45.9000991313889 +lat_0=45.9000991313889 +lon_0=-91.1166666666667 +k_0=1.0000573461 +x_0=216713.233731267 +y_0=120734.163169926 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8122
+  },
+  {
+    "name": "NAD83(HARN) / WISCRS Sauk (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=42.8194444444444 +lon_0=-89.9 +k=1.0000373868 +x_0=185623.571551943 +y_0=0.00518161036322072 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8124
+  },
+  {
+    "name": "NAD83(HARN) / WISCRS Rusk (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=43.9194444444444 +lon_0=-91.0666666666667 +k=1.0000495976 +x_0=250546.101397003 +y_0=0.0234696469392939 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8126
+  },
+  {
+    "name": "NAD83(HARN) / WISCRS Rock (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=41.9444444444444 +lon_0=-89.0722222222222 +k=1.0000337311 +x_0=146304.292608585 +y_0=0.00670561341122682 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8128
+  },
+  {
+    "name": "NAD83(HARN) / WISCRS Richland (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=43.3223129275 +lat_0=43.3223129275 +lon_0=-90.4305555555556 +k_0=1.0000375653 +x_0=202387.604775209 +y_0=134255.425450851 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8130
+  },
+  {
+    "name": "NAD83(HARN) / WISCRS Price (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=44.5555555555556 +lon_0=-90.4888888888889 +k=1.0000649554 +x_0=227990.854457709 +y_0=0.0109728219456439 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8132
+  },
+  {
+    "name": "NAD83(HARN) / WISCRS Portage (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=44.4168239752778 +lat_0=44.4168239752778 +lon_0=-89.5 +k_0=1.000039936 +x_0=56388.1127762255 +y_0=50022.1874523749 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8134
+  },
+  {
+    "name": "NAD83(HARN) / WISCRS Polk (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=44.6611111111111 +lon_0=-92.6333333333333 +k=1.0000433849 +x_0=141732.282245364 +y_0=0.00579121158242316 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8136
+  },
+  {
+    "name": "NAD83(HARN) / WISCRS Pepin and Pierce (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=44.6361488719444 +lat_0=44.6361488719444 +lon_0=-92.2277777777778 +k_0=1.0000362977 +x_0=167640.33528067 +y_0=86033.0877317754 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8138
+  },
+  {
+    "name": "NAD83(HARN) / WISCRS Oneida (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=45.7042237702778 +lat_0=45.7042237702778 +lon_0=-89.5444444444444 +k_0=1.0000686968 +x_0=70104.1402082804 +y_0=57588.0347472695 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8140
+  },
+  {
+    "name": "NAD83(HARN) / WISCRS Oconto (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=44.3972222222222 +lon_0=-87.9083333333333 +k=1.0000236869 +x_0=182880.367589535 +y_0=0.00335280670561341 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8142
+  },
+  {
+    "name": "NAD83(HARN) / WISCRS Monroe (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=44.0000739286111 +lat_0=44.0000739286111 +lon_0=-90.6416666666667 +k_0=1.0000434122 +x_0=204521.209042418 +y_0=121923.986182372 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8144
+  },
+  {
+    "name": "NAD83(HARN) / WISCRS Menominee (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=44.7166666666667 +lon_0=-88.4166666666667 +k=1.0000362499 +x_0=105461.012141224 +y_0=0.00304800609601219 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8146
+  },
+  {
+    "name": "NAD83(HARN) / WISCRS Marinette (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=44.6916666666667 +lon_0=-87.7111111111111 +k=1.0000234982 +x_0=238658.879451359 +y_0=0.00304800609601219 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8148
+  },
+  {
+    "name": "NAD83(HARN) / WISCRS Marathon (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=44.9009044236111 +lat_0=44.9009044236111 +lon_0=-89.77 +k_0=1.000053289 +x_0=74676.1493522987 +y_0=55049.2669545339 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8150
+  },
+  {
+    "name": "NAD83(HARN) / WISCRS Lincoln (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=44.8444444444444 +lon_0=-89.7333333333333 +k=1.0000599003 +x_0=116129.032258064 +y_0=0.00579121158242316 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8152
+  },
+  {
+    "name": "NAD83(HARN) / WISCRS Langlade (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=45.1542371052778 +lat_0=45.1542371052778 +lon_0=-89.0333333333333 +k_0=1.0000627024 +x_0=198425.196850394 +y_0=105279.782880366 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8154
+  },
+  {
+    "name": "NAD83(HARN) / WISCRS La Crosse (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=43.4511111111111 +lon_0=-91.3166666666667 +k=1.0000319985 +x_0=130454.659690119 +y_0=0.00335280670561341 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8156
+  },
+  {
+    "name": "NAD83(HARN) / WISCRS Kewaunee, Manitowoc and Sheboygan (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=43.2666666666667 +lon_0=-87.55 +k=1.0000233704 +x_0=79857.761544323 +y_0=0.00121920243840488 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8158
+  },
+  {
+    "name": "NAD83(HARN) / WISCRS Kenosha, Milwaukee, Ozaukee and Racine (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=42.2166666666667 +lon_0=-87.8944444444444 +k=1.0000260649 +x_0=185928.372771145 +y_0=0.000914401828803657 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8160
+  },
+  {
+    "name": "NAD83(HARN) / WISCRS Jackson (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=44.2533351277778 +lon_0=-90.8442965194444 +k=1.0000353 +x_0=27000 +y_0=24999.9998983998 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8162
+  },
+  {
+    "name": "NAD83(HARN) / WISCRS Iron (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=45.4333333333333 +lon_0=-90.2555555555556 +k=1.0000677153 +x_0=220980.441960884 +y_0=0.00853441706883413 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8164
+  },
+  {
+    "name": "NAD83(HARN) / WISCRS Iowa (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=42.5388888888889 +lon_0=-90.1611111111111 +k=1.0000394961 +x_0=113081.026162052 +y_0=0.00457200914401829 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8166
+  },
+  {
+    "name": "NAD83(HARN) / WISCRS Green Lake and Marquette (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=43.8070001177778 +lat_0=43.8070001177778 +lon_0=-89.2416666666667 +k_0=1.0000344057 +x_0=150876.301752603 +y_0=79170.7793751587 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8168
+  },
+  {
+    "name": "NAD83(HARN) / WISCRS Green and Lafayette (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=42.6375622769444 +lat_0=42.6375622769444 +lon_0=-89.8388888888889 +k_0=1.0000390487 +x_0=170078.74015748 +y_0=45830.2948437897 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8170
+  },
+  {
+    "name": "NAD83(HARN) / WISCRS Grant (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=41.4111111111111 +lon_0=-90.8 +k=1.0000349452 +x_0=242316.484023368 +y_0=0.0100584201168402 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8172
+  },
+  {
+    "name": "NAD83(HARN) / WISCRS Forest (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=44.0055555555556 +lon_0=-88.6333333333333 +k=1.0000673004 +x_0=275844.553213106 +y_0=0.0158496316992634 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8177
+  },
+  {
+    "name": "NAD83(HARN) / WISCRS Dunn (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=44.4083333333333 +lon_0=-91.8944444444444 +k=1.0000410324 +x_0=51816.1039370078 +y_0=0.00304800609601219 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8180
+  },
+  {
+    "name": "NAD83(HARN) / WISCRS Douglas (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=45.8833333333333 +lon_0=-91.9166666666667 +k=1.0000385418 +x_0=59131.3182626365 +y_0=0.00396240792481585 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8182
+  },
+  {
+    "name": "NAD83(HARN) / WISCRS Door (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=44.4 +lon_0=-87.2722222222222 +k=1.0000187521 +x_0=158801.117602235 +y_0=0.00243840487680975 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8185
+  },
+  {
+    "name": "NAD83(HARN) / WISCRS Dodge and Jefferson (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=41.4722222222222 +lon_0=-88.775 +k=1.0000346418 +x_0=263347.726390653 +y_0=0.00762001524003048 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8189
+  },
+  {
+    "name": "NAD83(HARN) / WISCRS Dane (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=43.0695160375 +lat_0=43.0695160375 +lon_0=-89.4222222222222 +k_0=1.0000384786 +x_0=247193.294386589 +y_0=146591.989636779 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8193
+  },
+  {
+    "name": "NAD83(HARN) / WISCRS Crawford (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=43.200055605 +lat_0=43.200055605 +lon_0=-90.9388888888889 +k_0=1.0000349151 +x_0=113690.627381255 +y_0=53703.1202438405 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8197
+  },
+  {
+    "name": "NAD83(HARN) / WISCRS Columbia (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=43.4625466458333 +lat_0=43.4625466458333 +lon_0=-89.3944444444444 +k_0=1.00003498 +x_0=169164.338023876 +y_0=111569.613512827 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8200
+  },
+  {
+    "name": "NAD83(HARN) / WISCRS Clark (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=43.6 +lon_0=-90.7083333333333 +k=1.0000463003 +x_0=199949.198983998 +y_0=0.00853441706883413 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8202
+  },
+  {
+    "name": "NAD83(HARN) / WISCRS Chippewa (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=44.9778568986111 +lat_0=44.9778568986111 +lon_0=-91.2944444444444 +k_0=1.0000391127 +x_0=60045.7200914401 +y_0=44091.434493269 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8204
+  },
+  {
+    "name": "NAD83(HARN) / WISCRS Calumet, Fond du Lac, Outagamie and Winnebago (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=42.7194444444444 +lon_0=-88.5 +k=1.0000286569 +x_0=244754.889204978 +y_0=0.0048768097536195 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8206
+  },
+  {
+    "name": "NAD83(HARN) / WISCRS Burnett (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=45.8987148658333 +lat_0=45.8987148658333 +lon_0=-92.4577777777778 +k_0=1.0000383841 +x_0=64008.1277114554 +y_0=59445.9041910083 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8208
+  },
+  {
+    "name": "NAD83(HARN) / WISCRS Buffalo (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=43.4813888888889 +lon_0=-91.7972222222222 +k=1.0000382778 +x_0=175260.3502159 +y_0=0.0048768097536195 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8210
+  },
+  {
+    "name": "NAD83(HARN) / WISCRS Brown (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=43 +lon_0=-88 +k=1.00002 +x_0=31599.9998983998 +y_0=4599.99989839979 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8213
+  },
+  {
+    "name": "NAD83(HARN) / WISCRS Bayfield (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_1=46.6696483772222 +lat_0=46.6696483772222 +lon_0=-91.1527777777778 +k_0=1.0000331195 +x_0=228600.457505715 +y_0=148551.483566167 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8216
+  },
+  {
+    "name": "NAD83(HARN) / WISCRS Barron (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=45.1333333333333 +lon_0=-91.85 +k=1.0000486665 +x_0=93150 +y_0=0.00304800609601219 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8220
+  },
+  {
+    "name": "NAD83(HARN) / WISCRS Ashland (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=45.7061111111111 +lon_0=-90.6222222222222 +k=1.0000495683 +x_0=172821.945948692 +y_0=0.00182880365760731 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8224
+  },
+  {
+    "name": "NAD83(HARN) / WISCRS Adams and Juneau (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=43.3666666666667 +lon_0=-90 +k=1.0000365285 +x_0=147218.694132588 +y_0=0.00365760731521463 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 8226
+  },
+  {
+    "name": "NAD83(HARN) / Maine East (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=43.6666666666667 +lon_0=-68.5 +k=0.9999 +x_0=300000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 26855
+  },
+  {
+    "name": "NAD83(HARN) / Maine West (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=tmerc +lat_0=42.8333333333333 +lon_0=-70.1666666666667 +k=0.999966667 +x_0=900000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 26856
+  },
+  {
+    "name": "NAD83(HARN) / Minnesota North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=46.5 +lon_0=-93.1 +lat_1=48.6333333333333 +lat_2=47.0333333333333 +x_0=800000.00001016 +y_0=99999.9999898399 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 26857
+  },
+  {
+    "name": "NAD83(HARN) / Minnesota Central (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=45 +lon_0=-94.25 +lat_1=47.05 +lat_2=45.6166666666667 +x_0=800000.00001016 +y_0=99999.9999898399 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 26858
+  },
+  {
+    "name": "NAD83(HARN) / Minnesota South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=43 +lon_0=-94 +lat_1=45.2166666666667 +lat_2=43.7833333333333 +x_0=800000.00001016 +y_0=99999.9999898399 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 26859
+  },
+  {
+    "name": "NAD83(HARN) / Nebraska (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=39.8333333333333 +lon_0=-100 +lat_1=43 +lat_2=40 +x_0=500000.00001016 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 26860
+  },
+  {
+    "name": "NAD83(HARN) / West Virginia North (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=38.5 +lon_0=-79.5 +lat_1=40.25 +lat_2=39 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 26861
+  },
+  {
+    "name": "NAD83(HARN) / West Virginia South (ftUS)",
+    "unit": "US survey foot",
+    "proj4": "+proj=lcc +lat_0=37 +lon_0=-81 +lat_1=38.8833333333333 +lat_2=37.4833333333333 +x_0=600000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs +type=crs",
+    "_id": 26862
+  }
+]
