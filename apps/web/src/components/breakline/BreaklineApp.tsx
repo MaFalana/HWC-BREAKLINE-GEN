@@ -199,7 +199,7 @@ export function BreaklineApp() {
   return (
     <div className="bl-page">
       <HwcHeader
-        logoSrc="/assets/HWC-Logo-Light.png"
+        logoSrc="/tools/breakline-gen/assets/HWC-Logo-Light.png"
         title="LiDAR Breakline Generator"
         right={
           showProgress ? (
