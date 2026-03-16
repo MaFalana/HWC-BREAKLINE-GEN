@@ -31,12 +31,7 @@ dependencies = [
   "open3d>=0.17",
 
   # Additional processing (used by source/process.py)
-  "pdal",
   "shapely",
-  "matplotlib",
-  "pandas",
-  "geopandas",
-  "lxml",
 ]
 
 [project.optional-dependencies]
