@@ -9,8 +9,6 @@ from .exceptions import (
     StorageException,
     ProcessingException,
     JobNotCompletedException,
-    AuthenticationException,
-    ConfigurationException,
     ServiceUnavailableException
 )
 
@@ -31,8 +29,6 @@ __all__ = [
     "StorageException",
     "ProcessingException",
     "JobNotCompletedException",
-    "AuthenticationException",
-    "ConfigurationException",
     "ServiceUnavailableException",
     # Validators
     "validate_upload_file",

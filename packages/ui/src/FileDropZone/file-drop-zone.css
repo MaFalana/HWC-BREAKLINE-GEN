@@ -1,0 +1,156 @@
+.file-drop-zone-container {
+  width: 100%;
+}
+
+.file-drop-zone {
+  border: 2px dashed #cbd5e1;
+  border-radius: 12px;
+  padding: 24px;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+}
+
+.file-drop-zone:hover:not(.disabled) {
+  border-color: #EE2F27;
+  background: rgba(238, 47, 39, 0.05);
+}
+
+.file-drop-zone.dragging {
+  border-color: #EE2F27;
+  background: rgba(238, 47, 39, 0.1);
+  transform: scale(1.02);
+}
+
+.file-drop-zone.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.file-drop-zone.has-file {
+  cursor: default;
+}
+
+.drop-zone-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+}
+
+.upload-icon {
+  font-size: 48px;
+  color: #94a3b8;
+  margin-bottom: 8px;
+}
+
+.paste-area {
+  width: 100%;
+  min-height: 80px;
+  padding: 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 14px;
+  resize: vertical;
+  background: white;
+  color: #1e293b;
+}
+
+.paste-area:focus {
+  outline: none;
+  border-color: #EE2F27;
+}
+
+.paste-area::placeholder {
+  color: #94a3b8;
+}
+
+.file-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 12px;
+  background: white;
+  border-radius: 8px;
+}
+
+.file-icon {
+  font-size: 32px;
+  color: #EE2F27;
+  flex-shrink: 0;
+}
+
+.file-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.file-name {
+  font-weight: 500;
+  color: #1e293b;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.file-size {
+  font-size: 12px;
+  color: #64748b;
+}
+
+.clear-button,
+.clear-button-text {
+  background: none;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.clear-button:hover,
+.clear-button-text:hover {
+  background: rgba(238, 47, 39, 0.1);
+  color: #EE2F27;
+}
+
+.clear-button-text {
+  position: absolute;
+  top: 60px;
+  right: 8px;
+}
+
+.error-message {
+  margin-top: 8px;
+  padding: 8px 12px;
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  border-radius: 6px;
+  color: #dc2626;
+  font-size: 14px;
+}
+
+.drop-zone-text {
+  margin: 0;
+  color: #94a3b8;
+  font-size: 14px;
+  text-align: center;
+}

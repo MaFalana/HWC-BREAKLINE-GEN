@@ -190,7 +190,8 @@ async def retry_job(job_id: str):
         updated_job = await job_manager.update_job_status(
             job_id,
             JobStatus.QUEUED,
-            error_message=None
+            error_message="",
+            output_files=[],
         )
         
         return {

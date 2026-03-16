@@ -71,25 +71,6 @@ class JobNotCompletedException(BaseAPIException):
         )
 
 
-class AuthenticationException(BaseAPIException):
-    """Exception raised for authentication failures"""
-    def __init__(self, detail: str = "Invalid or missing API key"):
-        super().__init__(
-            status_code=status.HTTP_401_UNAUTHORIZED,
-            detail=detail,
-            headers={"WWW-Authenticate": "Bearer"}
-        )
-
-
-class ConfigurationException(BaseAPIException):
-    """Exception raised for configuration errors"""
-    def __init__(self, detail: str):
-        super().__init__(
-            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            detail=f"Configuration error: {detail}"
-        )
-
-
 class ServiceUnavailableException(BaseAPIException):
     """Exception raised when a required service is unavailable"""
     def __init__(self, service: str):

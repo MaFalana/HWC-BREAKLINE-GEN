@@ -1,0 +1,108 @@
+/* Search Bar */
+.hwc-search-wrapper {
+  position: relative;
+  z-index: 1600;
+}
+
+.hwc-search {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.hwc-search__icon {
+  position: absolute;
+  left: 0.75rem;
+  width: 16px;
+  height: 16px;
+  color: rgba(255, 255, 255, 0.6);
+  pointer-events: none;
+}
+
+.hwc-search__input {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--hdr-border, rgba(255, 255, 255, 0.08));
+  border-radius: 0.375rem;
+  padding: 0.5rem 2.75rem 0.5rem 2.5rem;
+  color: var(--hdr-fg, #F5F7FA);
+  font-size: 0.875rem;
+  width: 200px;
+  transition: all 0.2s ease;
+}
+
+.hwc-search__input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.hwc-search__input:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.15);
+  border-color: var(--accent, #EE2F27);
+  width: 250px;
+}
+
+.hwc-search__filter-btn {
+  position: absolute;
+  right: 0.5rem;
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  padding: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.25rem;
+  transition: all 0.2s ease;
+}
+
+.hwc-search__filter-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--hdr-fg, #F5F7FA);
+}
+
+.hwc-search__filter-btn.active {
+  color: var(--accent, #EE2F27);
+}
+
+.hwc-search__filter-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+.hwc-search__filter-badge {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 6px;
+  height: 6px;
+  background: var(--accent, #EE2F27);
+  border-radius: 50%;
+  border: 1px solid var(--hdr-bg, rgba(26, 28, 32, 0.85));
+}
+
+/* Filter Dropdown */
+.hwc-search__filter-dropdown {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  right: 0;
+  background: var(--hdr-bg, rgba(26, 28, 32, 0.85));
+  border: 1px solid var(--hdr-border, rgba(255, 255, 255, 0.08));
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  backdrop-filter: saturate(120%) blur(8px);
+  min-width: 280px;
+  z-index: 1600;
+  overflow: hidden;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hwc-search__input {
+    width: 140px;
+  }
+
+  .hwc-search__input:focus {
+    width: 180px;
+  }
+}

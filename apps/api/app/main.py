@@ -55,6 +55,12 @@ async def process_jobs_loop():
                 logger.info(f"Processing job {job.id} (created {job_age.total_seconds():.1f}s ago)")
                 
                 try:
+                    # Re-check status — job may have been cancelled while queued
+                    fresh_job = await job_manager.get_job(job.id)
+                    if fresh_job.status != JobStatus.QUEUED:
+                        logger.info(f"Job {job.id} is no longer queued (status: {fresh_job.status.value}), skipping")
+                        continue
+                    
                     # Skip jobs with no input files
                     if not job.input_files:
                         logger.warning(f"Job {job.id} has no input files, marking as failed")
@@ -77,6 +83,12 @@ async def process_jobs_loop():
                         job.input_files,
                         job.processing_parameters
                     )
+                    
+                    # Re-check status — job may have been cancelled during processing
+                    current_job = await job_manager.get_job(job.id)
+                    if current_job.status == JobStatus.FAILED:
+                        logger.info(f"Job {job.id} was cancelled during processing, skipping completion")
+                        continue
                     
                     # Update status to completed
                     await job_manager.update_job_status(

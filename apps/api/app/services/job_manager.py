@@ -115,10 +115,10 @@ class JobManager:
             job.status = status
             job.updated_at = datetime.utcnow()
             
-            if error_message:
+            if error_message is not None:
                 job.error_message = error_message
             
-            if output_files:
+            if output_files is not None:
                 job.output_files = output_files
             
             if total_processed_points is not None:
@@ -230,7 +230,7 @@ class JobManager:
     
     async def cancel_job(self, job_id: str) -> Job:
         """
-        Cancel a job
+        Cancel a job and clean up its files
         
         Args:
             job_id: Job identifier
@@ -246,12 +246,22 @@ class JobManager:
                 raise ValueError(f"Cannot cancel job in {job.status.value} status")
             
             # Update status to failed with cancellation message
-            return await self.update_job_status(
+            updated = await self.update_job_status(
                 job_id,
                 JobStatus.FAILED,
                 error_message="Job cancelled by user"
             )
             
+            # Clean up uploaded files
+            try:
+                await self.storage_service.delete_job_files(job_id)
+            except Exception as e:
+                logger.warning(f"Failed to clean up files for cancelled job {job_id}: {e}")
+            
+            return updated
+            
+        except (ValueError, JobNotFoundException):
+            raise
         except Exception as e:
             logger.error(f"Failed to cancel job {job_id}: {str(e)}")
             raise

@@ -1,0 +1,94 @@
+.county-select-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.county-select-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--hdr-fg, #1f2937);
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.county-select-required {
+  color: var(--hwc-red, #dc2626);
+  font-weight: bold;
+}
+
+.county-select {
+  width: 100%;
+  padding: 0.625rem 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--hdr-fg, #1f2937);
+  background-color: white;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  transition: all 0.15s ease;
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3E%3C/svg%3E");
+  background-position: right 0.5rem center;
+  background-repeat: no-repeat;
+  background-size: 1.5em 1.5em;
+  padding-right: 2.5rem;
+}
+
+.county-select:hover:not(:disabled) {
+  border-color: #9ca3af;
+}
+
+.county-select:focus {
+  outline: none;
+  border-color: var(--accent, #2563eb);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.county-select:disabled {
+  background-color: #f3f4f6;
+  color: #9ca3af;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.county-select-error {
+  border-color: var(--hwc-red, #dc2626);
+}
+
+.county-select-error:focus {
+  border-color: var(--hwc-red, #dc2626);
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.1);
+}
+
+.county-select-error-message {
+  font-size: 0.75rem;
+  color: var(--hwc-red, #dc2626);
+  margin-top: -0.25rem;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .county-select {
+    background-color: #1f2937;
+    border-color: #374151;
+    color: #f9fafb;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%239ca3af' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3E%3C/svg%3E");
+  }
+
+  .county-select:hover:not(:disabled) {
+    border-color: #4b5563;
+  }
+
+  .county-select:disabled {
+    background-color: #111827;
+    color: #6b7280;
+  }
+
+  .county-select-label {
+    color: #f9fafb;
+  }
+}

@@ -87,7 +87,6 @@ class Settings(BaseSettings):
     # ── Security ───────────────────────────────────────────────────────
 
     cors_origins: list[str] = Field(default=["*"])
-    api_key: Optional[str] = Field(default=None)
 
     # ── Background tasks ───────────────────────────────────────────────
 
