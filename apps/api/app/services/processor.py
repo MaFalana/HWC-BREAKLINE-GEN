@@ -5,6 +5,7 @@ LiDAR processing service wrapper
 import logging
 import tempfile
 import os
+import asyncio
 from typing import List, Dict, Any
 from pathlib import Path
 import sys
@@ -68,10 +69,12 @@ class ProcessorService:
                 input_paths.append(local_path)
                 logger.info(f"Downloaded {blob_name}")
 
-            # Run LiDAR processing
+            # Run LiDAR processing in a thread so we don't block the event loop
             lidar_params = self._convert_parameters(input_paths, output_dir, processing_params)
             processor = LiDARProcessor(lidar_params)
-            results = processor.process_files()
+
+            loop = asyncio.get_event_loop()
+            results = await loop.run_in_executor(None, processor.process_files)
 
             # Check for failures
             failed = [r for r in results if not r.success]

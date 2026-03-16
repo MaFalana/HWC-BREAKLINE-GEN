@@ -80,6 +80,8 @@ jobs:
               --name ${{ env.CONTAINER_NAME }} \
               --resource-group ${{ secrets.AZURE_RESOURCE_GROUP }} \
               --image docker.io/${{ env.DOCKER_IMAGE }}:${{ github.sha }} \
+              --cpu 1.0 \
+              --memory 2.0Gi \
               --set-env-vars \
                 PORT=8000 \
                 MONGO_CONNECTION_STRING="${{ secrets.MONGO_CONNECTION_STRING }}" \
@@ -98,8 +100,8 @@ jobs:
               --ingress external \
               --min-replicas 0 \
               --max-replicas 3 \
-              --cpu 0.25 \
-              --memory 0.5Gi \
+              --cpu 1.0 \
+              --memory 2.0Gi \
               --env-vars \
                 PORT=8000 \
                 MONGO_CONNECTION_STRING="${{ secrets.MONGO_CONNECTION_STRING }}" \
