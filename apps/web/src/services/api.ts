@@ -1,6 +1,5 @@
-const BASE =
-  (import.meta as any).env?.PUBLIC_API_BASE_URL ??
-  'https://surface-gen-api.purplebush-adcf4e3b.eastus.azurecontainerapps.io';
+// PUBLIC_API_BASE_URL is set in .env (local) or via CI env vars (deploy)
+const BASE: string = import.meta.env.PUBLIC_API_BASE_URL || '';
 
 export async function request<T>(path: string, init?: RequestInit): Promise<T> {
   const res = await fetch(`${BASE}${path}`, {

@@ -51,9 +51,12 @@ async def get_download_urls(
                 detail="No output files found for this job"
             )
         
+        # Filter out internal preview CSVs — they're not user-facing outputs
+        user_outputs = [f for f in job.output_files if not f.endswith("_preview.csv")]
+
         # Generate download URLs
         download_urls = storage_service.generate_download_urls(
-            job.output_files,
+            user_outputs,
             expiry_hours
         )
         

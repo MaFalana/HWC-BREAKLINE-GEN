@@ -8,12 +8,16 @@ interface Props {
 export function Download({ downloadUrls, isDownloading, onDownload, mergeEnabled }: Props) {
   const getFiltered = () => {
     if (!downloadUrls) return {};
+    // Always filter out preview CSVs — they're internal artifacts
+    const filtered = Object.fromEntries(
+      Object.entries(downloadUrls).filter(([n]) => !n.includes('_preview.csv')),
+    );
     if (mergeEnabled) {
       return Object.fromEntries(
-        Object.entries(downloadUrls).filter(([n]) => n.includes('merged') || n.includes('output')),
+        Object.entries(filtered).filter(([n]) => n.includes('merged') || n.includes('output')),
       );
     }
-    return downloadUrls;
+    return filtered;
   };
 
   const urls = getFiltered();

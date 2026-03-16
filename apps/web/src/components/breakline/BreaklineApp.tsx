@@ -86,9 +86,12 @@ export function BreaklineApp() {
           for (let i = 0; i < 5; i++) {
             try {
               const p = await getJobPreview(currentJobId);
-              const hasData = 'file_previews' in p
-                ? p.file_previews.some((fp) => fp.preview_points?.length > 0) || (p.total_processed_points ?? 0) > 0
-                : (p.preview_points?.length > 0) || (p.total_processed_points ?? 0) > 0;
+              const isMulti = 'file_previews' in p;
+              const hasData = isMulti
+                ? (p as MultiFilePreviewResponse).file_previews.some((fp) => fp.preview_points?.length > 0)
+                  || !!(p as MultiFilePreviewResponse).merged_preview?.preview_points?.length
+                  || (p.total_processed_points ?? 0) > 0
+                : (p as JobPreviewResponse).preview_points?.length > 0 || (p.total_processed_points ?? 0) > 0;
               if (hasData) { preview = p; break; }
             } catch {}
             await new Promise((r) => setTimeout(r, 2000));
@@ -97,10 +100,17 @@ export function BreaklineApp() {
           if (preview) {
             setPreviewData(preview);
             if ('file_previews' in preview) {
-              setFilePreviews(preview.file_previews);
-              if (preview.file_previews.length > 0) setPreviewPoints(preview.file_previews[0].preview_points);
+              const multi = preview as MultiFilePreviewResponse;
+              // Use merged_preview if file_previews is empty (merge job)
+              if (multi.merged_preview?.preview_points?.length) {
+                setPreviewPoints(multi.merged_preview.preview_points);
+                setFilePreviews([]);
+              } else if (multi.file_previews.length > 0) {
+                setFilePreviews(multi.file_previews);
+                setPreviewPoints(multi.file_previews[0].preview_points);
+              }
             } else {
-              setPreviewPoints(preview.preview_points);
+              setPreviewPoints((preview as JobPreviewResponse).preview_points);
               setFilePreviews([]);
             }
           }
@@ -237,7 +247,13 @@ export function BreaklineApp() {
                 points={previewPoints}
                 isLoading={isLoadingPreview || (isPolling && jobStatus === 'processing')}
                 totalPoints={previewData && 'total_processed_points' in previewData ? previewData.total_processed_points : undefined}
-                elevationStats={previewData && 'elevation_statistics' in previewData ? previewData.elevation_statistics : undefined}
+                elevationStats={
+                  previewData && 'elevation_statistics' in previewData
+                    ? previewData.elevation_statistics
+                    : previewData && 'merged_preview' in previewData && (previewData as MultiFilePreviewResponse).merged_preview
+                      ? (previewData as MultiFilePreviewResponse).merged_preview!.elevation_statistics
+                      : undefined
+                }
                 filePreviews={filePreviews.length > 0 ? filePreviews : undefined}
                 isMultiFile={filePreviews.length > 0}
               />
@@ -256,7 +272,13 @@ export function BreaklineApp() {
                 points={previewPoints}
                 isLoading={isLoadingPreview || (isPolling && jobStatus === 'processing')}
                 totalPoints={previewData && 'total_processed_points' in previewData ? previewData.total_processed_points : undefined}
-                elevationStats={previewData && 'elevation_statistics' in previewData ? previewData.elevation_statistics : undefined}
+                elevationStats={
+                  previewData && 'elevation_statistics' in previewData
+                    ? previewData.elevation_statistics
+                    : previewData && 'merged_preview' in previewData && (previewData as MultiFilePreviewResponse).merged_preview
+                      ? (previewData as MultiFilePreviewResponse).merged_preview!.elevation_statistics
+                      : undefined
+                }
                 filePreviews={filePreviews.length > 0 ? filePreviews : undefined}
                 isMultiFile={filePreviews.length > 0}
               />
