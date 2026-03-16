@@ -86,20 +86,20 @@ def sanitize_filename(filename: str) -> str:
     return sanitized
 
 
-def generate_blob_name(job_id: str, filename: str, prefix: str = "uploads") -> str:
+def generate_blob_name(job_id: str, filename: str, folder: str = "input") -> str:
     """
     Generate blob storage name for a file
     
     Args:
         job_id: Job identifier
         filename: Original filename
-        prefix: Storage prefix (uploads/outputs)
+        folder: Storage folder within the job (input/output)
         
     Returns:
         Blob name with path
     """
     sanitized_name = sanitize_filename(filename)
-    return f"{prefix}/{job_id}/{sanitized_name}"
+    return f"jobs/{job_id}/{folder}/{sanitized_name}"
 
 
 def extract_filename_from_blob(blob_name: str) -> str:

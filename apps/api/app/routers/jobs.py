@@ -167,7 +167,7 @@ async def retry_job(job_id: str):
         missing_files = []
         
         for input_file in job.input_files:
-            # All input files are stored as full blob paths: uploads/job_id/filename.las
+            # All input files are stored as full blob paths: jobs/job_id/input/filename.las
             blob_path = input_file
                 
             try:

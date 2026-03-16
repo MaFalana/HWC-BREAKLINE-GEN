@@ -2,7 +2,7 @@
 Configuration management for Surface Generation API
 
 Env vars (set in .env locally, GitHub Actions secrets/vars in prod):
-  AZURE_CONNECTION_STRING            – Azure Blob Storage connection string
+  AZURE_CONNECTION_STRING          – Azure Blob Storage connection string
   MONGO_CONNECTION_STRING          – Cosmos DB Mongo connection string
   NAME                             – shared name for blob container + mongo db/collection
 """
@@ -25,19 +25,16 @@ class Settings(BaseSettings):
     azure_connection_string: str = Field(
         ...,
         description="Azure Blob Storage connection string",
-        alias="AZURE_CONNECTION_STRING"
     )
 
     mongo_connection_string: str = Field(
         ...,
         description="Cosmos DB MongoDB connection string",
-        alias="MONGO_CONNECTION_STRING"
     )
 
     name: str = Field(
-        ...,
+        default="hwc-breakline-generator",
         description="Shared project name used for blob container and mongo database/collection",
-        alias="NAME"
     )
 
     # ── Derived helpers (use `name` as the single source) ──────────────

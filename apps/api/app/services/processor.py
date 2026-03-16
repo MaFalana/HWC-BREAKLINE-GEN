@@ -89,7 +89,7 @@ class ProcessorService:
                 for fmt, file_path in result.output_files.items():
                     if os.path.exists(file_path):
                         filename = Path(file_path).name
-                        blob_name = f"outputs/{job_id}/{filename}"
+                        blob_name = f"jobs/{job_id}/output/{filename}"
                         with open(file_path, "rb") as f:
                             await self.storage_service.upload_file(
                                 f, blob_name, CONTENT_TYPES.get(fmt, "application/octet-stream")

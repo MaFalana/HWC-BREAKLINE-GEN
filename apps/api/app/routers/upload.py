@@ -77,7 +77,7 @@ async def upload_files(
         failed_uploads = []
         
         for file in files:
-            blob_name = generate_blob_name(job_id, file.filename, "uploads")
+            blob_name = generate_blob_name(job_id, file.filename, "input")
             
             try:
                 # Upload file

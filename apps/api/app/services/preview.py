@@ -71,8 +71,8 @@ class PreviewService:
             # Fix: Handle both full blob paths and just filenames
             # If input_file_blob doesn't contain '/', it's just a filename and needs the full path
             if '/' not in input_file_blob:
-                # Construct full blob path: uploads/job_id/filename
-                full_blob_path = f"uploads/{job_id}/{input_file_blob}"
+                # Construct full blob path: jobs/job_id/input/filename
+                full_blob_path = f"jobs/{job_id}/input/{input_file_blob}"
                 self.logger.info(f"Converting filename '{input_file_blob}' to full blob path: {full_blob_path}")
             else:
                 full_blob_path = input_file_blob
@@ -392,7 +392,7 @@ class PreviewService:
         """Generate preview for a single file"""
         # Fix: Handle both full blob paths and just filenames
         if '/' not in blob_path and job_id:
-            full_blob_path = f"uploads/{job_id}/{blob_path}"
+            full_blob_path = f"jobs/{job_id}/input/{blob_path}"
             self.logger.info(f"Converting filename '{blob_path}' to full blob path: {full_blob_path}")
         else:
             full_blob_path = blob_path
@@ -441,7 +441,7 @@ class PreviewService:
         for blob_path in blob_paths:
             # Fix: Handle both full blob paths and just filenames
             if '/' not in blob_path:
-                full_blob_path = f"uploads/{job_id}/{blob_path}"
+                full_blob_path = f"jobs/{job_id}/input/{blob_path}"
                 self.logger.info(f"Converting filename '{blob_path}' to full blob path: {full_blob_path}")
             else:
                 full_blob_path = blob_path

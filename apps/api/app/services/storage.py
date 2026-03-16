@@ -191,7 +191,7 @@ class StorageService:
     async def delete_job_files(self, job_id: str) -> None:
         """Delete all files associated with a job."""
         try:
-            prefixes = [f"uploads/{job_id}/", f"outputs/{job_id}/"]
+            prefixes = [f"jobs/{job_id}/"]
             for prefix in prefixes:
                 blob_names = await self.list_blobs(prefix)
                 for name in blob_names:
@@ -308,7 +308,7 @@ class StorageService:
         """Check if Azure Blob Storage is accessible."""
         try:
             def _ping():
-                list(self.blob_service_client.list_containers(max_results=1))
+                self.container_client.get_container_properties()
 
             await self._run_in_executor(_ping)
             return True

@@ -1,12 +1,61 @@
 [project]
-name = "hwc-api"
+name = "hwc-breakline-generator-api"
 version = "0.0.1"
 requires-python = ">=3.11"
 dependencies = [
+  # FastAPI and server
   "fastapi>=0.110",
   "uvicorn[standard]>=0.27",
-  "pydantic-settings>=2.0"
+  "python-multipart>=0.0.6",
+  "aiofiles>=23.2",
+
+  # Pydantic / config
+  "pydantic>=2.5",
+  "pydantic-settings>=2.0",
+  "python-dotenv>=1.0",
+
+  # Azure services
+  "azure-storage-blob>=12.19",
+
+  # MongoDB (Cosmos DB)
+  "motor>=3.3",
+  "pymongo>=4.6",
+
+  # LiDAR processing
+  "laspy>=2.4",
+  "laszip>=0.2",
+  "numpy>=1.24",
+  "scipy>=1.10",
+  "ezdxf>=1.1",
+  "pyproj>=3.6",
+  "open3d>=0.17",
+
+  # Additional processing (used by source/process.py)
+  "pdal",
+  "shapely",
+  "matplotlib",
+  "pandas",
+  "geopandas",
+  "lxml",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7.4",
+  "pytest-asyncio>=0.21",
+  "httpx>=0.25",
 ]
 
 [tool.uvicorn]
 factory = false
+
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = []
+
+[tool.setuptools.packages.find]
+include = ["app*", "source*"]
+exclude = ["test*", "hwc_api*"]
