@@ -1,43 +1,71 @@
-# Astro Starter Kit: Minimal
+# Breakline Generator — Web Frontend
 
-```sh
-npm create astro@latest -- --template minimal
+Astro site with a React island for the LiDAR breakline processing UI.
+
+## Architecture
+
 ```
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
+apps/web/
 ├── src/
-│   └── pages/
-│       └── index.astro
+│   ├── pages/
+│   │   └── index.astro            # Single page, loads BreaklineApp as React island
+│   ├── components/breakline/
+│   │   ├── BreaklineApp.tsx       # Root component (state, polling, orchestration)
+│   │   ├── FileUpload.tsx         # Drag-and-drop LAS/LAZ upload
+│   │   ├── Configuration.tsx      # Processing params (EPSG, voxel size, merge, formats)
+│   │   ├── Preview.tsx            # PNEZD point table + elevation stats
+│   │   ├── Download.tsx           # Output file download links
+│   │   ├── ProgressIndicator.tsx  # Upload/processing progress bar
+│   │   └── InfoBoxes.tsx          # Informational cards
+│   ├── services/
+│   │   ├── api.ts                 # Base fetch wrapper (reads PUBLIC_API_BASE_URL)
+│   │   ├── upload.ts              # XHR upload with progress callback
+│   │   └── jobs.ts                # Job status, preview, download, cancel
+│   ├── types/
+│   │   └── index.ts               # Shared TypeScript interfaces
+│   └── styles/
+│       ├── global.css             # CSS custom properties (colors, fonts, spacing)
+│       └── breakline.css          # Component styles (no Tailwind)
+├── public/assets/                 # Branding assets (synced via npm run assets:sync)
+├── astro.config.mjs               # Astro + React integration
+├── .env                           # Local env vars (not committed)
 └── package.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Shared Packages
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+- `@hwc/header` — site header bar component
+- `@hwc/ui` — shared UI components (Combobox for EPSG selection, etc.)
 
-Any static assets, like images, can be placed in the `public/` directory.
+## Environment Variables
 
-## 🧞 Commands
+| Variable | Description |
+|---|---|
+| `PUBLIC_API_BASE_URL` | API base URL (e.g. `http://localhost:8000` locally) |
 
-All commands are run from the root of the project, from a terminal:
+Copy `env.example` to `.env` and fill in values for local development.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## Local Development
 
-## 👀 Want to learn more?
+```bash
+# From monorepo root
+npm install
+npm run assets:sync
+npm run dev:web
+```
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Or from this directory:
+
+```bash
+npm run dev
+```
+
+Dev server runs at `http://localhost:4321`. Requires the API running at the URL specified in `.env`.
+
+## Build
+
+```bash
+npm run build
+```
+
+Static output goes to `dist/`. Deployed to Azure Static Web Apps via GitHub Actions.
