@@ -14,8 +14,8 @@ on:
   workflow_dispatch:
 
 env:
-  DOCKER_IMAGE: mfalana/hwc-xxx-xxx
-  CONTAINER_NAME: hwc-xxx-xxx
+  DOCKER_IMAGE: mfalana/hwc-breakline-gen-api
+  CONTAINER_NAME: hwc-breakline-gen-api
 
 concurrency:
   group: dockerhub-${{ github.ref }}
